@@ -1,0 +1,904 @@
+# Last change at 2016-08-10 14:52:34 by 192.168.1.70 (changes automatically, log in to show your name)
+
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Imanuel Habekotté <ima.habekotte@gmail.com>\n"
+"Language-Team: Dutch <ima.habekotte@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 10-7-2016 12:00+0100\n"
+"PO-Revision-Date: 2016-07-10 15:39+0200\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.8\n"
+
+msgid "Home"
+msgstr "Startpagina"
+
+msgid "Go to our YoYo Games Archive"
+msgstr "Ga naar onze YoYo Games Archief"
+
+msgid "Welcome"
+msgstr "Welkom"
+
+msgid "Log in"
+msgstr "Inloggen"
+
+msgid "Log out"
+msgstr "Uitloggen"
+
+msgid "Register"
+msgstr "Registreren"
+
+msgid "Search for games..."
+msgstr "Naar spelletjes zoeken..."
+
+msgid "Search for users..."
+msgstr "Naar gebruikers zoeken..."
+
+msgid "Search"
+msgstr "Zoeken"
+
+msgid "You are now logged in."
+msgstr "Je bent nu ingelogd."
+
+msgid "Email"
+msgstr "E-mailadres"
+
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgid "Remember me"
+msgstr "Ingelogd blijven"
+
+msgid "I don't have a login, but I would like to register for an account"
+msgstr "Ik wil me graag aanmelden bij de site"
+
+msgid "Help! I've forgotten my password"
+msgstr "Help! Ik ben mijn wachtwoord vergeten"
+
+msgid "Forgot password"
+msgstr "Wachtwoord herstellen"
+
+msgid "Reset password"
+msgstr "Wachtwoord herstellen"
+
+msgid "Fill in either your email, or your username and click \"Reset password\". You will be sent an email with a link to reset your password."
+msgstr "Vul je e-mailadres of je gebruikersnaam in en klik op \"Wachtwoord herstellen\". Dan krijg je een email opgestuurd met een link waarmee je je wachtwoord kan herstellen."
+
+msgid "...or username"
+msgstr "Of gebruikersnaam"
+
+msgid "Type the text"
+msgstr "Typ wat hierboven staat"
+
+msgid "Game"
+msgid_plural "Games"
+msgstr[0] "Spelletje"
+msgstr[1] "Spelletjes"
+
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "Gebruiker"
+msgstr[1] "Gebruikers"
+
+msgid "Guest"
+msgid_plural "Guests"
+msgstr[0] "Gast"
+msgstr[1] "Gasten"
+
+msgid "Member"
+msgid_plural "Members"
+msgstr[0] "Gebruiker"
+msgstr[1] "Gebruikers"
+
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "Reactie"
+msgstr[1] "Reacties"
+
+msgid "Favorite"
+msgid_plural "Favorites"
+msgstr[0] "Favoriet"
+msgstr[1] "Favorieten"
+
+msgid "Like"
+msgid_plural "Likes"
+msgstr[0] "Vind-ik-leuk"
+msgstr[1] "Vind-ik-leuks"
+
+msgid "Rating"
+msgid_plural "Ratings"
+msgstr[0] "Beoordeling"
+msgstr[1] "Beoordelingen"
+
+msgid "Review"
+msgid_plural "Reviews"
+msgstr[0] "Recensie"
+msgstr[1] "Recensies"
+
+msgid "message"
+msgid_plural "messages"
+msgstr[0] "bericht"
+msgstr[1] "berichten"
+
+msgid "new"
+msgstr "nieuwe"
+
+msgid "Online"
+msgstr "Online"
+
+msgid "Newest member"
+msgid_plural "Newest members"
+msgstr[0] "Nieuwste gebruiker"
+msgstr[1] "Nieuwste gebruikers"
+
+msgid "Statistic"
+msgid_plural "Statistics"
+msgstr[0] "Statistiek"
+msgstr[1] "Statistieken"
+
+msgid "Game created"
+msgid_plural "Games created"
+msgstr[0] "Game geüpload"
+msgstr[1] "Games geüpload"
+
+msgid "Game played"
+msgid_plural "Games played"
+msgstr[0] "Game gespeeld"
+msgstr[1] "Games gespeeld"
+
+msgid "Game indexed"
+msgid_plural "Games indexed"
+msgstr[0] "Game geïndexeerd"
+msgstr[1] "Games geïndexeerd"
+
+msgid "Game archived"
+msgid_plural "Games archived"
+msgstr[0] "Game gearchiveerd"
+msgstr[1] "Games gearchiveerd"
+
+msgid "Moderation"
+msgstr "Moderatie"
+
+msgid "Play"
+msgstr "Speel"
+
+msgid "Make"
+msgstr "Ontwikkel"
+
+msgid "Share"
+msgstr "Deel"
+
+msgid "Help"
+msgstr "Hulp"
+
+msgid "Reporting a"
+msgstr "Rapporteer een"
+
+msgid "What would you tell us about this game?"
+msgstr "Wat wil je aan ons kwijt over dit spelletje?"
+
+msgid "What would you tell us about this user?"
+msgstr "Wat wil je aan ons kwijt over deze gebruiker?"
+
+msgid "Submit"
+msgstr "Verstuur"
+
+msgid "Play now"
+msgstr "Speel dit spel"
+
+msgid "Downloads"
+msgstr "Downloads"
+
+msgid "Add to favorites"
+msgstr "Voeg toe aan favorieten"
+
+msgid "Remove from favorites"
+msgstr "Verwijder van favorieten"
+
+msgid "Report game"
+msgstr "Rapporteer spel"
+
+msgid "Send to friend"
+msgstr "Stuur naar een vriend"
+
+msgid "Rated <strong>%f</strong>"
+msgstr "<strong>%f</strong> beoordeeld"
+
+msgid "Played <strong>%d</strong> times."
+msgstr "<strong>%d</strong> keer gespeeld."
+
+msgid "Current rating"
+msgstr "Beoordeling"
+
+msgid "No ratings yet!"
+msgstr "Nog geen beoordelingen."
+
+msgid "I'm feeling lucky"
+msgstr "Ik doe een gok"
+
+msgid "Picks a random game"
+msgstr "Een willekeurige spel"
+
+msgid "Try latest game"
+msgstr "Nieuwste game"
+
+msgid "News"
+msgstr "Nieuws"
+
+msgid "Hello! Click <a href=\"register\">register</a> to make your account!"
+msgstr "Hallo! Klik <a href=\"register\">registreren</a> om je account aan te maken!"
+
+msgid "Note for older members: log in again to show your account here."
+msgstr "Tip voor vorige gebruikers: log opnieuw in om je account weer te herstellen."
+
+msgid "View all news..."
+msgstr "Alle nieuws weergeven..."
+
+msgid "Subscribe to the newsletter..."
+msgstr "Abonneer op de nieuwsbrief..."
+
+msgid "What's hot"
+msgstr "Uitgelicht"
+
+msgid "Popular"
+msgstr "Populair"
+
+msgid "Puzzle"
+msgstr "Puzzle"
+
+msgid "Platform"
+msgstr "Platformer"
+
+msgid "Adventure"
+msgstr "Avontuur"
+
+msgid "Strategy"
+msgstr "Strategie"
+
+msgid "Arcade"
+msgstr "Arcade"
+
+msgid "Shooter games"
+msgstr "Schietspellen"
+
+msgid "Other"
+msgstr "Andere"
+
+msgid "Puzzle games"
+msgstr "Puzzel spelletjes"
+
+msgid "Platform games"
+msgstr "Platformer spelletjes"
+
+msgid "Adventure games"
+msgstr "Avontuur spelletjes"
+
+msgid "Strategy games"
+msgstr "Strategie spelletjes"
+
+msgid "Arcade games"
+msgstr "Arcade spelletjes"
+
+msgid "Other games"
+msgstr "Andere spelletjes"
+
+msgid "Utilities"
+msgstr "Gereedschappen"
+
+msgid "Utility"
+msgstr "Gereedschap"
+
+msgid "View all games..."
+msgstr "Alle spelletjes bekijken..."
+
+msgid "Latest archive additions"
+msgstr "Laatste toevoegingen aan het archief"
+
+msgid "This site is not affiliated with YoYo Games in any way."
+msgstr "IndieMendable is een initiatief dat niet wordt ondersteund door YoYo Games."
+
+msgid "Snow"
+msgstr "Sneeuw"
+
+msgid "Theme"
+msgstr "Thema"
+
+msgid "Light"
+msgstr "Licht"
+
+msgid "Dark"
+msgstr "Donker"
+
+msgid "Domain"
+msgstr "Domein"
+
+msgid "Pages"
+msgstr "Pagina's"
+
+msgid "Please log in to leave a comment."
+msgstr "Om een reactie te plaatsen heb je een account nodig."
+
+msgid "Post comment"
+msgstr "Plaats reactie"
+
+msgid "Follow"
+msgstr "Volg"
+
+# 
+# Geïmporteerd uit Yambam's vertaalscript voor YoYo Games:
+msgid "Spotlight"
+msgstr "Uitgelicht"
+
+msgid "YoYo Games News"
+msgstr "YoYo Games Nieuws"
+
+msgid "What's Hot"
+msgstr "Uitgelicht"
+
+msgid "View all What's Hot"
+msgstr "Bekijk alles uitgelicht"
+
+msgid "View all"
+msgstr "Bekijk alle"
+
+msgid "created by"
+msgstr "gemaakt door"
+
+msgid "Friend"
+msgid_plural "Friends"
+msgstr[0] "Vriend"
+msgstr[1] "Vrienden"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Age"
+msgstr "Leeftijd"
+
+msgid "Location"
+msgstr "Locatie"
+
+msgid "Description"
+msgstr "Beschrijving"
+
+msgid "Registered"
+msgstr "Geregistreerd"
+
+msgid "View user's forum profile"
+msgstr "Bekijk de forumprofiel van deze gebruiker"
+
+msgid "Last active"
+msgstr "Laatst actief"
+
+msgid "Send friend request"
+msgstr "Stuur vriendschapsverzoek"
+
+msgid "Cancel friend request"
+msgstr "Annuleer vriendschapsverzoek"
+
+msgid "Remove as friend"
+msgstr "Verwijder van vriendenlijst"
+
+msgid "Send personal message"
+msgstr "Stuur persoonlijk bericht"
+
+msgid "Report"
+msgstr "Rapporteer"
+
+msgid "Message"
+msgid_plural "Messages"
+msgstr[0] "Bericht"
+msgstr[1] "Berichten"
+
+msgid "From"
+msgstr "Van"
+
+msgid "To"
+msgstr "Aan"
+
+msgid "Subject"
+msgstr "Onderwerp"
+
+msgid "Sent"
+msgstr "Verzonden"
+
+msgid "Reply"
+msgstr "Beantwoorden"
+
+msgid "Delete"
+msgstr "Verwijder"
+
+msgid "No messages found."
+msgstr "Geen berichten gevonden."
+
+msgid "Compose new message"
+msgstr "Opstellen"
+
+msgid "Sent items"
+msgstr "Verzonden items"
+
+msgid "Deleted items"
+msgstr "Verwijderde items"
+
+msgid "Tip: You can use BBCode in messages. :)"
+msgstr "Tip: Gebruik BBCode in je berichten. :)"
+
+msgid "Send message"
+msgstr "Verstuur bericht"
+
+msgid "Send message to"
+msgstr "Stuur bericht naar"
+
+msgid "Message preview (Last saved draft: "
+msgstr "Zo ziet je bericht eruit (Laatste draft: "
+
+msgid "Message preview"
+msgstr "Zo ziet je bericht eruit"
+
+msgid "Original message"
+msgstr "Beantwoorde bericht"
+
+msgid "Original message (not found)"
+msgstr "Beantwoorde bericht (niet gevonden)"
+
+msgid "Oops, we couldn't find the message you were looking for."
+msgstr "Oeps, we konden je bericht niet vinden."
+
+msgid "You haven't added any friends yet."
+msgstr "Je hebt nog geen vrienden toegevoegd."
+
+msgid "Games by this creator"
+msgstr "Games van deze ontwikkelaar"
+
+msgid "Comments by this member"
+msgstr "Reacties van deze gebruiker"
+
+msgid "member"
+msgstr "gebruiker"
+
+msgid "Recently played games"
+msgstr "Laatst gespeeld"
+
+msgid "Favorite games"
+msgstr "Favoriete games"
+
+msgid "creator"
+msgstr "maker"
+
+msgid "More games"
+msgstr "Meer games"
+
+msgid "More"
+msgstr "Meer"
+
+msgid "By"
+msgstr "Door"
+
+msgid "Added"
+msgstr "Geplaatst"
+
+msgid "Last updated"
+msgstr "Laatste update"
+
+msgid "Created by"
+msgstr "Gemaakt door"
+
+msgid "Version"
+msgstr "Versie"
+
+msgid "Category"
+msgstr "Categorie"
+
+msgid "View more"
+msgstr "Bekijk meer"
+
+msgid "Game description"
+msgstr "Beschrijving"
+
+msgid "Tags"
+msgstr "Tags"
+
+msgid "Plays"
+msgstr "Downloads"
+
+msgid "Created"
+msgstr "Gemaakt"
+
+msgid "said"
+msgstr "schreef"
+
+msgid "on"
+msgstr "op"
+
+msgid "the member"
+msgstr "de gebruiker"
+
+msgid "the game"
+msgstr "het spelletje"
+
+msgid "on the game"
+msgstr "op het spelletje"
+
+msgid "the review"
+msgstr "de recensie"
+
+msgid "View all comments (also use to report comments)"
+msgstr "Alle reacties bekijken (gebruik dit om reacties te rapporteren)"
+
+msgid "year"
+msgid_plural "years"
+msgstr[0] "jaar"
+msgstr[1] "jaren"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "maand"
+msgstr[1] "maanden"
+
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "week"
+msgstr[1] "weken"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "dag"
+msgstr[1] "dagen"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "uur"
+msgstr[1] "uur"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minuut"
+msgstr[1] "minuten"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "seconde"
+msgstr[1] "seconden"
+
+msgid "ago"
+msgstr "geleden"
+
+msgid "A new website for GameMaker creations!"
+msgstr "Een nieuwe website voor GameMaker creaties!"
+
+msgid "YoYoGames YoYo IndieMendable Sandbox forum free games downloads community GameMaker programming GM minigames share make play gaming fun game creation design software"
+msgstr "YoYoGames YoYo IndieMendable Sandbox forum gratis games spelletjes downloads community GameMaker programming GM minigames deel maak speel gaming plezier game ontwikkel design software"
+
+msgid "nl/games"
+msgstr "spelletjes"
+
+msgid "nl/users"
+msgstr "gebruikers"
+
+msgid "nl/browse"
+msgstr "verkennen"
+
+msgid "nl/make"
+msgstr "ontwikkel"
+
+msgid "nl/share"
+msgstr "deel"
+
+msgid "nl/help"
+msgstr "hulp"
+
+msgid "<p>We need more translators! Machine translation will never match up with your translation skills. :)<p><a href=\"%s/language-updater\" style=\"font-weight: 300;\">Select a flag and go to our Language Updater</a>"
+msgstr "<p>We hebben meer vertalers nodig! Machinevertalers zullen nooit zo goed kunnen worden als jullie vertaalskills. :)<p><a href=\"%s/language-updater\" style=\"font-weight: 300;\">Kies een vlag en ga naar onze Language Updater</a>"
+
+msgid "Community"
+msgstr "Community"
+
+msgid "No comments yet."
+msgstr "Nog geen reacties."
+
+msgid "No games yet."
+msgstr "Nog geen spelletjes."
+
+msgid "No reviews yet."
+msgstr "Nog geen recensies."
+
+msgid "This section of IndieMendable is still empty.<br>Help us by adding more content! :)"
+msgstr "Dit gedeelte van IndieMendable is nog leeg.<br>Help ons door het toevoegen van meer inhoud! :)"
+
+msgid "Uploading"
+msgstr "Uploaden"
+
+msgid "Not scanned yet"
+msgstr "Nog niet gescand"
+
+msgid "WARNING: Virus detected"
+msgstr "KIJK UIT: Virus gedetecteerd"
+
+msgid "Write a review?"
+msgstr "Schrijf jij er een?"
+
+msgid "Share your games"
+msgstr "Deel je eigen games"
+
+msgid "Fill in the details of your game. Click submit to continue and start uploading the files."
+msgstr "Vul de details in van je game. Klik op verstuur om verder te gaan, dan kun je pas de bestanden uploaden."
+
+msgid "Upload your game files and screenshots here."
+msgstr "Upload hier de bestanden en screenshots van je game."
+
+msgid "Your game"
+msgid_plural "Your games"
+msgstr[0] "Je game"
+msgstr[1] "Je games"
+
+msgid "Game details"
+msgstr "Game details"
+
+msgid "Stage"
+msgstr "Toestand"
+
+msgid "Seperate tags with commas."
+msgstr "Scheid tags van elkaar met komma's."
+
+msgid "Game file"
+msgid_plural "Game files"
+msgstr[0] "Game bestand"
+msgstr[1] "Game bestanden"
+
+msgid "Game details for"
+msgstr "Game details voor"
+
+msgid "Upload files for"
+msgstr "Upload bestanden voor"
+
+msgid "Latest version"
+msgstr "Laatste versie"
+
+msgid "Thumbnail"
+msgstr "Miniatuur"
+
+msgid "Header picture"
+msgstr "Langwerpige cover screenshot"
+
+msgid "Screenshot"
+msgid_plural "Screenshots"
+msgstr[0] "Screenshot"
+msgstr[1] "Screenshots"
+
+msgid "You haven't uploaded any games yet."
+msgstr "Je hebt nog geen games geüpload."
+
+msgid "Edit"
+msgstr "Bewerken"
+
+msgid "Upload"
+msgstr "Uploaden"
+
+msgid "== Select a category =="
+msgstr "== Kies een categorie =="
+
+msgid "Complete"
+msgstr "Volledige versie"
+
+msgid "Work in progress"
+msgstr "Lopende werkzaamheden"
+
+msgid "Beta"
+msgstr "Beta"
+
+msgid "Your games"
+msgstr "Jouw games"
+
+msgid "Fill in the details of your game. Click submit to continue and start uploading the files. "
+msgstr "Vul hier de informatie van de game in. Klik op submit om de bestanden te uploaden."
+
+# msgid ""
+# msgstr ""
+msgid "A new website for GameMaker creations"
+msgstr "Een nieuwe website voor GameMaker spul!"
+
+msgid "About IndieMendable"
+msgstr "Over IndieMendable"
+
+msgid "Add your own review"
+msgstr "Schrijf je eigen review"
+
+msgid "Administrators"
+msgstr "Administrators"
+
+msgid "And write the not very good stuff here."
+msgstr "En schrijf hier de slechte dingen."
+
+msgid "Categories"
+msgstr "Categoriën"
+
+msgid "Comments"
+msgstr "Reacties"
+
+msgid "Credits"
+msgstr "Aftiteling"
+
+msgid "Edit details"
+msgstr "Bewerk details"
+
+msgid "Edit email"
+msgstr "Bewerk email"
+
+msgid "Edit my details"
+msgstr "Bewerk mijn profiel"
+
+msgid "Edit password"
+msgstr "Bewerk mijn wachtwoord"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "Filename"
+msgstr "Bestandsnaam"
+
+msgid "First name"
+msgstr "Voornaam"
+
+msgid "Frequently Asked Questions"
+msgstr "Veelgestelde vragen"
+
+msgid "Game files"
+msgstr "Spelbestanden"
+
+msgid "Go back to the game"
+msgstr "Ga terug naar het spel"
+
+msgid "Highest Rating"
+msgstr "Hoogste Beoordeling"
+
+msgid "How can I follow activity on the site?"
+msgstr "Hoe kan ik de activiteit volgen op de site?"
+
+msgid "How can I support IndieMendable?"
+msgstr "Hoe kan ik IndieMendable ondersteunen?"
+
+msgid "I agree to the"
+msgstr "Ik ben het eens met de"
+
+msgid "Inactive members"
+msgstr "Inactieve leden"
+
+msgid "Inbox"
+msgstr "Inbox"
+
+msgid "IndieMendable Virus Scanner"
+msgstr "IndieMendable Virus Scanner"
+
+msgid "Instant Play"
+msgstr "Instant Play"
+
+msgid "Language details"
+msgstr "Taalinformatie"
+
+msgid "Language updater"
+msgstr "Talenupdater"
+
+msgid "Last name"
+msgstr "Achternaam"
+
+msgid "Make your account"
+msgstr "Maak je account aan"
+
+msgid "Making new review for"
+msgstr "Nieuwe recensie schrijven voor"
+
+msgid "Members"
+msgstr "Leden"
+
+msgid "Moderators"
+msgstr "Moderators"
+
+msgid "Most Relevant"
+msgstr "Meest Relevant"
+
+msgid "New password"
+msgstr "Nieuw wachtwoord"
+
+msgid "Newest members"
+msgstr "Nieuwste gebruikers"
+
+msgid "No files found."
+msgstr "Geen bestanden gevonden."
+
+msgid "No inactive members."
+msgstr "Geen actieve gebruikers."
+
+msgid "No moderators yet."
+msgstr "Nog geen moderators."
+
+msgid "No notifications"
+msgstr "Geen notificaties"
+
+msgid "No results found."
+msgstr "Geen resultaten gevonden."
+
+msgid "Popular Today"
+msgstr "Populair Vandaag"
+
+msgid "Quote"
+msgstr "Citaat"
+
+msgid "Read full review"
+msgstr "Lees volledige recensie"
+
+msgid "Reviews for"
+msgstr "Recensies voor"
+
+msgid "Select a flag and go to our Language Updater"
+msgstr "Kies een vlag en ga naar onze Talenupdater."
+
+msgid "Size"
+msgstr "Grootte"
+
+msgid "Stages"
+msgstr "Fase"
+
+msgid "Statistics"
+msgstr "Statistieken"
+
+msgid "Terms & Conditions"
+msgstr "Algemene voorwaarden"
+
+msgid "Time zone"
+msgstr "Tijdzone"
+
+msgid "Update notifications and forum users"
+msgstr "Notificaties en forumgebruikers updaten"
+
+msgid "Use Markdown for the description"
+msgstr "Gebruik Markdown in de beschrijving"
+
+msgid "Version history"
+msgstr "Versiegeschiedenis"
+
+msgid "View all reviews on this game"
+msgstr "Bekijk alle recensies op dit spel"
+
+msgid "Viewing all members"
+msgstr "Alle gebruikers verkennen"
+
+msgid "Viewing comments on"
+msgstr "Alle comments op"
+
+msgid "Viewing review on"
+msgstr "Recensie bekijken op"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "Welcome to IndieMendable"
+msgstr "Welkom bij IndieMendable"
+
+msgid "Write more in detail about what you think about the game in this place."
+msgstr "Ga hier meer in op de inhoud van het spel."
+
+msgid "Write the good stuff about the game here."
+msgstr "Schrijf hier de goeie punten over de spel op."
+
+msgid "Your account is now activated"
+msgstr "Je account is nu geactiveerd."
+
+msgid "and use BBCode for the forums."
+msgstr "en gebruik BBCode voor de forums."
+
+msgid "hourly"
+msgstr "ieder uur"
+
+msgid "log in"
+msgstr "inloggen"
+
+msgid "login"
+msgstr "inloggen"
+
+msgid "register"
+msgstr "registreren"

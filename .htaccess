@@ -1,0 +1,147 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^cached/ - [NC,L]
+RewriteCond %{DOCUMENT_ROOT}/cached/$1 -f [NC]
+RewriteRule ^(.*)$ /cached/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(bloody)(\/.*) $2?$1 [QSA,L]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond /media/silicon/htdocs/imanuelhab/cached/%{REQUEST_FILENAME} -f
+#RewriteRule ^((?:css|js).*?)$ /cached$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^spelletjes(.*) /nl/games$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^gebruikers(.*) /nl/users$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^verkennen(.*) /nl/browse$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ontwikkel(.*) /nl/make$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^deel(.*) /nl/share$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^hulp(.*) /nl/help$1 [QSA,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^permainan(.*) /id/games$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^anggota(.*) /id/users$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^menjelajah(.*) /id/browse$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^pembangunan(.*) /id/make$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^bagian(.*) /id/share$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^membantu(.*) /id/help$1 [QSA,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(af|ar|da|de|el|en|es|fr|fy|he|id|it|nl|nn|pl|pt|ru|sv|zh)(\/.*) $2?lang=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^help/(instant-play|about|credits)/?$ /help-$1.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^share/(upload)/(.*?)/?$ /share-$1.php?q=$2 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^users/?$ /users.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^report/(comment|game|user)/(.*?)/?$ /report?type=$1&place=$2 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^users/(.*?)/all_comments/report/(.*?)/?$ /report?type=comment&place=$2&user=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^users/(.*?)/all_comments/?$ /comments-on-member.php?q=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^users/(.*?)/(friend/approve|friend|message)/?$ /user.php?q=$1&action=$2 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^users/(.*?)/?$ /user.php?q=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^games/(.*?)(?:-.*)?/download/alt/(.*?)/?$ /game-download.php?q=$1&fileid=$2&alt=1&notalt=0 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^games/(.*?)(?:-.*)?/download/(.*?)/?$ /game-download.php?q=$1&fileid=$2&alt=0&notalt=1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^games/(.*?)(?:-.*)?/reviews/make/?$ /game-reviews-make.php?q=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^games/(.*?)(?:-.*)?/reviews/(.*?)/?$ /game-review.php?q=$1&reviewid=$2 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^games/(random|latest)/download/?$ /game-download.php?q=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^games/(.*?)(?:-.*)?/(download|rating|more_information|reviews|favorite|report|feature|edit)/?$ /game-$2.php?q=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^games/(.*?)(?:-.*)?/updated_info/?$ /game.php?q=$1&message=Your+game+details+have+been+updated. [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^games/(.*?)(?:-.*)?/updated_game/?$ /game.php?q=$1&message=Your+game+has+been+updated. [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^games/(.*?)(?:-.*)?/?$ /game.php?q=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^messages/(inbox|sent|trash|compose|preview)/?$ /messages.php?action=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^messages/(.*?)/?$ /messages.php?q=$1&action=view [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^forums/users/([0-9]*)/?$ /forums.php?user=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^forums/(.*?)/?$ /forums.php?q=$1 [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ /$1.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(img/(user|game)/.*/(extra-small|thumb|medium|large|larger)/.*)$ /image_thumb.php?q=$1&type=$3 [QSA,B,L]
+
+# CACHING
+# 2 DAYS
+<FilesMatch "\.(html|htm|php|xml|txt)$">
+	Header set Cache-Control "no-cache, private, max-age=172800"
+</FilesMatch>
+
+<FilesMatch "\.(css|js)$">
+	Header set Cache-Control "no-cache, public, max-age=172800"
+</FilesMatch>
+
+<FilesMatch "\.(ico)$">
+	Header set Cache-Control "public, max-age=172800"
+</FilesMatch>
+
+<FilesMatch "\.(exe|zip|rar|7z|gmk|gm6|gmd)$">
+	Header set Cache-Control "no-cache, public, max-age=172800"
+</FilesMatch>
+
+# 1 WEEK
+<FilesMatch "\.(jpg|jpeg|png|bmp|gif)$">
+	Header set Cache-Control "no-cache, private, max-age=604800"
+</FilesMatch>

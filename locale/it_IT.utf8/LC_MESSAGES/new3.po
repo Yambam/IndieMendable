@@ -1,0 +1,590 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://littlesvr.ca/ostd/contact.php\n"
+"PO-Revision-Date: 2016-07-12 04:55\n"
+"Last-Translator: http://littlesvr.ca/ostd/\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Language-Team: http://littlesvr.ca/ostd/\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "Go to our YoYo Games Archive"
+msgstr "Ga naar onze YoYo Games Archief"
+
+msgid "Welcome"
+msgstr "Benvenuto"
+
+msgid "Log in"
+msgstr "Collegati"
+
+msgid "Log out"
+msgstr "Esci da questo account"
+
+msgid "Register"
+msgstr "Iscrizione"
+
+msgid "Search for games..."
+msgstr "Naar spelletjes zoeken..."
+
+msgid "Search for users..."
+msgstr "Naar gebruikers zoeken..."
+
+msgid "Search"
+msgstr "Cerca"
+
+msgid "You are now logged in."
+msgstr "Je bent nu ingelogd."
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Remember me"
+msgstr "Ingelogd blijven"
+
+msgid "I don't have a login, but I would like to register for an account"
+msgstr "Ik wil me graag aanmelden bij de site"
+
+msgid "Help! I've forgotten my password"
+msgstr "Help! Ik ben mijn wachtwoord vergeten"
+
+msgid "Forgot password"
+msgstr "Wachtwoord herstellen"
+
+msgid "Reset password"
+msgstr "Wachtwoord herstellen"
+
+msgid ""
+"Fill in either your email, or your username and click \"Reset password\". You will be sent an email with a link to reset your password."
+msgstr "Vul je e-mailadres of je gebruikersnaam in en klik op \"Wachtwoord herstellen\". Dan krijg je een email opgestuurd met een link waarmee je je wachtwoord kan herstellen."
+
+msgid "...or username"
+msgstr "Of gebruikersnaam"
+
+msgid "Type the text"
+msgstr "Typ wat hierboven staat"
+
+msgid "new"
+msgstr "nuovo"
+
+msgid "Online"
+msgstr "Connesso"
+
+msgid "Moderation"
+msgstr "Moderazione"
+
+msgid "Play"
+msgstr "Gioca"
+
+msgid "Make"
+msgstr "Crea"
+
+msgid "Share"
+msgstr "Condividi"
+
+msgid "Help"
+msgstr "Guida"
+
+msgid "Reporting a"
+msgstr "Rapporteer een"
+
+msgid "What would you tell us about this game?"
+msgstr "Wat wil je aan ons kwijt over dit spelletje?"
+
+msgid "What would you tell us about this user?"
+msgstr "Wat wil je aan ons kwijt over deze gebruiker?"
+
+msgid "Submit"
+msgstr "Invia"
+
+msgid "Play now"
+msgstr "Speel dit spel"
+
+msgid "Downloads"
+msgstr "Scaricati"
+
+msgid "Add to favorites"
+msgstr "Aggiungi ai preferiti"
+
+msgid "Remove from favorites"
+msgstr "Rimuovi dai preferiti"
+
+msgid "Report game"
+msgstr "Rapporteer spel"
+
+msgid "Send to friend"
+msgstr "Stuur naar een vriend"
+
+msgid "Rated <strong>%f</strong>"
+msgstr "<strong>%f</strong> beoordeeld"
+
+msgid "Played <strong>%d</strong> times."
+msgstr "<strong>%d</strong> keer gespeeld."
+
+msgid "Current rating"
+msgstr "Beoordeling"
+
+msgid "I'm feeling lucky"
+msgstr "Ik doe een gok"
+
+msgid "Picks a random game"
+msgstr "Een willekeurige spel"
+
+msgid "Try latest game"
+msgstr "Nieuwste game"
+
+msgid "News"
+msgstr "Novità"
+
+msgid "Hello! Click <a href=\"register\">register</a> to make your account!"
+msgstr "Hallo! Klik <a href=\"register\">registreren</a> om je account aan te maken!"
+
+msgid "Note for older members: log in again to show your account here."
+msgstr "Tip voor vorige gebruikers: log opnieuw in om je account weer te herstellen."
+
+msgid "View all news..."
+msgstr "Alle nieuws weergeven..."
+
+msgid "Subscribe to the newsletter..."
+msgstr "Abonneer op de nieuwsbrief..."
+
+msgid "What's hot"
+msgstr "Uitgelicht"
+
+msgid "Popular"
+msgstr "Popolare"
+
+msgid "Puzzle"
+msgstr "Puzzle"
+
+msgid "Platform"
+msgstr "Piattaforma"
+
+msgid "Adventure"
+msgstr "Avventura"
+
+msgid "Shooter games"
+msgstr "Schietspellen"
+
+msgid "Other"
+msgstr "Altro"
+
+msgid "Puzzle games"
+msgstr "Puzzel spelletjes"
+
+msgid "Platform games"
+msgstr "Platformer spelletjes"
+
+msgid "Adventure games"
+msgstr "Avontuur spelletjes"
+
+msgid "Other games"
+msgstr "Altre partite"
+
+msgid "Utilities"
+msgstr "Utilità"
+
+msgid "Utility"
+msgstr "Utilità"
+
+msgid "View all games..."
+msgstr "Alle spelletjes bekijken..."
+
+msgid "Latest archive additions"
+msgstr "Laatste toevoegingen aan het archief"
+
+msgid "This site is not affiliated with YoYo Games in any way."
+msgstr "IndieMendable is een initiatief dat niet wordt ondersteund door YoYo Games."
+
+msgid "Snow"
+msgstr "Neve"
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Light"
+msgstr "Leggero"
+
+msgid "Dark"
+msgstr "Scura"
+
+msgid "Domain"
+msgstr "Dominio"
+
+msgid "Pages"
+msgstr "Pagine"
+
+msgid "Please log in to leave a comment."
+msgstr "Om een reactie te plaatsen heb je een account nodig."
+
+msgid "Post comment"
+msgstr "Plaats reactie"
+
+msgid "Follow"
+msgstr "Segui"
+
+msgid "Spotlight"
+msgstr "Riflettore"
+
+msgid "YoYo Games News"
+msgstr "YoYo Games Nieuws"
+
+msgid "What's Hot"
+msgstr "Uitgelicht"
+
+msgid "View all What's Hot"
+msgstr "Bekijk alles uitgelicht"
+
+msgid "View all"
+msgstr "Mostra tutti"
+
+msgid "created by"
+msgstr "gemaakt door"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Age"
+msgstr "Età"
+
+msgid "Location"
+msgstr "Locazione"
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "Registered"
+msgstr "Registrato"
+
+msgid "View user's forum profile"
+msgstr "Bekijk de forumprofiel van deze gebruiker"
+
+msgid "Send friend request"
+msgstr "Stuur vriendschapsverzoek"
+
+msgid "Cancel friend request"
+msgstr "Annuleer vriendschapsverzoek"
+
+msgid "Remove as friend"
+msgstr "Verwijder van vriendenlijst"
+
+msgid "Send personal message"
+msgstr "Stuur persoonlijk bericht"
+
+msgid "Report"
+msgstr "Rapporto"
+
+msgid "From"
+msgstr "Da"
+
+msgid "To"
+msgstr "A"
+
+msgid "Subject"
+msgstr "Soggetto"
+
+msgid "Sent"
+msgstr "Inviato"
+
+msgid "Reply"
+msgstr "Rispondi"
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "Compose new message"
+msgstr "Compone un nuovo messaggio"
+
+msgid "Sent items"
+msgstr "Verzonden items"
+
+msgid "Deleted items"
+msgstr "Verwijderde items"
+
+msgid "Tip: You can use BBCode in messages. :)"
+msgstr "Tip: Gebruik BBCode in je berichten. :)"
+
+msgid "Send message"
+msgstr "Invia messaggio"
+
+msgid "Send message to"
+msgstr "Stuur bericht naar"
+
+msgid "Message preview (Last saved draft: "
+msgstr "Zo ziet je bericht eruit (Laatste draft: "
+
+msgid "Message preview"
+msgstr "Zo ziet je bericht eruit"
+
+msgid "Oops, we couldn't find the message you were looking for."
+msgstr "Oeps, we konden je bericht niet vinden."
+
+msgid "You haven't added any friends yet."
+msgstr "Je hebt nog geen vrienden toegevoegd."
+
+msgid "Games by this creator"
+msgstr "Games van deze ontwikkelaar"
+
+msgid "Comments by this member"
+msgstr "Reacties van deze gebruiker"
+
+msgid "member"
+msgstr "membro"
+
+msgid "Recently played games"
+msgstr "Partite giocate recentemente"
+
+msgid "Favorite games"
+msgstr "Favoriete games"
+
+msgid "creator"
+msgstr "creatore"
+
+msgid "More games"
+msgstr "Meer games"
+
+msgid "More"
+msgstr "Più"
+
+msgid "By"
+msgstr "Di"
+
+msgid "Added"
+msgstr "Aggiunto"
+
+msgid "Last updated"
+msgstr "Ultimo aggiornamento"
+
+msgid "Created by"
+msgstr "Creato da"
+
+msgid "Version"
+msgstr "Versione"
+
+msgid "Category"
+msgstr "Categorie"
+
+msgid "View more"
+msgstr "Bekijk meer"
+
+msgid "Game description"
+msgstr "Beschrijving"
+
+msgid "Tags"
+msgstr "Etichette"
+
+msgid "Plays"
+msgstr "Riproduzioni"
+
+msgid "Created"
+msgstr "Creato"
+
+msgid "said"
+msgstr "schreef"
+
+msgid "on"
+msgstr "sulla"
+
+msgid "the member"
+msgstr "de gebruiker"
+
+msgid "the game"
+msgstr "het spelletje"
+
+msgid "on the game"
+msgstr "op het spelletje"
+
+msgid "the review"
+msgstr "de recensie"
+
+msgid "View all comments (also use to report comments)"
+msgstr "Alle reacties bekijken (gebruik dit om reacties te rapporteren)"
+
+msgid "Game"
+msgstr "Spelletje"
+
+msgid "Games"
+msgstr "Spelletjes"
+
+msgid "User"
+msgstr "Gebruiker"
+
+msgid "Users"
+msgstr "Gebruikers"
+
+msgid "Guest"
+msgstr "Gast"
+
+msgid "Guests"
+msgstr "Gasten"
+
+msgid "Member"
+msgstr "Gebruiker"
+
+msgid "Members"
+msgstr "Gebruikers"
+
+msgid "Comment"
+msgstr "Reactie"
+
+msgid "Comments"
+msgstr "Reacties"
+
+msgid "Favorite"
+msgstr "Favoriet"
+
+msgid "Favorites"
+msgstr "Favorieten"
+
+msgid "Like"
+msgstr "Vind-ik-leuk"
+
+msgid "Likes"
+msgstr "Vind-ik-leuks"
+
+msgid "Rating"
+msgstr "Beoordeling"
+
+msgid "Ratings"
+msgstr "Beoordelingen"
+
+msgid "Review"
+msgstr "Recensie"
+
+msgid "Reviews"
+msgstr "Recensies"
+
+msgid "message"
+msgstr "bericht"
+
+msgid "messages"
+msgstr "berichten"
+
+msgid "Newest member"
+msgstr "Nieuwste gebruiker"
+
+msgid "Newest members"
+msgstr "Nieuwste gebruikers"
+
+msgid "Statistic"
+msgstr "Statistiek"
+
+msgid "Statistics"
+msgstr "Statistieken"
+
+msgid "Game created"
+msgstr "Game geupload"
+
+msgid "Games created"
+msgstr "Games geupload"
+
+msgid "Game played"
+msgstr "Game gespeeld"
+
+msgid "Games played"
+msgstr "Games gespeeld"
+
+msgid "Game indexed"
+msgstr "Game geïndexeerd"
+
+msgid "Games indexed"
+msgstr "Games geïndexeerd"
+
+msgid "Game archived"
+msgstr "Game gearchiveerd"
+
+msgid "Games archived"
+msgstr "Games gearchiveerd"
+
+msgid "Strategy"
+msgstr "Strategie"
+
+msgid "Arcade"
+msgstr "Arcade"
+
+msgid "Strategy games"
+msgstr "Strategie spelletjes"
+
+msgid "Arcade games"
+msgstr "Arcade spelletjes"
+
+msgid "Friend"
+msgstr "Vriend"
+
+msgid "Friends"
+msgstr "Vrienden"
+
+msgid "Last active"
+msgstr "Laatst actief"
+
+msgid "Message"
+msgstr "Bericht"
+
+msgid "Messages"
+msgstr "Berichten"
+
+msgid "No messages found."
+msgstr "Geen berichten gevonden."
+
+msgid "Original message"
+msgstr "Beantwoorde bericht"
+
+msgid "Original message (not found)"
+msgstr "Beantwoorde bericht (niet gevonden)"
+
+msgid "year"
+msgstr "jaar"
+
+msgid "years"
+msgstr "jaren"
+
+msgid "month"
+msgstr "maand"
+
+msgid "months"
+msgstr "maanden"
+
+msgid "week"
+msgstr "week"
+
+msgid "weeks"
+msgstr "weken"
+
+msgid "day"
+msgstr "dag"
+
+msgid "days"
+msgstr "dagen"
+
+msgid "hour"
+msgstr "uur"
+
+msgid "hours"
+msgstr "uur"
+
+msgid "minute"
+msgstr "minuut"
+
+msgid "minutes"
+msgstr "minuten"
+
+msgid "second"
+msgstr "seconde"
+
+msgid "seconds"
+msgstr "seconden"
+
+msgid "ago"
+msgstr "geleden"
+
+msgid "A new website for GameMaker creations!"
+msgstr "Een nieuwe website voor GameMaker creaties!"
+
+msgid "YoYoGames YoYo IndieMendable Sandbox forum free games downloads community GameMaker programming GM minigames share make play gaming fun game creation design software"
+msgstr "YoYoGames YoYo IndieMendable Sandbox forum gratis games spelletjes downloads community GameMaker programming GM minigames deel maak speel gaming plezier game ontwikkel design software"

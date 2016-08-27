@@ -1,0 +1,594 @@
+#
+# IndieMendable
+# Copyright SymptoticCycles (c) 2016
+# Imanuel Habekotté <ima.habekotte@gmail.com>.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"POT-Creation-Date: 10-7-2016 12:00+0100\n"
+"PO-Revision-Date: 2016-07-10 15:39+0200\n"
+"Last-Translator: Imanuel Habekotté <ima.habekotte@gmail.com>\n"
+"Language-Team: Dutch <ima.habekotte@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl_NL\n"
+"X-Generator: Poedit 1.8.8\n"
+
+msgid "Home"
+msgstr "家"
+
+msgid "Go to our YoYo Games Archive"
+msgstr "请访问我们的YoYo游戏存档"
+
+msgid "Welcome"
+msgstr "欢迎"
+
+msgid "Log in"
+msgstr "登录"
+
+msgid "Log out"
+msgstr "登出"
+
+msgid "Register"
+msgstr "寄存器"
+
+msgid "Search for games..."
+msgstr "搜索游戏..."
+
+msgid "Search for users..."
+msgstr "搜索用户..."
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "You are now logged in."
+msgstr "您现在已登录。"
+
+msgid "Email"
+msgstr "电子邮件"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Remember me"
+msgstr "记住我"
+
+msgid "I don't have a login, but I would like to register for an account"
+msgstr "我没有登录，但我想注册一个帐号"
+
+msgid "Help! I've forgotten my password"
+msgstr "帮帮我！我忘记了密码"
+
+msgid "Forgot password"
+msgstr "忘记密码"
+
+msgid "Reset password"
+msgstr "重设密码"
+
+msgid "Fill in either your email, or your username and click \"Reset password\". You will be sent an email with a link to reset your password."
+msgstr "填写或者您的电子邮件，或你的用户名，然后点击\"重设密码\"。您将收到一封电子邮件，链接重设密码。"
+
+msgid "...or username"
+msgstr "...或用户名"
+
+msgid "Type the text"
+msgstr "键入文本"
+
+msgid "Game"
+msgid_plural "Games"
+msgstr[0] "游戏"
+msgstr[1] "游戏"
+
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "用户"
+msgstr[1] "用户"
+
+msgid "Guest"
+msgid_plural "Guests"
+msgstr[0] "客人"
+msgstr[1] "客人"
+
+msgid "Member"
+msgid_plural "Members"
+msgstr[0] "会员"
+msgstr[1] "会员"
+
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "评论"
+msgstr[1] "评论"
+
+msgid "Favorite"
+msgid_plural "Favorites"
+msgstr[0] "喜爱"
+msgstr[1] "喜爱"
+
+msgid "Like"
+msgid_plural "Likes"
+msgstr[0] "喜欢"
+msgstr[1] "喜欢"
+
+msgid "Rating"
+msgid_plural "Ratings"
+msgstr[0] "评分"
+msgstr[1] "评分"
+
+msgid "Review"
+msgid_plural "Reviews"
+msgstr[0] "评论"
+msgstr[1] "评论"
+
+msgid "message"
+msgid_plural "messages"
+msgstr[0] "信息"
+msgstr[1] "信息"
+
+msgid "new"
+msgstr "新"
+
+msgid "Online"
+msgstr "线上"
+
+msgid "Newest member"
+msgid_plural "Newest members"
+msgstr[0] "最新成员"
+msgstr[1] "最新成员"
+
+msgid "Statistic"
+msgid_plural "Statistics"
+msgstr[0] "统计"
+msgstr[1] "统计"
+
+msgid "Game created"
+msgid_plural "Games created"
+msgstr[0] "游戏创建"
+msgstr[1] "游戏创建"
+
+msgid "Game played"
+msgid_plural "Games played"
+msgstr[0] "比赛打了"
+msgstr[1] "比赛打了"
+
+msgid "Game indexed"
+msgid_plural "Games indexed"
+msgstr[0] "游戏收录"
+msgstr[1] "游戏收录"
+
+msgid "Game archived"
+msgid_plural "Games archived"
+msgstr[0] "游戏存档"
+msgstr[1] "游戏存档"
+
+msgid "Moderation"
+msgstr "适度"
+
+msgid "Play"
+msgstr "玩"
+
+msgid "Make"
+msgstr "使"
+
+msgid "Share"
+msgstr "分享"
+
+msgid "Help"
+msgstr "帮帮我"
+
+msgid "Reporting a"
+msgstr "一个报告"
+
+msgid "What would you tell us about this game?"
+msgstr "请问您介绍一下这款游戏？"
+
+msgid "What would you tell us about this user?"
+msgstr "你会告诉我们关于这个用户？"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Play now"
+msgstr "现在播放"
+
+msgid "Downloads"
+msgstr "下载"
+
+msgid "Add to favorites"
+msgstr "添加到收藏夹"
+
+msgid "Remove from favorites"
+msgstr "从收藏夹删除"
+
+msgid "Report game"
+msgstr "报告游戏"
+
+msgid "Send to friend"
+msgstr "发送给朋友"
+
+msgid "Rated <strong>%f</strong>"
+msgstr "额定<STRONG> %f </ STRONG>"
+
+msgid "Played <strong>%d</strong> times."
+msgstr "玩过的<strong> %d </ STRONG>倍。"
+
+msgid "Current rating"
+msgstr "目前评级"
+
+msgid "I'm feeling lucky"
+msgstr "我感觉我是幸运的"
+
+msgid "Picks a random game"
+msgstr "挑选一个随机的游戏"
+
+msgid "Try latest game"
+msgstr "尝试最新的游戏"
+
+msgid "News"
+msgstr "新闻"
+
+msgid "Hello! Click <a href=\"register\">register</a> to make your account!"
+msgstr "你好！点击<a href=\"register\">注册</a>以使您的帐户！"
+
+msgid "Note for older members: log in again to show your account here."
+msgstr "注意老会员：再次登录到在这里展示您的帐户。"
+
+msgid "View all news..."
+msgstr "查看所有新闻..."
+
+msgid "Subscribe to the newsletter..."
+msgstr "订阅电子报..."
+
+msgid "What's hot"
+msgstr "什么比较流行"
+
+msgid "Popular"
+msgstr "流行"
+
+msgid "Puzzle"
+msgstr "难题"
+
+msgid "Platform"
+msgstr "平台"
+
+msgid "Adventure"
+msgstr "冒险"
+
+msgid "Strategy"
+msgstr "战略"
+
+msgid "Arcade"
+msgstr "拱廊"
+
+msgid "Shooter games"
+msgstr "射击游戏"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Puzzle games"
+msgstr "益智游戏"
+
+msgid "Platform games"
+msgstr "平台游戏"
+
+msgid "Adventure games"
+msgstr "冒险游戏"
+
+msgid "Strategy games"
+msgstr "战略游戏"
+
+msgid "Arcade games"
+msgstr "街机游戏"
+
+msgid "Other games"
+msgstr "其他游戏"
+
+msgid "Utilities"
+msgstr "公用事业"
+
+msgid "Utility"
+msgstr "效用"
+
+msgid "View all games..."
+msgstr "查看所有游戏..."
+
+msgid "Latest archive additions"
+msgstr "最新存档增加"
+
+msgid "This site is not affiliated with YoYo Games in any way."
+msgstr "本网站不与溜溜球比赛在没有任何关联。"
+
+msgid "Snow"
+msgstr "雪"
+
+msgid "Theme"
+msgstr "主题"
+
+msgid "Light"
+msgstr "光"
+
+msgid "Dark"
+msgstr "黑暗"
+
+msgid "Domain"
+msgstr "域"
+
+msgid "Pages"
+msgstr "网页"
+
+msgid "Please log in to leave a comment."
+msgstr "请登录发表评论。"
+
+msgid "Post comment"
+msgstr "发表评论"
+
+msgid "Follow"
+msgstr "跟随"
+
+#
+# Geïmporteerd uit Yambam's vertaalscript voor YoYo Games:
+#
+msgid "Spotlight"
+msgstr "聚光灯"
+
+msgid "YoYo Games News"
+msgstr "溜溜球游戏新闻"
+
+msgid "What's Hot"
+msgstr "什么比较流行"
+
+msgid "View all What's Hot"
+msgstr "查看所有热点"
+
+msgid "View all"
+msgstr "查看全部"
+
+msgid "created by"
+msgstr "由...制作"
+
+msgid "Friend"
+msgid_plural "Friends"
+msgstr[0] "朋友"
+msgstr[1] "朋友"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Age"
+msgstr "年龄"
+
+msgid "Location"
+msgstr "位置"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Registered"
+msgstr "注册"
+
+msgid "View user's forum profile"
+msgstr "查看用户的个人资料论坛"
+
+msgid "Last active"
+msgstr "最后活动"
+
+msgid "Send friend request"
+msgstr "发送好友请求"
+
+msgid "Cancel friend request"
+msgstr "取消好友请求"
+
+msgid "Remove as friend"
+msgstr "删除好友"
+
+msgid "Send personal message"
+msgstr "发送的个人信息"
+
+msgid "Report"
+msgstr "报告"
+
+msgid "Message"
+msgid_plural "Messages"
+msgstr[0] "信息"
+msgstr[1] "信息"
+
+msgid "From"
+msgstr "从"
+
+msgid "To"
+msgstr "至"
+
+msgid "Subject"
+msgstr "学科"
+
+msgid "Sent"
+msgstr "发送"
+
+msgid "Reply"
+msgstr "回复"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "No messages found."
+msgstr "没有找到的消息。"
+
+msgid "Compose new message"
+msgstr "撰写新邮件"
+
+msgid "Sent items"
+msgstr "发送的邮件"
+
+msgid "Deleted items"
+msgstr "删除的项目"
+
+msgid "Tip: You can use BBCode in messages. :)"
+msgstr "提示：您可以在邮件中使用BB代码。 :)"
+
+msgid "Send message"
+msgstr "发信息"
+
+msgid "Send message to"
+msgstr "发送消息至"
+
+msgid "Message preview (Last saved draft: "
+msgstr "邮件预览（最后保存的草稿："
+
+msgid "Message preview"
+msgstr "邮件预览"
+
+msgid "Original message"
+msgstr "原始信息"
+
+msgid "Original message (not found)"
+msgstr "原始消息（未找到）"
+
+msgid "Oops, we couldn't find the message you were looking for."
+msgstr "抱歉，我们无法找到你要找的消息。"
+
+msgid "You haven't added any friends yet."
+msgstr "您还没有添加任何好友。"
+
+msgid "Games by this creator"
+msgstr "这个游戏的创造者"
+
+msgid "Comments by this member"
+msgstr "这个会员的评论"
+
+msgid "member"
+msgstr "会员"
+
+msgid "Recently played games"
+msgstr "最近玩过的游戏"
+
+msgid "Favorite games"
+msgstr "最喜欢的游戏"
+
+msgid "creator"
+msgstr "创造者"
+
+msgid "More games"
+msgstr "更多游戏"
+
+msgid "More"
+msgstr "更多"
+
+msgid "By"
+msgstr "通过"
+
+msgid "Added"
+msgstr "添加"
+
+msgid "Last updated"
+msgstr "最近更新时间"
+
+msgid "Created by"
+msgstr "由...制作"
+
+msgid "Version"
+msgstr "版"
+
+msgid "Category"
+msgstr "类别"
+
+msgid "View more"
+msgstr "查看更多"
+
+msgid "Game description"
+msgstr "游戏介绍"
+
+msgid "Tags"
+msgstr "标签"
+
+msgid "Plays"
+msgstr "播放"
+
+msgid "Created"
+msgstr "创建"
+
+msgid "said"
+msgstr "说过"
+
+msgid "on"
+msgstr "上"
+
+msgid "the member"
+msgstr "成员"
+
+msgid "the game"
+msgstr "游戏"
+
+msgid "on the game"
+msgstr "在游戏"
+
+msgid "the review"
+msgstr "评价"
+
+msgid "View all comments (also use to report comments)"
+msgstr "查看所有评论（也可以使用报告评论）"
+
+msgid "year"
+msgid_plural "years"
+msgstr[0] "年"
+msgstr[1] "年"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "月"
+msgstr[1] "月"
+
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "周"
+msgstr[1] "周"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "天"
+msgstr[1] "天"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "小时"
+msgstr[1] "小时"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "分钟"
+msgstr[1] "分钟"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "第二"
+msgstr[1] "第二"
+
+msgid "ago"
+msgstr "前"
+
+msgid "A new website for GameMaker creations!"
+msgstr "一个新的网站为游戏制作的作品！"
+
+msgid "YoYoGames YoYo IndieMendable Sandbox forum free games downloads community GameMaker programming GM minigames share make play gaming fun game creation design software"
+msgstr "YoYoGames 悠悠球 IndieMendable 沙箱 論壇 自由 遊戲 下載 社區 遊戲製作 節目 通用汽車公司 小遊戲 份額 令 玩 玩遊戲 樂趣 遊戲 創造 設計 軟件"
+
+msgid "nl/games"
+msgstr "游戏"
+
+msgid "nl/users"
+msgstr "用户"
+
+msgid "nl/browse"
+msgstr "浏览"
+
+msgid "nl/make"
+msgstr "化妆"
+
+msgid "nl/share"
+msgstr "股"
+
+msgid "nl/help"
+msgstr "帮助"
+

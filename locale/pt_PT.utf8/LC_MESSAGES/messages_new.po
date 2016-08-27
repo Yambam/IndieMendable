@@ -1,0 +1,958 @@
+#
+# IndieMendable
+# Copyright SymptoticCycles (c) 2016
+# Imanuel Habekotté <ima.habekotte@gmail.com>.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"POT-Creation-Date: 10-7-2016 12:00+0100\n"
+"PO-Revision-Date: 2016-07-10 15:39+0200\n"
+"Last-Translator: Imanuel Habekotté <ima.habekotte@gmail.com>\n"
+"Language-Team: Dutch <ima.habekotte@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl_NL\n"
+"X-Generator: Poedit 1.8.8\n"
+
+msgid "Home"
+msgstr "Início"
+
+msgid "Go to our YoYo Games Archive"
+msgstr "Vá para a nossa YoYo Games Archive"
+
+msgid "Welcome"
+msgstr "Bem-vindo"
+
+msgid "Log in"
+msgstr "Conecte-se"
+
+msgid "Log out"
+msgstr "Desconectar"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Search for games..."
+msgstr "Procurar jogos ..."
+
+msgid "Search for users..."
+msgstr "Procurar por usuários..."
+
+msgid "Search"
+msgstr "Pesquisa"
+
+msgid "You are now logged in."
+msgstr "Agora você está logado."
+
+msgid "Email"
+msgstr "O email"
+
+msgid "Password"
+msgstr "Senha"
+
+msgid "Remember me"
+msgstr "Lembre de mim"
+
+msgid "I don't have a login, but I would like to register for an account"
+msgstr "Eu não tenho um login, mas eu gostaria de registrar para uma conta"
+
+msgid "Help! I've forgotten my password"
+msgstr "Socorro! Eu esqueci minha senha"
+
+msgid "Forgot password"
+msgstr "Esqueceu a senha"
+
+msgid "Reset password"
+msgstr "Trocar a senha"
+
+msgid ""
+"Fill in either your email, or your username and click \"Reset password\". "
+"You will be sent an email with a link to reset your password."
+msgstr ""
+"Preencha quer o seu e-mail ou seu nome de usuário e clique em \"Redefinir a "
+"senha\". Você será enviado um e-mail com um link para redefinir sua senha."
+
+msgid "...or username"
+msgstr "Ou nome de usuário"
+
+msgid "Type the text"
+msgstr "Escreva o texto"
+
+msgid "Game"
+msgid_plural "Games"
+msgstr[0] "Jogo"
+msgstr[1] "Jogos"
+
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "Usuário"
+msgstr[1] "Usuários"
+
+msgid "Guest"
+msgid_plural "Guests"
+msgstr[0] "Convidado"
+msgstr[1] "Convidados"
+
+msgid "Member"
+msgid_plural "Members"
+msgstr[0] "Membro"
+msgstr[1] "Membros"
+
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "Comente"
+msgstr[1] "Comentes"
+
+msgid "Favorite"
+msgid_plural "Favorites"
+msgstr[0] "Favorito"
+msgstr[1] "Favoritos"
+
+msgid "Like"
+msgid_plural "Likes"
+msgstr[0] "Gostar"
+msgstr[1] "Gostos"
+
+msgid "Rating"
+msgid_plural "Ratings"
+msgstr[0] "Avaliação"
+msgstr[1] "Avaliações"
+
+msgid "Review"
+msgid_plural "Reviews"
+msgstr[0] "Comentário"
+msgstr[1] "Comentários"
+
+msgid "message"
+msgid_plural "messages"
+msgstr[0] "mensagem"
+msgstr[1] "mensagens"
+
+msgid "new"
+msgstr "nova(s)"
+
+msgid "Online"
+msgstr "Conectados"
+
+msgid "Newest member"
+msgid_plural "Newest members"
+msgstr[0] "Novo usuário"
+msgstr[1] "Novos usuários"
+
+msgid "Statistic"
+msgid_plural "Statistics"
+msgstr[0] "Estatística"
+msgstr[1] "Estatística"
+
+msgid "Game created"
+msgid_plural "Games created"
+msgstr[0] "Jogo carregado"
+msgstr[1] "Jogos carregado"
+
+msgid "Game played"
+msgid_plural "Games played"
+msgstr[0] "Jogo jogado"
+msgstr[1] "Jogos jogado"
+
+msgid "Game indexed"
+msgid_plural "Games indexed"
+msgstr[0] "Jogo indexado"
+msgstr[1] "Jogos indexado"
+
+msgid "Game archived"
+msgid_plural "Games archived"
+msgstr[0] "Jogo arquivado"
+msgstr[1] "Jogos arquivado"
+
+msgid "Moderation"
+msgstr "Moderação"
+
+msgid "Play"
+msgstr "Toque"
+
+msgid "Make"
+msgstr "Desenvolver"
+
+msgid "Share"
+msgstr "Compartilhar"
+
+msgid "Help"
+msgstr "Ajuda"
+
+msgid "Reporting a"
+msgstr "Informe sobre um"
+
+msgid "What would you tell us about this game?"
+msgstr "O que você quer nos dizer sobre este jogo?"
+
+msgid "What would you tell us about this user?"
+msgstr "O que você quer dizer-nos sobre este utilizador?"
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Play now"
+msgstr "Jogue agora"
+
+msgid "Downloads"
+msgstr "Transferências"
+
+msgid "Add to favorites"
+msgstr "Adicionar aos favoritos"
+
+msgid "Remove from favorites"
+msgstr "Remover dos favoritos"
+
+msgid "Report game"
+msgstr "Jogo de relatório"
+
+msgid "Send to friend"
+msgstr "Envie a um amigo"
+
+msgid "Rated <strong>%f</strong>"
+msgstr "<strong>%f</strong> avaliações"
+
+msgid "Played <strong>%d</strong> times."
+msgstr "Jogado <strong>%d</strong> vezes."
+
+msgid "Current rating"
+msgstr "Avaliadas"
+
+msgid "I'm feeling lucky"
+msgstr "Estou com sorte"
+
+msgid "Picks a random game"
+msgstr "Pega um jogo aleatório"
+
+msgid "Try latest game"
+msgstr "Tente último jogo"
+
+msgid "News"
+msgstr "Notícia"
+
+msgid "Hello! Click <a href=\"register\">register</a> to make your account!"
+msgstr ""
+"Olá! Clique <a href=\"register\"> registar </a> para tornar a sua conta!"
+
+msgid "Note for older members: log in again to show your account here."
+msgstr ""
+"Nota para os membros mais velhos: login novamente para mostrar a sua conta "
+"aqui."
+
+msgid "View all news..."
+msgstr "Ver todas as notícias..."
+
+msgid "Subscribe to the newsletter..."
+msgstr "Assine a newsletter..."
+
+msgid "What's hot"
+msgstr "O que há de novo"
+
+msgid "Popular"
+msgstr "Popular"
+
+msgid "Puzzle"
+msgstr "Enigma"
+
+msgid "Platform"
+msgstr "Plataforma"
+
+msgid "Adventure"
+msgstr "Aventura"
+
+msgid "Strategy"
+msgstr "Estratégia"
+
+msgid "Arcade"
+msgstr "Arcada"
+
+msgid "Shooter games"
+msgstr "Jogos de tiro"
+
+msgid "Other"
+msgstr "De outros"
+
+msgid "Puzzle games"
+msgstr "Puzzle jogos"
+
+msgid "Platform games"
+msgstr "Jogos de plataformas"
+
+msgid "Adventure games"
+msgstr "Jogos de aventura"
+
+msgid "Strategy games"
+msgstr "Jogos de estratégia"
+
+msgid "Arcade games"
+msgstr "Jogos de salão"
+
+msgid "Other games"
+msgstr "Outros jogos"
+
+msgid "Utilities"
+msgstr "Utilities"
+
+msgid "Utility"
+msgstr "Utilidade"
+
+msgid "View all games..."
+msgstr "Ver todos os jogos..."
+
+msgid "Latest archive additions"
+msgstr "Adições mais recentes de arquivo"
+
+msgid "This site is not affiliated with YoYo Games in any way."
+msgstr "Este site não é afiliado com Jogos YoYo de qualquer forma."
+
+msgid "Snow"
+msgstr "Neve"
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Light"
+msgstr "Leve"
+
+msgid "Dark"
+msgstr "Escuro"
+
+msgid "Domain"
+msgstr "Domínio"
+
+msgid "Pages"
+msgstr "Páginas"
+
+msgid "Please log in to leave a comment."
+msgstr "Por favor, faça o login para deixar um comentário."
+
+msgid "Post comment"
+msgstr "Enviar comentário"
+
+msgid "Follow"
+msgstr "Segue"
+
+#
+# Geïmporteerd uit Yambam's vertaalscript voor YoYo Games:
+#
+msgid "Spotlight"
+msgstr "Holofote"
+
+msgid "YoYo Games News"
+msgstr "YoYo Games Notícias"
+
+msgid "What's Hot"
+msgstr "Representado"
+
+msgid "View all What's Hot"
+msgstr "Ver todo fue ofrecido"
+
+msgid "View all"
+msgstr "Ver tudo"
+
+msgid "created by"
+msgstr "criado por"
+
+msgid "Friend"
+msgid_plural "Friends"
+msgstr[0] "Amigos"
+msgstr[1] "Amigos"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Age"
+msgstr "Idade"
+
+msgid "Location"
+msgstr "Localização"
+
+msgid "Description"
+msgstr "Descrição"
+
+msgid "Registered"
+msgstr "Registrado"
+
+msgid "View user's forum profile"
+msgstr "Perfil do fórum vista do usuário"
+
+msgid "Last active"
+msgstr "Ativo pela última vez"
+
+msgid "Send friend request"
+msgstr "Enviar solicitação de amizade"
+
+msgid "Cancel friend request"
+msgstr "Cancelar pedido de amizade"
+
+msgid "Remove as friend"
+msgstr "Remover como amigo"
+
+msgid "Send personal message"
+msgstr "Enviar mensagem pessoal"
+
+msgid "Report"
+msgstr "Relatório"
+
+msgid "Message"
+msgid_plural "Messages"
+msgstr[0] "Mensagem"
+msgstr[1] "Mensagens"
+
+msgid "From"
+msgstr "A partir de"
+
+msgid "To"
+msgstr "Para"
+
+msgid "Subject"
+msgstr "Sujeito"
+
+msgid "Sent"
+msgstr "Enviei"
+
+msgid "Reply"
+msgstr "Resposta"
+
+msgid "Delete"
+msgstr "Excluir"
+
+msgid "No messages found."
+msgstr "Nenhuma mensagem encontrada."
+
+msgid "Compose new message"
+msgstr "Compor nova mensagem"
+
+msgid "Sent items"
+msgstr "Enviar itens"
+
+msgid "Deleted items"
+msgstr "Itens deletados"
+
+msgid "Tip: You can use BBCode in messages. :)"
+msgstr "Dica: Você pode usar BBCode nas mensagens. :)"
+
+msgid "Send message"
+msgstr "Enviar mensagem"
+
+msgid "Send message to"
+msgstr "Enviar mensagem para"
+
+msgid "Message preview (Last saved draft: "
+msgstr "Visualização da mensagem (Last salvo projecto:"
+
+msgid "Message preview"
+msgstr "Visualização da mensagem"
+
+msgid "Original message"
+msgstr "Mensagem original"
+
+msgid "Original message (not found)"
+msgstr "Mensagem original (não encontrado)"
+
+msgid "Oops, we couldn't find the message you were looking for."
+msgstr "Opa, não foi possível encontrar a mensagem que você estava procurando."
+
+msgid "You haven't added any friends yet."
+msgstr "Você não adicionou amigos ainda."
+
+msgid "Games by this creator"
+msgstr "Jogos por este criador"
+
+msgid "Comments by this member"
+msgstr "Comentários deste membro"
+
+msgid "member"
+msgstr "membro"
+
+msgid "Recently played games"
+msgstr "Jogos recentes"
+
+msgid "Favorite games"
+msgstr "Jogos favoritos"
+
+msgid "creator"
+msgstr "criador"
+
+msgid "More games"
+msgstr "Mais jogos"
+
+msgid "More"
+msgstr "Mais"
+
+msgid "By"
+msgstr "De"
+
+msgid "Added"
+msgstr "Adicionado"
+
+msgid "Last updated"
+msgstr "Ultima atualização"
+
+msgid "Created by"
+msgstr "Criado por"
+
+msgid "Version"
+msgstr "Versão"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "View more"
+msgstr "Veja mais"
+
+msgid "Game description"
+msgstr "Descrição do jogo"
+
+msgid "Tags"
+msgstr "Etiquetas"
+
+msgid "Plays"
+msgstr "Tocam"
+
+msgid "Created"
+msgstr "Criado"
+
+msgid "said"
+msgstr "disse"
+
+msgid "on"
+msgstr "em"
+
+msgid "the member"
+msgstr "o membro"
+
+msgid "the game"
+msgstr "o jogo"
+
+msgid "on the game"
+msgstr "no jogo"
+
+msgid "the review"
+msgstr "a revisão"
+
+msgid "View all comments (also use to report comments)"
+msgstr "Ver todos os comentários (também usado para comunicar Comentários)"
+
+msgid "year"
+msgid_plural "years"
+msgstr[0] "ano"
+msgstr[1] "anos"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "mês"
+msgstr[1] "mêses"
+
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "semana"
+msgstr[1] "semanas"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "dia"
+msgstr[1] "dias"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "hora"
+msgstr[1] "horas"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minuto"
+msgstr[1] "minutos"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "segundo"
+msgstr[1] "segundos"
+
+msgid "ago"
+msgstr "atrás"
+
+msgid "A new website for GameMaker creations!"
+msgstr "Um novo site para criações GameMaker!"
+
+msgid ""
+"YoYoGames YoYo IndieMendable Sandbox forum free games downloads community "
+"GameMaker programming GM minigames share make play gaming fun game creation "
+"design software"
+msgstr ""
+"forum YoYoGames YoYo IndieMendable Sandbox jogos livres de downloads "
+"comunidade GameMaker programação minigames GM compartilhar tornar divertido "
+"jogo de software de design de criação de jogos jogo"
+
+msgid "nl/games"
+msgstr "jogos"
+
+msgid "nl/users"
+msgstr "usuários"
+
+msgid "nl/browse"
+msgstr "explorar"
+
+msgid "nl/make"
+msgstr "desarrollo"
+
+msgid "nl/share"
+msgstr "compartir"
+
+msgid "nl/help"
+msgstr "ayudar"
+
+msgid "Rated <strong>%s of 5</strong> by"
+msgstr "Rated <strong>%s of 5</strong> by"
+
+msgid "Played <strong>once</strong>."
+msgstr "Played <strong>once</strong>."
+
+msgid "No ratings yet!"
+msgstr "No ratings yet!"
+
+msgid "YoYo Games: Search utility"
+msgstr "YoYo Games: Search utility"
+
+msgid "Please <a href=\"%s/login\">log in</a> to rate"
+msgstr "Please <a href=\"%s/login\">log in</a> to rate"
+
+# 
+# URL transformations (replace ?? with language code and remove #):
+# 
+# msgid "??/games"
+# msgstr "games"
+# msgid "??/users"
+# msgstr "users"
+# msgid "??/browse"
+# msgstr "browse"
+# msgid "??/make"
+# msgstr "make"
+# msgid "??/share"
+# msgstr "share"
+# msgid "??/help"
+# msgstr "help"
+msgid ""
+"<p>We need more translators! Machine translation will never match up with "
+"your translation skills. :)<p><a href=\"%s/language-updater\" style=\"font-"
+"weight: 300;\">Select a flag and go to our Language Updater</a>"
+msgstr ""
+"<p>We need more translators! Machine translation will never match up with "
+"your translation skills. :)<p><a href=\"%s/language-updater\" style=\"font-"
+"weight: 300;\">Select a flag and go to our Language Updater</a>"
+
+msgid "Community"
+msgstr "Community"
+
+msgid "No comments yet."
+msgstr "No comments yet."
+
+msgid "No games yet."
+msgstr "No games yet."
+
+msgid "No reviews yet."
+msgstr "No reviews yet."
+
+msgid "Uploading"
+msgstr "Uploading"
+
+msgid "Not scanned yet"
+msgstr "Not scanned yet"
+
+msgid "WARNING: Virus detected"
+msgstr "WARNING: Virus detected"
+
+msgid "Write a review?"
+msgstr "Write a review?"
+
+msgid "Share your games"
+msgstr "Share your games"
+
+msgid ""
+"Fill in the details of your game. Click submit to continue and start "
+"uploading the files. "
+msgstr ""
+"Fill in the details of your game. Click submit to continue and start "
+"uploading the files. "
+
+msgid "Upload your game files and screenshots here."
+msgstr "Upload your game files and screenshots here."
+
+msgid "Your game"
+msgid_plural "Your games"
+msgstr[0] "Your game"
+msgstr[1] "Your games"
+
+msgid "Game details"
+msgstr "Game details"
+
+msgid "Stage"
+msgstr "Stage"
+
+msgid "Seperate tags with commas."
+msgstr "Seperate tags with commas."
+
+msgid "Game file"
+msgid_plural "Game files"
+msgstr[0] "Game file"
+msgstr[1] "Game files"
+
+msgid "Game details for"
+msgstr "Game details for"
+
+msgid "Upload files for"
+msgstr "Upload files for"
+
+msgid "Latest version"
+msgstr "Latest version"
+
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+msgid "Header picture"
+msgstr "Header picture"
+
+msgid "Screenshot"
+msgid_plural "Screenshots"
+msgstr[0] "Screenshot"
+msgstr[1] "Screenshots"
+
+msgid "You haven't uploaded any games yet."
+msgstr "You haven't uploaded any games yet."
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Upload"
+msgstr "Upload"
+
+msgid "== Select a category =="
+msgstr "== Select a category =="
+
+msgid "Complete"
+msgstr "Complete"
+
+msgid "Work in progress"
+msgstr "Work in progress"
+
+msgid "Beta"
+msgstr "Beta"
+
+msgid "WIP"
+msgstr "WIP"
+
+msgid "Your games"
+msgstr "Your games"
+
+# msgid ""
+# msgstr ""
+msgid "A new website for GameMaker creations"
+msgstr "A new website for GameMaker creations"
+
+msgid "About IndieMendable"
+msgstr "About IndieMendable"
+
+msgid "Add your own review"
+msgstr "Add your own review"
+
+msgid "Administrators"
+msgstr "Administrators"
+
+msgid "And write the not very good stuff here."
+msgstr "And write the not very good stuff here."
+
+msgid "Categories"
+msgstr "Categories"
+
+msgid "Comments"
+msgstr "Comments"
+
+msgid "Credits"
+msgstr "Credits"
+
+msgid "Edit details"
+msgstr "Edit details"
+
+msgid "Edit email"
+msgstr "Edit email"
+
+msgid "Edit my details"
+msgstr "Edit my details"
+
+msgid "Edit password"
+msgstr "Edit password"
+
+msgid "FAQ"
+msgstr "FAQ"
+
+msgid "Filename"
+msgstr "Filename"
+
+msgid "First name"
+msgstr "First name"
+
+msgid "Frequently Asked Questions"
+msgstr "Frequently Asked Questions"
+
+msgid "Game files"
+msgstr "Game files"
+
+msgid "Go back to the game"
+msgstr "Go back to the game"
+
+msgid "Highest Rating"
+msgstr "Highest Rating"
+
+msgid "How can I follow activity on the site?"
+msgstr "How can I follow activity on the site?"
+
+msgid "How can I support IndieMendable?"
+msgstr "How can I support IndieMendable?"
+
+msgid "I agree to the"
+msgstr "I agree to the"
+
+msgid "Inactive members"
+msgstr "Inactive members"
+
+msgid "Inbox"
+msgstr "Inbox"
+
+msgid "IndieMendable Virus Scanner"
+msgstr "IndieMendable Virus Scanner"
+
+msgid "Instant Play"
+msgstr "Instant Play"
+
+msgid "Language details"
+msgstr "Language details"
+
+msgid "Language updater"
+msgstr "Language updater"
+
+msgid "Last name"
+msgstr "Last name"
+
+msgid "Make your account"
+msgstr "Make your account"
+
+msgid "Making new review for"
+msgstr "Making new review for"
+
+msgid "Members"
+msgstr "Members"
+
+msgid "Moderators"
+msgstr "Moderators"
+
+msgid "Most Relevant"
+msgstr "Most Relevant"
+
+msgid "New password"
+msgstr "New password"
+
+msgid "Newest members"
+msgstr "Newest members"
+
+msgid "No files found."
+msgstr "No files found."
+
+msgid "No inactive members."
+msgstr "No inactive members."
+
+msgid "No moderators yet."
+msgstr "No moderators yet."
+
+msgid "Notifications"
+msgstr "Notifications"
+
+msgid "No notifications"
+msgstr "No notifications"
+
+msgid "No results found."
+msgstr "No results found."
+
+msgid "Popular Today"
+msgstr "Popular Today"
+
+msgid "Quote"
+msgstr "Quote"
+
+msgid "Read full review"
+msgstr "Read full review"
+
+msgid "Reviews for"
+msgstr "Reviews for"
+
+msgid "Select a flag and go to our Language Updater"
+msgstr "Select a flag and go to our Language Updater"
+
+msgid "Size"
+msgstr "Size"
+
+msgid "Stages"
+msgstr "Stages"
+
+msgid "Statistics"
+msgstr "Statistics"
+
+msgid "Terms & Conditions"
+msgstr "Terms & Conditions"
+
+msgid "Time zone"
+msgstr "Time zone"
+
+msgid "Update notifications and forum users"
+msgstr "Update notifications and forum users"
+
+msgid "Use Markdown for the description"
+msgstr "Use Markdown for the description"
+
+msgid "Version history"
+msgstr "Version history"
+
+msgid "View all reviews on this game"
+msgstr "View all reviews on this game"
+
+msgid "Viewing all members"
+msgstr "Viewing all members"
+
+msgid "Viewing comments on"
+msgstr "Viewing comments on"
+
+msgid "Viewing review on"
+msgstr "Viewing review on"
+
+msgid "Website"
+msgstr "Website"
+
+msgid "Welcome to IndieMendable"
+msgstr "Welcome to IndieMendable"
+
+msgid "Write more in detail about what you think about the game in this place."
+msgstr ""
+"Write more in detail about what you think about the game in this place."
+
+msgid "Write the good stuff about the game here."
+msgstr "Write the good stuff about the game here."
+
+msgid "Your account is now activated"
+msgstr "Your account is now activated"
+
+msgid "and use BBCode for the forums."
+msgstr "and use BBCode for the forums."
+
+msgid "hourly"
+msgstr "hourly"
+
+msgid "log in"
+msgstr "log in"
+
+msgid "login"
+msgstr "login"
+
+msgid "register"
+msgstr "register"

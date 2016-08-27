@@ -1,0 +1,8 @@
+#wrapper, .links-bar, .links-bar2 {
+	box-shadow: 8px 8px 0px rgba(0,0,0,.1);
+}
+
+.footer {
+	border-color: white;
+	color: white;
+}

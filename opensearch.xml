@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>Search on IndieMendable</ShortName>
+	<Description>Search on IndieMendable</Description>
+	<Tags>games gamemaker indiemendable</Tags>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">http://gamemaker.mooo.com/favicon.ico</Image>
+	<Url type="text/html" template="http://gamemaker.mooo.com/search?q={searchTerms}&amp;page={startPage?}" />
+	<Query role="example" searchTerms="cat" />
+</OpenSearchDescription>

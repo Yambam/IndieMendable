@@ -1,0 +1,8 @@
+{
+    "require": {
+        "jayzeng/virustotalapi": "^0.1.5",
+	"3f/converter": "dev-master",
+        "erusev/parsedown-extra": "^0.7.1",
+        "gettext/gettext": "^4.0"
+    }
+}

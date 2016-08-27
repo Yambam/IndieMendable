@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]
+
+RewriteBase /locale
+RewriteCond %{REQUEST_METHOD} !PUT
+RewriteRule ^/put\.php$ - [F]
+RewriteCond %{REQUEST_METHOD} PUT
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^/put\.php$ - [F]
+RewriteCond %{REQUEST_METHOD} PUT
+RewriteRule ^(.*)$ put.php?url=$1 [L]

@@ -1,0 +1,283 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://littlesvr.ca/ostd/contact.php\n"
+"PO-Revision-Date: 2016-07-12 15:17\n"
+"Last-Translator: http://littlesvr.ca/ostd/\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Language-Team: http://littlesvr.ca/ostd/\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Home"
+msgstr "Rumah"
+
+msgid "Welcome"
+msgstr "Selamat datang"
+
+msgid "Log in"
+msgstr "Log masuk"
+
+msgid "Log out"
+msgstr "Log keluar"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Search"
+msgstr "Cari"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Password"
+msgstr "Sandi"
+
+msgid "new"
+msgstr "baru"
+
+msgid "Online"
+msgstr "Online"
+
+msgid "Moderation"
+msgstr "Moderasi"
+
+msgid "Play"
+msgstr "Play"
+
+msgid "Share"
+msgstr "Berbagi"
+
+msgid "Help"
+msgstr "Bantuan"
+
+msgid "Submit"
+msgstr "Kirim"
+
+msgid "Downloads"
+msgstr "Unduhan"
+
+msgid "Remove from favorites"
+msgstr "Hapus dari favorit"
+
+msgid "News"
+msgstr "Berita"
+
+msgid "Popular"
+msgstr "Populer"
+
+msgid "Puzzle"
+msgstr "Puzzle"
+
+msgid "Adventure"
+msgstr "Petualangan"
+
+msgid "Arcade"
+msgstr "Pertempuran"
+
+msgid "Other"
+msgstr "Lainnya"
+
+msgid "Strategy games"
+msgstr "Permainan strategi"
+
+msgid "Other games"
+msgstr "permainan lainnya"
+
+msgid "Utilities"
+msgstr "Utilitas"
+
+msgid "Utility"
+msgstr "Alat"
+
+msgid "Snow"
+msgstr "Salju"
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Light"
+msgstr "Cahaya"
+
+msgid "Dark"
+msgstr "Gelap"
+
+msgid "Domain"
+msgstr "Domain"
+
+msgid "Pages"
+msgstr "Halaman"
+
+msgid "Follow"
+msgstr "Ikuti"
+
+msgid "Spotlight"
+msgstr "Lampu sorot"
+
+msgid "View all"
+msgstr "Lihat Semua"
+
+msgid "Name"
+msgstr "Nama"
+
+msgid "Age"
+msgstr "Umur"
+
+msgid "Location"
+msgstr "Lokasi"
+
+msgid "Description"
+msgstr "Keterangan"
+
+msgid "Report"
+msgstr "Laporan"
+
+msgid "From"
+msgstr "Dari"
+
+msgid "To"
+msgstr "Ke"
+
+msgid "Subject"
+msgstr "Perihal"
+
+msgid "Sent"
+msgstr "Terkirim"
+
+msgid "Reply"
+msgstr "Balas"
+
+msgid "Delete"
+msgstr "Hapus"
+
+msgid "Send message"
+msgstr "Kirim pesan"
+
+msgid "member"
+msgstr "anggota"
+
+msgid "More"
+msgstr "Lebih lanjut"
+
+msgid "By"
+msgstr "Oleh"
+
+msgid "Added"
+msgstr "Ditambahkan"
+
+msgid "Last updated"
+msgstr "Terakhir diperbarui"
+
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+msgid "Version"
+msgstr "Versi"
+
+msgid "Category"
+msgstr "Katagori"
+
+msgid "Tags"
+msgstr "Tag"
+
+msgid "Plays"
+msgstr "Putar"
+
+msgid "Created"
+msgstr "Dibuat"
+
+msgid "on"
+msgstr "hidup"
+
+msgid "Game"
+msgid_plural "Games"
+msgstr[0] "Permainan"
+msgstr[1] "Permainan"
+
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "Pengguna"
+msgstr[1] "Pengguna"
+
+msgid "Guest"
+msgstr "Tamu"
+
+msgid "Member"
+msgid_plural "Members"
+msgstr[0] "Anggota"
+msgstr[1] "Anggota"
+
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "Komentar"
+msgstr[1] "Kommentar"
+
+msgid "Favorite"
+msgid_plural "Favorites"
+msgstr[0] "Favorit"
+msgstr[1] "Favorit"
+
+msgid "Rating"
+msgstr "Peringkat"
+
+msgid "Review"
+msgid_plural "Reviews"
+msgstr[0] "Tinjau"
+msgstr[1] "Ulasan"
+
+msgid "message"
+msgstr "pesan"
+
+msgid "Statistics"
+msgstr "Statistik"
+
+msgid "Strategy"
+msgstr "Taktik dan Strategi"
+
+msgid "Friend"
+msgid_plural "Friends"
+msgstr[0] "Teman"
+msgstr[1] "Teman-teman"
+
+msgid "Message"
+msgid_plural "Messages"
+msgstr[0] "Pesan"
+msgstr[1] "Pesan"
+
+msgid "year"
+msgid_plural "years"
+msgstr[0] "tahun"
+msgstr[1] "tahun"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "bulan"
+msgstr[1] "bulan"
+
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "minggu"
+msgstr[1] "minggu"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "hari"
+msgstr[1] "hari"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "jam"
+msgstr[1] "jam"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "menit"
+msgstr[1] "menit"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "detik"
+msgstr[1] "detik"
+
+msgid "ago"
+msgstr "yang lalu"

@@ -1,0 +1,11 @@
+body {
+	min-width: 800px;
+}
+
+#search-field {
+	width: 664px;
+}
+
+.category {
+	width: 200px;
+}

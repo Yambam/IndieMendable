@@ -1,0 +1,699 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: IndieMendable\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural= n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+msgid "Go to our YoYo Games Archive"
+msgstr "اذهب إلى موقعنا يويو الألعاب الأرشيف"
+
+msgid "Welcome"
+msgstr "أهلا بك"
+
+msgid "Log in"
+msgstr "تسجيل الدخول"
+
+msgid "Log out"
+msgstr "خروج"
+
+msgid "Register"
+msgstr "تسجيل"
+
+msgid "Search for games..."
+msgstr "بحث عن ألعاب ..."
+
+msgid "Search for users..."
+msgstr "بحث عن مستخدمين ..."
+
+msgid "Search"
+msgstr "بحث"
+
+msgid "You are now logged in."
+msgstr "قمت بتسجيل الدخول الآن في."
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Password"
+msgstr "كلمه السر"
+
+msgid "Remember me"
+msgstr "تذكرنى"
+
+msgid "I don't have a login, but I would like to register for an account"
+msgstr "أنا لم يكن لديك لتسجيل الدخول، ولكن أود أن التسجيل للحصول على حساب"
+
+msgid "Help! I've forgotten my password"
+msgstr "مساعدة! نسيت كلمة المرور الخاصة بي"
+
+msgid "Forgot password"
+msgstr "هل نسيت كلمة المرور"
+
+msgid "Reset password"
+msgstr "اعادة تعيين كلمة السر"
+
+msgid "Fill in either your email, or your username and click \"Reset password\". You will be sent an email with a link to reset your password."
+msgstr "ملء إما بريدك الإلكتروني، أو اسم المستخدم الخاص بك وانقر على \"إعادة تعيين كلمة المرور\". وسوف ترسل لك رسالة بريد إلكتروني مع وصلة لإعادة تعيين كلمة المرور الخاصة بك."
+
+msgid "...or username"
+msgstr "...أو اسم المستخدم"
+
+msgid "Type the text"
+msgstr "اطبع النص"
+
+msgid "Game"
+msgid_plural "Games"
+msgstr[0] "لعبة"
+msgstr[1] "لعبة"
+msgstr[2] "لعبة"
+msgstr[3] "لعبة"
+msgstr[4] "لعبة"
+msgstr[5] "لعبة"
+
+msgid "User"
+msgid_plural "Users"
+msgstr[0] "مستخدم"
+msgstr[1] "مستخدم"
+msgstr[2] "مستخدم"
+msgstr[3] "مستخدم"
+msgstr[4] "مستخدم"
+msgstr[5] "مستخدم"
+
+msgid "Guest"
+msgid_plural "Guests"
+msgstr[0] "ضيف"
+msgstr[1] "ضيف"
+msgstr[2] "ضيف"
+msgstr[3] "ضيف"
+msgstr[4] "ضيف"
+msgstr[5] "ضيف"
+
+msgid "Member"
+msgid_plural "Members"
+msgstr[0] "عضو"
+msgstr[1] "عضو"
+msgstr[2] "عضو"
+msgstr[3] "عضو"
+msgstr[4] "عضو"
+msgstr[5] "عضو"
+
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "التعليق"
+msgstr[1] "التعليق"
+msgstr[2] "التعليق"
+msgstr[3] "التعليق"
+msgstr[4] "التعليق"
+msgstr[5] "التعليق"
+
+msgid "Favorite"
+msgid_plural "Favorites"
+msgstr[0] "المفضل"
+msgstr[1] "المفضل"
+msgstr[2] "المفضل"
+msgstr[3] "المفضل"
+msgstr[4] "المفضل"
+msgstr[5] "المفضل"
+
+msgid "Like"
+msgid_plural "Likes"
+msgstr[0] "مثل"
+msgstr[1] "مثل"
+msgstr[2] "مثل"
+msgstr[3] "مثل"
+msgstr[4] "مثل"
+msgstr[5] "مثل"
+
+msgid "Rating"
+msgid_plural "Ratings"
+msgstr[0] "تصنيف"
+msgstr[1] "تصنيف"
+msgstr[2] "تقييمات"
+msgstr[3] "تصنيف"
+msgstr[4] "تصنيف"
+msgstr[5] "تصنيف"
+
+msgid "Review"
+msgid_plural "Reviews"
+msgstr[0] "مراجعة"
+msgstr[1] "مراجعة"
+msgstr[2] "مراجعة"
+msgstr[3] "مراجعة"
+msgstr[4] "مراجعة"
+msgstr[5] "مراجعة"
+
+msgid "message"
+msgid_plural "messages"
+msgstr[0] "الرسالة"
+msgstr[1] "الرسالة"
+msgstr[2] "الرسالة"
+msgstr[3] "الرسالة"
+msgstr[4] "الرسالة"
+msgstr[5] "الرسالة"
+
+msgid "new"
+msgstr "جديد"
+
+msgid "Online"
+msgstr "على الانترنت"
+
+msgid "Newest member"
+msgid_plural "Newest members"
+msgstr[0] "بالعضو الجديد"
+msgstr[1] "بالعضو الجديد"
+msgstr[2] "بالعضو الجديد"
+msgstr[3] "بالعضو الجديد"
+msgstr[4] "بالعضو الجديد"
+msgstr[5] "بالعضو الجديد"
+
+msgid "Statistic"
+msgid_plural "Statistics"
+msgstr[0] "إحصائية"
+msgstr[1] "إحصائية"
+msgstr[2] "إحصائية"
+msgstr[3] "إحصائية"
+msgstr[4] "إحصائية"
+msgstr[5] "إحصائية"
+
+msgid "Game created"
+msgid_plural "Games created"
+msgstr[0] "لعبة خلق"
+msgstr[1] "لعبة خلق"
+msgstr[2] "لعبة خلق"
+msgstr[3] "لعبة خلق"
+msgstr[4] "لعبة خلق"
+msgstr[5] "لعبة خلق"
+
+msgid "Game played"
+msgid_plural "Games played"
+msgstr[0] "لعبة لعبت"
+msgstr[1] "لعبة لعبت"
+msgstr[2] "لعبة لعبت"
+msgstr[3] "لعبة لعبت"
+msgstr[4] "لعبة لعبت"
+msgstr[5] "لعبة لعبت"
+
+msgid "Game indexed"
+msgid_plural "Games indexed"
+msgstr[0] "لعبة فهرستها"
+msgstr[1] "لعبة فهرستها"
+msgstr[2] "لعبة فهرستها"
+msgstr[3] "لعبة فهرستها"
+msgstr[4] "لعبة فهرستها"
+msgstr[5] "لعبة فهرستها"
+
+msgid "Game archived"
+msgid_plural "Games archived"
+msgstr[0] "لعبة المؤرشفة"
+msgstr[1] "لعبة المؤرشفة"
+msgstr[2] "لعبة المؤرشفة"
+msgstr[3] "لعبة المؤرشفة"
+msgstr[4] "لعبة المؤرشفة"
+msgstr[5] "لعبة المؤرشفة"
+
+msgid "Moderation"
+msgstr "الاعتدال"
+
+msgid "Play"
+msgstr "لعب"
+
+msgid "Make"
+msgstr "صنع"
+
+msgid "Share"
+msgstr "شارك"
+
+msgid "Help"
+msgstr "مساعدة"
+
+msgid "Reporting a"
+msgstr "الإبلاغ عن"
+
+msgid "What would you tell us about this game?"
+msgstr "ماذا تقول لنا عن هذه اللعبة؟"
+
+msgid "What would you tell us about this user?"
+msgstr "ماذا تقول لنا عن هذا المستخدم؟"
+
+msgid "Submit"
+msgstr "عرض"
+
+msgid "Play now"
+msgstr "العب الان"
+
+msgid "Downloads"
+msgstr "التنزيلات"
+
+msgid "Add to favorites"
+msgstr "أضف الى المفضلة"
+
+msgid "Remove from favorites"
+msgstr "ازالة من قائمة المفضلة"
+
+msgid "Report game"
+msgstr "تقرير المباراة"
+
+msgid "Send to friend"
+msgstr "إرسال إلى صديق"
+
+msgid "Rated <strong>%f</strong>"
+msgstr "مصنفة على <strong>٪ و </ قوي>"
+
+msgid "Played <strong>%d</strong> times."
+msgstr "لعبت على <strong>٪ د </ قوي> مرات."
+
+msgid "Current rating"
+msgstr "التصويت الحالي"
+
+msgid "I'm feeling lucky"
+msgstr "اشعر اني محظوظ"
+
+msgid "Picks a random game"
+msgstr "يختار لعبة عشوائية"
+
+msgid "Try latest game"
+msgstr "محاولة أحدث لعبة"
+
+msgid "News"
+msgstr "أخبار"
+
+msgid "Hello! Click <a href=\"register\">register</a> to make your account!"
+msgstr "مرحبا! انقر <a href=\"register\"> تسجيل </a> لجعل حسابك!"
+
+msgid "Note for older members: log in again to show your account here."
+msgstr "ملاحظة لكبار السن: تسجيل الدخول مرة أخرى لإظهار حسابك هنا."
+
+msgid "View all news..."
+msgstr "عرض جميع الأخبار ..."
+
+msgid "Subscribe to the newsletter..."
+msgstr "اشترك في النشرة الإخبارية ..."
+
+msgid "What's hot"
+msgstr "ما الحار"
+
+msgid "Popular"
+msgstr "شعبي"
+
+msgid "Puzzle"
+msgstr "لغز"
+
+msgid "Platform"
+msgstr "منصة"
+
+msgid "Adventure"
+msgstr "مغامرة"
+
+msgid "Strategy"
+msgstr "إستراتيجية"
+
+msgid "Arcade"
+msgstr "رواق"
+
+msgid "Shooter games"
+msgstr "ألعاب مطلق النار"
+
+msgid "Other"
+msgstr "آخر"
+
+msgid "Puzzle games"
+msgstr "ألعاب اللغز"
+
+msgid "Platform games"
+msgstr "منصة الألعاب"
+
+msgid "Adventure games"
+msgstr "ألعاب المغامرات"
+
+msgid "Strategy games"
+msgstr "العاب استراتيجية"
+
+msgid "Arcade games"
+msgstr "العاب الورق"
+
+msgid "Other games"
+msgstr "ألعاب أخرى"
+
+msgid "Utilities"
+msgstr "خدمات"
+
+msgid "Utility"
+msgstr "خدمات مثل الكهرباء والغاز"
+
+msgid "View all games..."
+msgstr "عرض جميع الألعاب ..."
+
+msgid "Latest archive additions"
+msgstr "أحدث الإضافات أرشيف"
+
+msgid "This site is not affiliated with YoYo Games in any way."
+msgstr "لا يرتبط هذا الموقع مع ألعاب يويو بأي شكل من الأشكال."
+
+msgid "Snow"
+msgstr "ثلج"
+
+msgid "Theme"
+msgstr "موضوع"
+
+msgid "Light"
+msgstr "ضوء"
+
+msgid "Dark"
+msgstr "ظلام"
+
+msgid "Domain"
+msgstr "نطاق"
+
+msgid "Pages"
+msgstr "الصفحات"
+
+msgid "Please log in to leave a comment."
+msgstr "الرجاء تسجيل الدخول لترك تعليق."
+
+msgid "Post comment"
+msgstr "أضف تعليقا"
+
+msgid "Follow"
+msgstr "إتبع"
+
+#. Geïmporteerd uit Yambam's vertaalscript voor YoYo Games:
+msgid "Spotlight"
+msgstr "ضوء كشاف"
+
+msgid "YoYo Games News"
+msgstr "يويو ألعاب أخبار"
+
+msgid "What's Hot"
+msgstr "ما الحار"
+
+msgid "View all What's Hot"
+msgstr "عرض كل ما هو ساخن"
+
+msgid "View all"
+msgstr "مشاهدة الكل"
+
+msgid "created by"
+msgstr "التي أنشأتها"
+
+msgid "Friend"
+msgid_plural "Friends"
+msgstr[0] "صديق"
+msgstr[1] "صديق"
+msgstr[2] "صديق"
+msgstr[3] "صديق"
+msgstr[4] "صديق"
+msgstr[5] "صديق"
+
+msgid "Name"
+msgstr "اسم"
+
+msgid "Age"
+msgstr "عمر"
+
+msgid "Location"
+msgstr "موقع"
+
+msgid "Description"
+msgstr "وصف"
+
+msgid "Registered"
+msgstr "مسجل"
+
+msgid "View user's forum profile"
+msgstr "الملف الشخصى عن المستخدمين"
+
+msgid "Last active"
+msgstr "آخر نشاط"
+
+msgid "Send friend request"
+msgstr "ارسل طلب صداقة"
+
+msgid "Cancel friend request"
+msgstr "إلغاء طلب صديق"
+
+msgid "Remove as friend"
+msgstr "إزالة كصديق"
+
+msgid "Send personal message"
+msgstr "إرسال رسالة شخصية"
+
+msgid "Report"
+msgstr "تقرير"
+
+msgid "Message"
+msgid_plural "Messages"
+msgstr[0] "الرسالة"
+msgstr[1] "الرسالة"
+msgstr[2] "الرسالة"
+msgstr[3] "الرسالة"
+msgstr[4] "الرسالة"
+msgstr[5] "الرسالة"
+
+msgid "From"
+msgstr "من عند"
+
+msgid "To"
+msgstr "إلى"
+
+msgid "Subject"
+msgstr "موضوع"
+
+msgid "Sent"
+msgstr "أرسلت"
+
+msgid "Reply"
+msgstr "الرد"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "No messages found."
+msgstr "لم يتم العثور على الرسائل."
+
+msgid "Compose new message"
+msgstr "يؤلف رسالة جديدة"
+
+msgid "Sent items"
+msgstr "المواد المرسلة"
+
+msgid "Deleted items"
+msgstr "عناصر محذوفة"
+
+msgid "Tip: You can use BBCode in messages. :)"
+msgstr "نصيحة: يمكنك استعمال BBCode في الرسائل. :)"
+
+msgid "Send message"
+msgstr "إرسال رسالة"
+
+msgid "Send message to"
+msgstr "إرسال رسالة إلى"
+
+msgid "Message preview (Last saved draft: "
+msgstr "معاينة الرسالة (الحفظ الأخير مشروع:"
+
+msgid "Message preview"
+msgstr "معاينة الرسالة"
+
+msgid "Original message"
+msgstr "رسالة أصلية"
+
+msgid "Original message (not found)"
+msgstr "الرسالة الأصلية (غير موجودة)"
+
+msgid "Oops, we couldn't find the message you were looking for."
+msgstr "عفوا، لم نتمكن من العثور على الرسالة التي كانت تبحث عنه."
+
+msgid "You haven't added any friends yet."
+msgstr "أنت لم يقم بإضافة أصدقاء بعد."
+
+msgid "Games by this creator"
+msgstr "الألعاب من قبل هذا الخالق"
+
+msgid "Comments by this member"
+msgstr "تصريحات هذا العضو"
+
+msgid "member"
+msgstr "عضو"
+
+msgid "Recently played games"
+msgstr "المباريات التي لعبت مؤخرا"
+
+msgid "Favorite games"
+msgstr "الألعاب المفضلة"
+
+msgid "creator"
+msgstr "الخالق"
+
+msgid "More games"
+msgstr "المزيد من الألعاب"
+
+msgid "More"
+msgstr "أكثر"
+
+msgid "By"
+msgstr "بواسطة"
+
+msgid "Added"
+msgstr "وأضاف"
+
+msgid "Last updated"
+msgstr "آخر تحديث"
+
+msgid "Created by"
+msgstr "التي أنشأتها"
+
+msgid "Version"
+msgstr "الإصدار"
+
+msgid "Category"
+msgstr "فئة"
+
+msgid "View more"
+msgstr "شاهد المزيد"
+
+msgid "Game description"
+msgstr "وصف اللعبة"
+
+msgid "Tags"
+msgstr "الكلمات"
+
+msgid "Plays"
+msgstr "مسرحيات"
+
+msgid "Created"
+msgstr "مكون"
+
+msgid "said"
+msgstr "قال"
+
+msgid "on"
+msgstr "على"
+
+msgid "the member"
+msgstr "عضو"
+
+msgid "the game"
+msgstr "اللعبة"
+
+msgid "on the game"
+msgstr "على اللعبة"
+
+msgid "the review"
+msgstr "استعراض"
+
+msgid "View all comments (also use to report comments)"
+msgstr "عرض جميع التعليقات (أيضا استخدام تقرير تعليق)"
+
+msgid "year"
+msgid_plural "years"
+msgstr[0] "عام"
+msgstr[1] "عام"
+msgstr[2] "عام"
+msgstr[3] "عام"
+msgstr[4] "عام"
+msgstr[5] "عام"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "شهر"
+msgstr[1] "شهر"
+msgstr[2] "شهر"
+msgstr[3] "شهر"
+msgstr[4] "شهر"
+msgstr[5] "شهر"
+
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "أسبوع"
+msgstr[1] "أسبوع"
+msgstr[2] "أسبوع"
+msgstr[3] "أسبوع"
+msgstr[4] "أسبوع"
+msgstr[5] "أسبوع"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "يوم"
+msgstr[1] "يوم"
+msgstr[2] "يوم"
+msgstr[3] "يوم"
+msgstr[4] "يوم"
+msgstr[5] "يوم"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "ساعة"
+msgstr[1] "ساعة"
+msgstr[2] "ساعة"
+msgstr[3] "ساعة"
+msgstr[4] "ساعة"
+msgstr[5] "ساعة"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "دقيقة"
+msgstr[1] "دقيقة"
+msgstr[2] "دقيقة"
+msgstr[3] "دقيقة"
+msgstr[4] "دقيقة"
+msgstr[5] "دقيقة"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "ثانيا"
+msgstr[1] "ثانيا"
+msgstr[2] "ثانيا"
+msgstr[3] "ثانيا"
+msgstr[4] "ثانيا"
+msgstr[5] "ثانيا"
+
+msgid "ago"
+msgstr "منذ"
+
+msgid "A new website for GameMaker creations!"
+msgstr "موقع جديد لإبداعات غاميماكر!"
+
+msgid "YoYoGames YoYo IndieMendable Sandbox forum free games downloads community GameMaker programming GM minigames share make play gaming fun game creation design software"
+msgstr "تشترك منتدى YoYoGames يويو IndieMendable رمل مباريات الحرة المجتمع التنزيلات البرمجة غاميماكر minigames جنرال موتورز جعل اللعب الألعاب متعة لعبة تصميم البرمجيات خلق"
+
+msgid "ar/games"
+msgstr "ألعاب"
+
+msgid "ar/users"
+msgstr "المستخدمين"
+
+msgid "ar/browse"
+msgstr "تصفح"
+
+msgid "ar/make"
+msgstr "تنمية"
+
+msgid "ar/share"
+msgstr "سهم"
+
+msgid "ar/help"
+msgstr "مساعدة"
+
+
+msgid "<p>We need more translators! Machine translation will never match up with your translation skills. :)<p><a href=\"%s/language-updater\" style=\"font-weight: 300;\">Select a flag and go to our Language Updater</a>"
+msgstr "<p>We need more translators! Machine translation will never match up with your translation skills. :)<p><a href=\"%s/language-updater\" style=\"font-weight: 300;\">Select a flag and go to our Language Updater</a>"
+
+msgid "Community"
+msgstr "Community"
+
+
+msgid "No comments yet."
+msgstr "No comments yet."
+
+msgid "No games yet."
+msgstr "No games yet."
+
+msgid "No reviews yet."
+msgstr "No reviews yet."
