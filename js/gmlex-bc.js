@@ -1732,35 +1732,118 @@ function _GMLfunc_event_inherited() {
  * /
 function _GMLfunc_show_debug_message(str) {
 	return show_debug_message(str);
+}
+//*/
 
-	 # define _GMLfunc_ /* _GMLfunc_ * Wrapper for return
-	#define _GMLfunc_/* _GMLfunc_ * Wrapper for function:  */
-	return
-	function  :  *  /
-	 # define _GMLfunc_ /* _GMLfunc_ * Wrapper for return
-	#define _GMLfunc_/* _GMLfunc_ * Wrapper for function:  */
-	return
-	function  :  *  /
-	 # define _GMLfunc_ /* _GMLfunc_ * Wrapper for return
-	#define _GMLfunc_/* _GMLfunc_ * Wrapper for function:  */
-	return
-	function  :  *  /
-	 # define _GMLfunc_ /* _GMLfunc_ * Wrapper for return
-	#define _GMLfunc_/* _GMLfunc_ * Wrapper for function:  */
-	return
-	function  :  *  /
-	 # define _GMLfunc_ /* _GMLfunc_ * Wrapper for return
-	#define _GMLfunc_/* _GMLfunc_ * Wrapper for function:  */
-	return
-	function  :  *  /
-	 # define _GMLfunc_ /* _GMLfunc_ * Wrapper for return
-	#define _GMLfunc_/* _GMLfunc_ * Wrapper for function:  */
-	return
-	function  :  *  /
-	 # define _GMLfunc_ /* _GMLfunc_ * Wrapper for return
-	#define _GMLfunc_/* _GMLfunc_ * Wrapper for function:  */
-	return
-	function  :  *  /
+/* _GMLfunc_variable_global_exists(name)
+ * Wrapper for function: variable_global_exists.
+ * /
+function _GMLfunc_variable_global_exists(name) {
+	return variable_global_exists(name);
+}
+//*/
+
+/* _GMLfunc_variable_global_get(name)
+ * Wrapper for function: variable_global_get.
+ * /
+function _GMLfunc_variable_global_get(name) {
+	return variable_global_get(name);
+}
+//*/
+
+/* _GMLfunc_variable_global_array_get(name,ind)
+ * Wrapper for function: variable_global_array_get.
+ * /
+function _GMLfunc_variable_global_array_get(name,ind) {
+	return variable_global_array_get(name,ind);
+}
+//*/
+
+/* _GMLfunc_variable_global_array2_get(name,ind1,ind2)
+ * Wrapper for function: variable_global_array2_get.
+ * /
+function _GMLfunc_variable_global_array2_get(name,ind1,ind2) {
+	return variable_global_array2_get(name,ind1,ind2);
+}
+//*/
+
+/* _GMLfunc_variable_global_set(name,value)
+ * Wrapper for function: variable_global_set.
+ * /
+function _GMLfunc_variable_global_set(name,value) {
+	return variable_global_set(name,value);
+}
+//*/
+
+/* _GMLfunc_variable_global_array_set(name,ind,value)
+ * Wrapper for function: variable_global_array_set.
+ * /
+function _GMLfunc_variable_global_array_set(name,ind,value) {
+	return variable_global_array_set(name,ind,value);
+}
+//*/
+
+/* _GMLfunc_variable_global_array2_set(name,ind1,ind2,value)
+ * Wrapper for function: variable_global_array2_set.
+ * /
+function _GMLfunc_variable_global_array2_set(name,ind1,ind2,value) {
+	return variable_global_array2_set(name,ind1,ind2,value);
+}
+//*/
+
+/* _GMLfunc_variable_local_exists(name)
+ * Wrapper for function: variable_local_exists.
+ * /
+function _GMLfunc_variable_local_exists(name) {
+	return variable_local_exists(name);
+}
+//*/
+
+/* _GMLfunc_variable_local_get(name)
+ * Wrapper for function: variable_local_get.
+ * /
+function _GMLfunc_variable_local_get(name) {
+	return variable_local_get(name);
+}
+//*/
+
+/* _GMLfunc_variable_local_array_get(name,ind)
+ * Wrapper for function: variable_local_array_get.
+ * /
+function _GMLfunc_variable_local_array_get(name,ind) {
+	return variable_local_array_get(name,ind);
+}
+//*/
+
+/* _GMLfunc_variable_local_array2_get(name,ind1,ind2)
+ * Wrapper for function: variable_local_array2_get.
+ * /
+function _GMLfunc_variable_local_array2_get(name,ind1,ind2) {
+	return variable_local_array2_get(name,ind1,ind2);
+}
+//*/
+
+/* _GMLfunc_variable_local_set(name,value)
+ * Wrapper for function: variable_local_set.
+ * /
+function _GMLfunc_variable_local_set(name,value) {
+	return variable_local_set(name,value);
+}
+//*/
+
+/* _GMLfunc_variable_local_array_set(name,ind,value)
+ * Wrapper for function: variable_local_array_set.
+ * /
+function _GMLfunc_variable_local_array_set(name,ind,value) {
+	return variable_local_array_set(name,ind,value);
+}
+//*/
+
+/* _GMLfunc_variable_local_array2_set(name,ind1,ind2,value)
+ * Wrapper for function: variable_local_array2_set.
+ * /
+function _GMLfunc_variable_local_array2_set(name,ind1,ind2,value) {
+	return variable_local_array2_set(name,ind1,ind2,value);
 }
 //*/
 
