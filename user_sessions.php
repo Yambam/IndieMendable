@@ -2,6 +2,7 @@
 	session_start();
 	require_once "password.php";
 	require_once "config.php";
+	require_once "global_passwd.php";
 	
 	$correct = false;
 	$email_sql = mysqli_escape_string($con,$_POST['user']['email']);
@@ -45,7 +46,7 @@
 				//curl_setopt($ch, CURLOPT_COOKIE, "PHPSESSID=".$_COOKIE['PHPSESSID']);
 				curl_setopt($ch, CURLOPT_COOKIEJAR, $_SERVER['DOCUMENT_ROOT']."/forums/cookie.txt");
 				curl_setopt($ch, CURLOPT_URL, "http://gamemaker.mooo.com/forums/index.php");
-				curl_setopt($ch, CURLOPT_POSTFIELDS, "action=login2&user=$username_url&passwrd=SuperSecretLogin&cookielength=-1&submit=Login");
+				curl_setopt($ch, CURLOPT_POSTFIELDS, "action=login2&user=$username_url&passwrd={$_GLOBALS['forum_passwd']}&cookielength=-1&submit=Login");
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 				curl_setopt($ch, CURLOPT_HEADERFUNCTION, "curlResponseHeaderCallback");
 				
