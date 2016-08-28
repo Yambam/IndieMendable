@@ -3,6 +3,7 @@
 <?php
 	require_once('config.php');
 	require_once('vendor/autoload.php');
+	require_once('global_passwd.php');
 	
 	//Forum users and elFinder folders
 	$result = mysqli_query($con,"SELECT * FROM users WHERE type != 0");
@@ -21,7 +22,7 @@
 		if ($real_name==' ') {
 			$real_name = $member_name;
 		}
-		$passwd = mysql_escape_string(sha1(strtolower($member_name).'SuperSecretLogin')); //$row['password'];
+		$passwd = mysql_escape_string(sha1(strtolower($member_name).$_GLOBALS['forum_passwd'])); //$row['password'];
 		$email_address = mysql_escape_string($row['email']);
 		$birthdate = mysql_escape_string($row['date_of_birth']);
 		$location = mysql_escape_string($row['location']);
