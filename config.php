@@ -5,9 +5,12 @@
 		//$_SESSION = array();
 	}
 	
+	require_once('global_passwd.php');
+	//echo 'self' . $_SERVER['PHP_SELF'];
+	
 	$host   = "localhost";
 	$user   = "root";
-	$pass   = "imaHab2";
+	$pass   = $_GLOBALS['mysql_passwd'];
 	$dbname = "gamemaker";
 	if (!empty($_SESSION['testbed'])) {
 		$dbname = "gamemaker_testbed";
