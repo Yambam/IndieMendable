@@ -2474,6 +2474,10 @@ h6 {
 	vertical-align: middle;
 	display: block;
 	cursor: pointer;
+	
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .translation-help {

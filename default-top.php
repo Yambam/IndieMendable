@@ -195,7 +195,7 @@
 				$_region = strtolower(end(explode("_",substr($_language,0,5))));
 				
 ?>
-				<a href="<?php echo preg_replace('/^(?:\/?(?:af|ar|da|de|el|en|es|fr|fy|he|id|it|nl|nn|pl|pt|ru|sv|zh|)\/)(.*)$/','/'.$_language_abbr.'/\1',$_SERVER['REQUEST_URI']); ?>" class="lang lang-<?php echo $_language_abbr; ?> region region-<?php echo $_region; ?>" tabindex="-1"></a>
+				<a href="<?php echo preg_replace('/^(?:\/?(?:af|ar|da|de|el|en|es|fr|fy|he|id|it|nl|nn|pl|pt|ru|sv|zh|)\/)(.*)$/','/'.$_language_abbr.'/\1',$_SERVER['REQUEST_URI']); ?>" class="lang lang-<?php echo $_language_abbr; ?> region region-<?php echo $_region; ?>" tabindex="-1" title="<?php echo $_language_abbr.'-'.strtoupper($_region); ?>"><?php echo $_language_abbr.'-'.strtoupper($_region); ?></a>
 <?php
 			}
 ?>

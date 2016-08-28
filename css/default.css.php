@@ -3333,8 +3333,13 @@ button:hover:active {
 
 .language-select > a, .language-select > :first-child {
 	margin: 4px;
+	vertical-align: middle;
 	display: block;
 	cursor: pointer;
+	
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .translation-help {
