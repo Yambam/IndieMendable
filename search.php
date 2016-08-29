@@ -72,7 +72,7 @@
 	}
 ?>
 				<div class="container dark dark2" style="width: 200px; margin-right: 15px;">
-					<div class="container-title">Categories</div>
+					<div class="container-title"><?php echo gettext('Categories'); ?></div>
 					<div id="category-chooser" class="smallfont2">
 <?php foreach($categories as $category) { ?>
 						<a <?php if ($_GET['category']==$category) { echo 'class="selected" '; } ?>href="<?php if ($_GET['category']!=$category) { echo query_add($_GET,'category',$category); } ?>"><?php echo ucfirst($category); ?></a>
@@ -80,7 +80,7 @@
 					</div>
 				</div>
 				<div class="container dark dark2 clear-left" style="width: 200px; margin-right: 15px;">
-					<div class="container-title">Stages</div>
+					<div class="container-title"><?php echo gettext('Stages'); ?></div>
 					<div id="category-chooser" class="smallfont2">
 <?php foreach($stages as $category) { ?>
 						<a <?php if ($_GET['stage']==$category) { echo 'class="selected" '; } ?>href="<?php if ($_GET['stage']!=$category) { echo query_add($_GET,'stage',$category); } ?>"><?php echo ucfirst($category); ?></a>
@@ -88,24 +88,24 @@
 					</div>
 				</div>
 				<div class="container dark dark2 clear-left" style="width: 200px; margin-right: 15px; min-height: 0;">
-					<div class="container-title">Website</div>
+					<div class="container-title"><?php echo gettext('Website'); ?></div>
 					<div id="category-chooser" class="smallfont2">
-						<a <?php if ($yyg) { echo 'class="selected" '; } ?>href="<?php echo query_add($_GET,'yyg','yes'); ?>">YoYo Games Sandbox</a>
-						<a <?php if (!$yyg) { echo 'class="selected" '; } ?>href="<?php echo query_add($_GET,'yyg',''); ?>">IndieMendable</a>
+						<a <?php if ($yyg) { echo 'class="selected" '; } ?>href="<?php echo query_add($_GET,'yyg','yes'); ?>"><?php echo gettext('YoYo Games Sandbox'); ?></a>
+						<a <?php if (!$yyg) { echo 'class="selected" '; } ?>href="<?php echo query_add($_GET,'yyg',''); ?>"><?php echo gettext('IndieMendable'); ?></a>
 					</div>
 				</div>
 				<div id="sorted-by-chooser"><a <?php
 	if ($_GET['sorted-by']=='relevance') { echo 'class="active" '; } ?> href="<?php
-	echo query_add($_GET,'sorted-by','relevance') ?>">Most Relevant</a> <a <?php
+	echo query_add($_GET,'sorted-by','relevance') ?>"><?php echo gettext('Most Relevant'); ?></a> <a <?php
 	if ($_GET['sorted-by']=='popular') { echo 'class="active" '; } ?> href="<?php
-	echo query_add($_GET,'sorted-by','popular') ?>">Popular Today</a> <a <?php
+	echo query_add($_GET,'sorted-by','popular') ?>"><?php echo gettext('Popular Today'); ?></a> <a <?php
 	if ($_GET['sorted-by']=='rating') { echo 'class="active" '; } ?> href="<?php
-	echo query_add($_GET,'sorted-by','rating') ?>">Highest Rating</a></div>
+	echo query_add($_GET,'sorted-by','rating') ?>"><?php echo gettext('Highest Rating'); ?></a></div>
 				<div class="container-lt float-right" style="overflow: auto; float: none; border-top-right-radius: 0;">
 					<div class="container-title-lt">Searching for "<?php echo $_GET['q']; ?>"</div>
 <?php
 	if (!$yyg&&(!empty($_SESSION['betabeta'])||$version_info['gamemaker_sandbox']>=3)) {
-		$category_sql = mysql_escape_string($_GET['category']);
+		$category_sql = mysqli_escape_string($con,$_GET['category']);
 		if ($category_sql=='all') {
 			$extra_sql = '';
 		} else {
@@ -161,7 +161,7 @@
 					<div class="games-alt items" style="max-height: 505px; overflow: auto;" data-columns="3" data-per-page="12">
 <?php
 		while($row = mysqli_fetch_assoc($result)) {
-			$game_author_id = mysql_escape_string($row['author']);
+			$game_author_id = mysqli_escape_string($con,$row['author']);
 			$game_author = mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM users WHERE id = $game_author_id"));
 			//for($i=0;$i<32;$i+=1) {
 			if ($row['picture']=='') {
@@ -171,24 +171,24 @@
 				$game_author['username'] = $row['author_str'];
 			}
 /*?><div class="game-alt item"><a href="/games/<?php echo $row['id'] ?>"><div class="picture-large" style="background-image: url('<?php echo htmlspecialchars(str_replace('/original/','/extra-small/',$row['picture'])); ?>');"></div>
-						<div><?php echo $row['name'] ?></div></a><span style="font-size: .7em;">By <a href="/users/<?php echo $game_author['username']; ?>"><?php echo $game_author['username']; ?></a></span><br>
-						<ul class="star-rating"><li class="current-rating" style="width: <?php echo $row['rating']*60/5; ?>px; padding: 0;">Rating: <?php echo $row['rating']; ?>/5 Stars.</li></ul></div><?php*/
+						<div><?php echo $row['name'] ?></div></a><span style="font-size: .7em;"><?php echo gettext('By'); ?> <a href="/users/<?php echo $game_author['username']; ?>"><?php echo $game_author['username']; ?></a></span><br>
+						<ul class="star-rating"><li class="current-rating" style="width: <?php echo $row['rating']*60/5; ?>px; padding: 0;"><?php echo gettext('Rating:'); ?> <?php echo $row['rating']; ?>/5.</li></ul></div><?php*/
 ?><div class="game-alt item">
-					<a target="_blank" href="/games/<?php echo $row['id'].'-'.slugify($row['name']); ?>">
+					<a target="_blank" href="<?php echo $language_url; ?>/games/<?php echo $row['id'].'-'.slugify($row['name']); ?>">
 						<div class="picture-large" style="background-image: url('<?php echo htmlspecialchars(str_replace('/original/','/extra-small/',$row['picture'])); ?>');"></div>
 						<div class="name-box">
 							<div class="name-box-bg" style="background-image: url('<?php echo htmlspecialchars(str_replace('/original/','/extra-small/',$row['picture'])); ?>');"></div>
 							<span class="name"><?php echo $row['name'] ?></span>
 						</div>
 					</a>
-					<span style="font-size: .7em;">By <a target="_blank" href="<?php if ($row['domain']=='yoyogames'&&!empty($game_author['username'])) echo '/yyg'; ?>/users/<?php echo $game_author['username']; ?>"><?php echo $game_author['username']; ?></a></span><br>
+					<span style="font-size: .7em;"><?php echo gettext('By'); ?> <a target="_blank" href="<?php echo $language_url; if ($row['domain']=='yoyogames'&&!empty($game_author['username'])) echo '/yyg'; ?>/users/<?php echo $game_author['username']; ?>"><?php echo $game_author['username']; ?></a></span><br>
 					
-					<ul class="star-rating"><li class="current-rating" style="width: <?php echo $row['rating']*60/5; ?>px; padding: 0;">Rating: <?php echo number_format($row['rating'],2,'.',''); ?>/5 Stars.</li></ul>
+					<ul class="star-rating"><li class="current-rating" style="width: <?php echo $row['rating']*60/5; ?>px; padding: 0;"><?php echo gettext('Rating:'); ?> <?php echo number_format($row['rating'],2,'.',''); ?>/5.</li></ul>
 				</div><?php
 			//}
 		}
 		if (mysqli_num_rows($result)==0) { ?>
-						<div class="item" style="text-align: center; height: 130px; line-height: 130px;">No results found.</div>
+						<div class="item" style="text-align: center; height: 130px; line-height: 130px;"><?php echo gettext('No results found.'); ?></div>
 <?php
 		}
 ?>
@@ -262,6 +262,7 @@
 		$games_listed = array();
 		$games_done = array();
 		for($i=0;$i<sizeof($result[0]);$i+=1) {
+			$row['url_orig'] = preg_replace('/(.*?\/games\/.*?)[\/-].*/','\1',str_replace('/send_download','',str_replace('/reviews','#',str_replace('/download','',/*urldecode*/($result[1][$i])))));
 			$row = array(
 				'id'=>'',
 				'name'=>'',
@@ -275,10 +276,13 @@
 				'version'=>'1',
 				'added'=>0,
 				'rating'=>0,
-				'url_orig'=>preg_replace('/(.*?\/games\/.*?)[\/-].*/','\1',str_replace('/send_download','',str_replace('/reviews','#',str_replace('/download','',/*urldecode*/($result[1][$i]))))),
-				'url'=>"http://web.archive.org/web/".date('YmdHis')."/".$row['url_orig'],
+				'rating_count'=>0,
+				'plays'=>0,
+				'url_orig'=>$row['url_orig'],
+				'url'=>"http://web.archive.org/web/".date('YmdHis',strtotime('1-05-2015'))."/".$row['url_orig'],
 				'url_download'=>"http://web.archive.org/web/*/".$result[1][$i]."/*"
 			);
+			//echo $row['url'];
 			
 			//$row['url_orig'] = preg_replace('/(.*?\/games\/.*?)[\/-].*/','\1',str_replace('/send_download','',str_replace('/reviews','#',str_replace('/download','',/*urldecode*/($result[1][$i])))));
 			//$row['url'] = "http://web.archive.org/web/".date('YmdHis')."/".$row['url_orig'];
@@ -319,6 +323,12 @@
 			}
 			if (preg_match('/<li class=\'current-rating\' style=\'width:(.*?);\'>Currently .*? /',$content,$result2)>=1) {
 				$row['rating'] = intval($result2[1])/12;
+			}
+			if (preg_match('/Rated <strong>.*?<\/strong> by <strong>([0-9]+)<\/strong> members\./',$content,$result2)>=1) {
+				$row['rating_count'] = intval($result2[1]);
+			}
+			if (preg_match('/Played <strong>([0-9]+)<\/strong> times\./',$content,$result2)>=1) {
+				$row['plays'] = intval($result2[1]);
 			}
 			if (preg_match('/<title>(.*?)<\/title>/',$content,$result2)>=1) if (strlen($result2[1])>10) {
 				//$row['name'] = $result2[1];
@@ -362,29 +372,32 @@
 			$version_sql = mysqli_escape_string($con,$row['version']);
 			$added_sql = mysqli_escape_string($con,date('Y-m-d H:i:s',$row['added']));
 			$rating_sql = mysqli_escape_string($con,$row['rating']);
+			$rating_count_sql = mysqli_escape_string($con,$row['rating_count']);
+			$plays_sql = mysqli_escape_string($con,$row['plays']);
 			$game_sql = mysqli_escape_string($con,$row['url_download']);
-			/*if ($result2 = mysqli_query($con,"UPDATE games SET name = '$name_sql', author_str = '$author_sql', author_picture = '$author_picture_sql', game = '$game_sql', description = '$description_sql', tags = '$tags_sql', picture = '$picture_sql', version = '$version_sql', added = '$added_sql', state = 2, stage = 1, rating = '$rating_sql' WHERE id = '$id_sql' AND domain = 'yoyogames'")) {
+			if ($result2 = mysqli_query($con,"UPDATE games SET name = '$name_sql', author_str = '$author_sql', author_picture = '$author_picture_sql', game = '$game_sql', description = '$description_sql', tags = '$tags_sql', picture = '$picture_sql', version = '$version_sql', added = '$added_sql', state = 2, stage = 1, yyg_rating = '$rating_sql', yyg_rating_count = '$rating_count_sql', yyg_plays = '$plays_sql' WHERE id = '$id_sql' AND domain = 'yoyogames'")) {
 				
 			} else {
 				echo 'Error: ' . mysqli_error($con);
 				exit;
 			}
 			list($matched, $changed, $warnings) = sscanf(mysqli_info($con), "Rows matched: %d Changed: %d Warnings: %d");
-			if ($matched==0) {*/
-			$result2 = mysqli_query($con,"SELECT * FROM games WHERE id = '$id_sql' AND domain = 'yoyogames'");
-			if (mysqli_num_rows($result2)==0) {
-				if ($result2 = mysqli_query($con,"INSERT INTO games (id, domain, name, author_str, author_picture, game, description, tags, picture, version, added, state, stage) VALUES ('$id_sql', 'yoyogames', '$name_sql', '$author_sql', '$author_picture_sql', '$game_sql', '$description_sql', '$tags_sql', '$picture_sql', '$version_sql', '$added_sql', 2, 1)")) {
-					
+			if ($matched==0) {
+				$result2 = mysqli_query($con,"SELECT * FROM games WHERE id = '$id_sql' AND domain = 'yoyogames'");
+				if (mysqli_num_rows($result2)==0) {
+					if ($result2 = mysqli_query($con,"INSERT INTO games (id, domain, name, author_str, author_picture, game, description, tags, picture, version, added, state, stage, yyg_rating, yyg_rating_count, yyg_plays) VALUES ('$id_sql', 'yoyogames', '$name_sql', '$author_sql', '$author_picture_sql', '$game_sql', '$description_sql', '$tags_sql', '$picture_sql', '$version_sql', '$added_sql', 2, 1, '$rating_sql', '$rating_count_sql', '$plays_sql')")) {
+						
+					} else {
+						echo 'Error: ' . mysqli_error($con);
+						exit;
+					}
+					//echo 'Created new game '.$member_name;
 				} else {
-					echo 'Error: ' . mysqli_error($con);
-					exit;
+					//echo 'Updated game '.$name_sql;
 				}
-				//echo 'Created new game '.$member_name;
-			} else {
-				//echo 'Updated game '.$name_sql;
 			}
 			
-			if ($result2 = mysqli_query($con,"UPDATE uploaded_files SET filename = '$picture2_sql' WHERE filename = '$picture2_sql' AND domain = 'yoyogames'")) {
+			if ($result2 = mysqli_query($con,"UPDATE uploaded_files SET filename = '$picture2_sql' WHERE type = 2 AND place = '$id_sql' AND domain = 'yoyogames'")) {
 				
 			} else {
 				echo 'Error: ' . mysqli_error($con);
@@ -410,28 +423,28 @@
 							<span class="name"><?php echo $row['name'] ?></span>
 						</div>
 					</a>
-					<span style="font-size: .7em;">By <a target="_blank" href="<?php echo empty($row['author']) ? '' : "http://web.archive.org/web/".date('YmdHis')."/http://sandbox.yoyogames.com/users/".$row['author']; ?>"><?php echo $row['author']; ?></a></span><br>
+					<span style="font-size: .7em;"><?php echo gettext('By'); ?> <a target="_blank" href="<?php echo empty($row['author']) ? '' : "http://web.archive.org/web/".date('YmdHis')."/http://sandbox.yoyogames.com/users/".$row['author']; ?>"><?php echo $row['author']; ?></a></span><br>
 					
-					<ul class="star-rating"><li class="current-rating" style="width: <?php echo $row['rating']*60/5; ?>px; padding: 0;">Rating: <?php echo number_format($row['rating'],2,'.',''); ?>/5 Stars.</li></ul>
+					<ul class="star-rating"><li class="current-rating" style="width: <?php echo $row['rating']*60/5; ?>px; padding: 0;"><?php echo gettext('Rating:'); ?> <?php echo number_format($row['rating'],2,'.',''); ?>/5.</li></ul>
 				</div><?php
 			//echo str_repeat('<!----->',1024*8);
 			flush();
 			ob_flush();
 		}
 		if (sizeof($result[0])==0) { ?>
-						<div class="item" style="text-align: center; height: 130px; line-height: 130px;">No results found.</div>
+						<div class="item" style="text-align: center; height: 130px; line-height: 130px;"><?php echo gettext('No results found.'); ?></div>
 <?php
 		} else {
 			//echo '<a href="' . $url . '">' . $url . '</a>';
 			?><div class="game-alt item"><a target="_blank" href="<?php echo $url; ?>"><div class="picture-large" style="background-image: url('<?php echo htmlspecialchars(str_replace('/original/','/extra-small/',$no_picture)); ?>');"></div>
-						<div>More...</div></a></div><?php
+						<div><?php echo gettext('More...'); ?></div></a></div><?php
 		}
 ?>
 				</div>
 <?php
 	} else {
 ?>
-					<div class="item" style="text-align: center; height: 130px; line-height: 130px;">No results found.</div>
+					<div class="item" style="text-align: center; height: 130px; line-height: 130px;"><?php echo gettext('No results found.'); ?></div>
 <?php
 	}
 ?>
