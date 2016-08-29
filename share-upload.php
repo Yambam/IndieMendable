@@ -86,7 +86,7 @@
 					
 					$screenshot_file_sql = mysqli_escape_string($con,$screenshot_file);
 					
-					mkdir(dirname(__FILE__) . $screenshot_file_dir,777,true);
+					mkdir(dirname(__FILE__) . $screenshot_file_dir,0777,true);
 					if (!move_uploaded_file($_FILES['game']['tmp_name']['screenshots'][$i],dirname(__FILE__) . $screenshot_file)) {
 						$errors['screenshots'] = 'An error occurred, one or more of your screenshots could not be uploaded.';
 					} else {

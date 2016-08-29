@@ -97,7 +97,7 @@
 				
 				//Picture
 				if ($picture!=''&&empty($errors['picture'])) {
-					mkdir(dirname(__FILE__) . $picture_dir,777,true);
+					mkdir(dirname(__FILE__) . $picture_dir,0777,true);
 					move_uploaded_file($_FILES['user']['tmp_name']['image'],dirname(__FILE__) . $picture);
 				}
 				
