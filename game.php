@@ -51,10 +51,13 @@
 				$game_info['header_picture'] = $game_info['picture'];
 			}
 			if (empty($game_info['description'])) {
-				$game_info['description'] = 'Some information is missing on this game...';
+				$game_info['description'] = '_Some information is missing on this game. A downloadable file however is still available! :)_';
+			} else {
+				$game_info['description'] = str_replace("\r<br />","\r\n",$game_info['description']);
 			}
-			
-			
+			$game_info['description'] .= "\r\n\r\n__Source:__ [WayBack Machine](http://web.archive.org/web/20160608203511/http://sandbox.yoyogames.com".$_SERVER['REQUEST_URI'].")";
+			$game_info['plays'] += $game_info['yyg_plays'];
+			$yyg = true;
 		} else {
 			header("HTTP/1.1 404 Not Found");
 			include("error-404.php");
@@ -72,18 +75,20 @@
 		exit;
 	}
 	
-	$rating_count = 0;
 	$rating_given = false;
-	$game_info['rating'] = 0;
+	$rating_count = $game_info['yyg_rating_count'];
+	$game_info['rating'] = $game_info['yyg_rating_count'] * $game_info['yyg_rating'];
 	$result = mysqli_query($con,"SELECT * FROM ratings WHERE type = 1 AND place = {$game_info['id']}");
 	if (mysqli_num_rows($result)>=1) {
-		$rating_count = mysqli_num_rows($result);
+		$rating_count += mysqli_num_rows($result);
 		while($row = mysqli_fetch_assoc($result)) {
 			$game_info['rating'] += $row['rating'];
 			if (!empty($_SESSION['user_id'])&&$row['author']==$_SESSION['user_id']) {
 				$rating_given = true;
 			}
 		}
+	}
+	if ($rating_count>0) {
 		$game_info['rating'] /= $rating_count;
 	}
 	mysqli_query($con,"UPDATE games SET rating = {$game_info['rating']} WHERE id = {$game_info['id']}");
@@ -195,7 +200,7 @@
 						<div class="smallfont2" style="background-color: #303030; color: #D0D0D0; padding: 3px; margin: 12px 0;">
 							<?php
 	if ($rating_count>=1) {
-		?><?php echo sprintf(gettext('Rated <strong>%s of 5</strong> by'),$game_info['rating']); ?> <strong><?php echo $rating_count; ?></strong> <?php echo lcfirst(ngettext('Member','Members',$rating_count)) . '.';
+		?><?php echo sprintf(gettext('Rated <strong>%s of 5</strong> by'),number_format($game_info['rating'],1)); ?> <strong><?php echo $rating_count; ?></strong> <?php echo lcfirst(ngettext('Member','Members',$rating_count)) . '.';
 	} else {
 		echo gettext('No ratings yet!');
 	}
@@ -259,15 +264,21 @@
 					<div class="container-title-lt" style="margin: 0;"><?php echo gettext('More games') . ' ' . lcfirst(gettext('By')) . ' ' . htmlspecialchars($game_author['username']); ?></div>
 					<div style="overflow: hidden;" class="game-screenshots game-other-games">
 <?php
-	$result = mysqli_query($con,"SELECT * FROM games WHERE domain = '$domain_sql' AND author = '$game_author_id' OR (author_str != '' && author_str = '$game_author_str') ORDER BY added DESC");
+	$result = mysqli_query($con,"SELECT * FROM games WHERE domain = '$domain_sql' AND author = '$game_author_id' OR (author_str != '' && author_str = '$game_author_str') AND id != '$game_id' ORDER BY added DESC");
 	if (!$result) {
 		echo mysqli_error($con);
 	}
 ?>
 						<div class="shift" data-count="<?php echo mysqli_num_rows($result); ?>" style="margin-left: 0;">
-						</div><?php while($row = mysqli_fetch_assoc($result)) { ?><a href="<?php echo $language_url; ?>/games/<?php echo $row['id'].'-'.slugify($row['name']); ?>" tabindex="-1" style="background-image: url('<?php echo str_replace('/original/','/large/',$row['picture']); ?>')">
+						</div><?php if (mysqli_num_rows($result)>=1) while($row = mysqli_fetch_assoc($result)) { ?><a href="<?php echo $language_url; ?>/games/<?php echo $row['id'].'-'.slugify($row['name']); ?>" tabindex="-1" style="background-image: url('<?php echo str_replace('/original/','/large/',$row['picture']); ?>')">
 							<div><div><?php echo $row['name']; ?></div></div>
-						</a><?php } ?>
+						</a><?php } else {
+?>
+						<a tabindex="-1" style="width: 100%;">
+							<div class="not-available"><div><?php echo gettext('No other games available.'); ?></div></div>
+						</a>
+<?php
+	} ?>
 
 					</div>
 				</div>
@@ -335,8 +346,7 @@
 					<div class="container-title-lt"><?php echo gettext('Comments'); ?></div>
 <?php
 	if (!empty($_SESSION['betabeta'])||$version_info['gamemaker_sandbox']>=2) {
-		$id = mysql_escape_string($game_info['id']);
-		$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 2 AND place = $id ORDER BY id DESC");
+		$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 2 AND place = '$game_id' AND domain = '$domain_sql' ORDER BY id DESC");
 ?>
 					<div class="even-odd seperators comments items">
 <?php
