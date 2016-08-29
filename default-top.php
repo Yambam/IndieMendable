@@ -98,7 +98,7 @@
 ?>
 <!DOCTYPE html>
 <?php } ?>
-<html lang="en">
+<html lang="<?php echo $language_abbr; ?>">
 	<head>
 		<script src="/js/jquery-1.11.0.min.js"></script>
 		<script src="/js/lightbox.min.js"></script>
@@ -188,11 +188,11 @@
 		<div class="links-bar smallfont">
 			<a href="<?php echo $language_url; ?>/"><?php echo gettext("Home"); ?></a> | <a href="/forums"><?php echo gettext("Forums"); ?></a> | <a href="http://www.yoyogames.com/gamemaker"><?php echo gettext("GameMaker"); ?></a> | <a href="http://enigma-dev.org/"><?php echo gettext("ENIGMA"); ?></a> | <a href="http://yygwiki.mooo.com/"><?php echo gettext("Wiki"); ?></a> | <a href="/blog"><?php echo gettext("Blog"); ?></a>
 			<div style="float: right;"><a href="/yyg/"><?php echo gettext("Go to our YoYo Games Archive"); ?></a> | <div class="language-select" tabindex="0">
-				<div class="lang lang-<?php echo explode("_",$language)[0]; ?> region region-<?php echo strtolower(end(explode("_",substr($language,0,5)))); ?>" onclick="if (document.activeElement==this) this.blur(); else this.focus();"></div>
+				<div class="lang lang-<?php echo explode("_",$language)[0]; ?> region region-<?php echo strtolower(end((explode("_",substr($language,0,5))))); ?>" onclick="if (document.activeElement==this) this.blur(); else this.focus();"></div>
 <?php
 			foreach($languages as $_language) if ($_language!=$language) {
 				$_language_abbr = explode("_",$_language)[0];
-				$_region = strtolower(end(explode("_",substr($_language,0,5))));
+				$_region = strtolower(end((explode("_",substr($_language,0,5)))));
 				
 ?>
 				<a href="<?php echo preg_replace('/^(?:\/?(?:af|ar|da|de|el|en|es|fr|fy|he|id|it|nl|nn|pl|pt|ru|sv|zh|)\/)(.*)$/','/'.$_language_abbr.'/\1',$_SERVER['REQUEST_URI']); ?>" class="lang lang-<?php echo $_language_abbr; ?> region region-<?php echo $_region; ?>" tabindex="-1" title="<?php echo $_language_abbr.'-'.strtoupper($_region); ?>"><?php echo $_language_abbr.'-'.strtoupper($_region); ?></a>
@@ -332,7 +332,7 @@
 				</div>
 				<form action="<?php echo (strncmp($uri,gettext("$language_url/users"),strlen(gettext("$language_url/users"))))==0 ? gettext("$language_url/users") : gettext("$language_url/search"); ?>" method="get" style="overflow: auto; margin-bottom: 15px;">
 					<input type="submit" class="search-field-submit" value="<?php echo gettext('Search'); ?>" disabled="">
-					<input type="text" name="q" class="search-field" onkeypress="if (document.getElementById('search-field').value.length < 3) { return event.keyCode!=13; }" placeholder="<?php echo gettext('Search for '.((strtolower(substr($uri,0,6))=='/users') ? 'users...' :  'games...')); ?>" value="<?php if (!empty($_GET['q'])&&(strtolower(substr($uri,0,7))=='/search'||strncmp($uri,gettext("$language_url/users"),strlen(gettext("$language_url/users")))==0)) echo $_GET['q']; ?>">
+					<input type="text" name="q" class="search-field" onkeypress="if (document.getElementById('search-field').value.length < 3) { return event.keyCode!=13; }" placeholder="<?php echo gettext('Search for '.((strtolower(substr($uri,0,6))=='/users') ? 'users...' :  (isset($yyg) ? "YoYo Games archived games..." : 'games...'))); ?>" value="<?php if (!empty($_GET['q'])&&(strtolower(substr($uri,0,7))=='/search'||strncmp($uri,gettext("$language_url/users"),strlen(gettext("$language_url/users")))==0)) echo $_GET['q']; ?>">
 <?php
 		if (strncmp($uri,gettext("$language_url/users"),strlen(gettext("$language_url/users")))==0) {
 ?>
@@ -340,7 +340,7 @@
 <?php
 		} else {
 ?>
-					<input type="hidden" name="yyg" value="<?php if (!empty($_GET['yyg'])) echo $_GET['yyg']; ?>">
+					<input type="hidden" name="yyg" value="<?php if (!empty($_GET['yyg'])||isset($yyg)) echo 'yes'; ?>">
 					<input type="hidden" name="category" value="<?php if (!empty($_GET['category'])) echo $_GET['category']; else echo 'all'; ?>">
 					<input type="hidden" name="stage" value="<?php if (!empty($_GET['stage'])) echo $_GET['stage']; else echo 'complete'; ?>">
 <?php
