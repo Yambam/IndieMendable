@@ -5,7 +5,7 @@
 	$result = mysqli_query($con,"SELECT * FROM users WHERE username = \"{$_GET['q']}\"");
 	if (mysqli_num_rows($result) >= 1) {
 		$user_info = mysqli_fetch_array($result);
-		if ($user_info['picture']=='') {
+		if ($user_info['picture']==''||!file_exists($user_info['picture'])) {
 			$user_info['picture'] = $no_picture;
 		}
 		
@@ -100,7 +100,7 @@ Local time: <?php
 		?> -10px; display: block;" alt="<?php
 			echo $_GET['q'];
 		?>" src="<?php
-			echo str_replace('/original/','/large/',$user_info['picture']);
+			echo str_replace('/original/','/larger/',$user_info['picture']);
 		?>"><?php
 	}
 ?>
