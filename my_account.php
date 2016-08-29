@@ -43,7 +43,7 @@
 		$result = mysqli_query($con,"SELECT * FROM users WHERE username = '$user'");
 		if (mysqli_num_rows($result) >= 1) {
 			$user_info = mysqli_fetch_array($result);
-			if ($user_info['picture']=='') {
+			if ($user_info['picture']==''||!file_exists($user_info['picture'])) {
 				$user_info['picture'] = '/img/no-picture.png';
 				if (!empty($_SESSION['theme'])) {
 					if ($_SESSION['theme']=='dark') {
@@ -207,7 +207,7 @@
 			
 			//Picture
 			if ($picture!=''&&empty($errors['picture'])&&$picture!=$user_info['picture']) {
-				mkdir(dirname(__FILE__) . $picture_dir,777,true);
+				mkdir(dirname(__FILE__) . $picture_dir,0777,true);
 				move_uploaded_file($_FILES['user']['tmp_name']['image'],dirname(__FILE__) . $picture);
 			}
 			
