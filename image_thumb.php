@@ -34,7 +34,7 @@
 		$dir = '';
 		foreach($parts as $part) {
 			$dir .= "$part/";
-			if (!is_dir($dir)) mkdir($dir);
+			if (!is_dir($dir)) mkdir($dir,0777);
 		}
 		
 		//file_put_contents("$dir$file", fopen($contents, "r"));
@@ -44,6 +44,8 @@
 		}
 	}
 	
+	$original = false;
+	
 	//$_GET['q'] = str_replace(basename($_GET['q']),urlencode(basename($_GET['q'])),$_GET['q']);
 	$image_fname = implode('.',array_slice(explode('.',dirname(__FILE__) . '/' . $_GET['q']),0,-1)).'.png';
 	$file_type = 'png'; //array_pop(explode('.',$image_fname));
@@ -52,13 +54,17 @@
 	} else {
 		$image_fname = dirname(__FILE__) . '/' . str_replace($_GET['type'],'original',$_GET['q']);
 		$file_type = array_pop(explode('.',$image_fname));
+		if (!file_exists($image_fname)) {
+			$image_fname = dirname(__FILE__) . '/img/'.$_GET['type'].'/no-picture.png';
+			$original = true;
+		}
 		$size = getimagesize($image_fname);
 	}
 	
 	if ($file_type=="gif"&&$type!="original") {
 		header("Location: http://gamemaker.mooo.com".str_replace("/$type/","/original/",$_SERVER['REQUEST_URI']), true, 302);
 		exit;
-	} elseif (($size[0]>$max_size||$size[1]>$max_size)) {
+	} elseif (($size[0]>$max_size||$size[1]>$max_size)&&!$original) {
 		if ($size[0]>$size[1]) {
 			$width = $max_size;
 			$height = round($width*$size[1]/$size[0]);
