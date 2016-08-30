@@ -238,6 +238,8 @@
 	}
 	if (!function_exists('update_notifications')) {
 		function update_notifications($con) {
+			global $no_picture;
+			
 			if (!empty($_SESSION['logged_in'])) {
 				$result = mysqli_query($con,"SELECT * FROM subscriptions WHERE type = 1 AND author = {$_SESSION['user_id']} ORDER BY id DESC");
 				
@@ -278,7 +280,7 @@
 					$place['picture'] = $no_picture;
 				}
 				
-				$result2 = mysqli_query($con,"SELECT * FROM comments WHERE place = $place_id ORDER BY id DESC LIMIT 10");
+				$result2 = mysqli_query($con,"SELECT * FROM comments WHERE place = $place_id AND author!=0 ORDER BY id DESC LIMIT 10");
 				while($row2 = mysqli_fetch_assoc($result2)) {
 					$author_id = mysqli_escape_string($con,$row2['author']);
 					if ($row2['author']==$_SESSION['user_id']) {
