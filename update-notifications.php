@@ -143,7 +143,7 @@
 			}
 			
 			if ($row['type']==1) {
-				$result2 = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $place_id AND domain != 'unassigned' ORDER BY id DESC");
+				$result2 = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $place_id AND domain != 'unassigned' AND author != 0 ORDER BY id DESC");
 				while($row2 = mysqli_fetch_assoc($result2)) {
 					$author_id = mysql_escape_string($row2['author']);
 					if ($row2['author']==$row_user['id']) {
@@ -187,7 +187,7 @@
 			$place['picture'] = $no_picture;
 		}
 		
-		$result2 = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $place_id AND domain != 'unassigned' ORDER BY id DESC");
+		$result2 = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $place_id AND domain != 'unassigned' AND author != 0 ORDER BY id DESC");
 		while($row2 = mysqli_fetch_assoc($result2)) {
 			$author_id = mysql_escape_string($row2['author']);
 			if ($row2['author']==$row_user['id']) {
@@ -243,7 +243,7 @@
 				$place['picture'] = $no_picture;
 			}
 			
-			$result2 = mysqli_query($con,"SELECT * FROM comments WHERE type = 2 AND place = $place_id AND domain != 'unassigned' ORDER BY id DESC");
+			$result2 = mysqli_query($con,"SELECT * FROM comments WHERE type = 2 AND place = $place_id AND domain != 'unassigned' AND author != 0 ORDER BY id DESC");
 			while($row2 = mysqli_fetch_assoc($result2)) {
 				$author_id = mysql_escape_string($row2['author']);
 				if ($row2['author']==$row_user['id']) {
@@ -310,19 +310,19 @@
 		$headers .= "To: $email\r\n";
 		
 		//if ($i[$email]<7) {
-			echo $headers;
-			echo $notification['content']."\r\n\r\n";
+			//echo $headers;
+			//echo $notification['content']."\r\n\r\n";
+			
+			if ($email=='ima.habekotte@gmail.com') {
+				mail($email, $notification['msg2'], "Dear {$notification['username']},\r\n\r\nYou received a notification from our website.\r\n{$notification['msg']}:\r\n\r\n{$notification['content']}\r\n\r\nURL: http://gamemaker.mooo.com{$notification['image_url']} (Domain: {$notification['domain']})\r\n\r\n- IndieMendable", $headers);
+				sleep(1);
+			}
+			
+			echo $headers . "Dear {$notification['username']},\r\n\r\nYou received a notification from our website.\r\n{$notification['msg']}:\r\n\r\n{$notification['content']}\r\n\r\nURL: http://gamemaker.mooo.com{$notification['image_url']} (Domain: {$notification['domain']})\r\n\r\n- IndieMendable\r\n";
 			
 			echo str_repeat('<!----->',1024*8);
 			flush();
 			ob_flush();
-			
-			/*if ($email=='ima.habekotte@gmail.com') {
-				mail($email, $notification['msg2'], "Dear {$notification['username']},\r\n\r\nYou received a notification from our website.\r\n{$notification['msg']}:\r\n\r\n{$notification['content']}\r\n\r\nhttp://gamemaker.mooo.com{$notification['image_url']} (Domain: {$notification['domain']})\r\n\r\n- IndieMendable", $headers);
-				sleep(1);
-			}*/
-			
-			echo $headers . "Dear {$notification['username']},\r\n\r\nYou received a notification from our website.\r\n{$notification['msg']}:\r\n\r\n{$notification['content']}\r\n\r\n{$notification['image_url']} (Domain: {$notification['domain']})\r\n\r\n- IndieMendable";
 		//}
 		
 		$type_sql = mysqli_escape_string($con,$notification['type']);
@@ -340,7 +340,7 @@
 		}
 		list($matched, $changed, $warnings) = sscanf(mysqli_info($con), "Rows matched: %d Changed: %d Warnings: %d");
 		if ($matched==0) {
-			if ($result2 = mysqli_query($con,"INSERT INTO notifications (type,place,domain,ip,author,item_id,notified) VALUES ($type_sql,$place_sql,'gamemaker','$ip','$author_sql','$domain_sql','$item_id_sql',1)")) {
+			if ($result2 = mysqli_query($con,"INSERT INTO notifications (type,place,domain,ip,author,item_id,notified) VALUES ($type_sql,$place_sql,'$domain_sql','$ip','$author_sql','$item_id_sql',1)")) {
 				
 			} else {
 				echo 'Error: ' . mysqli_error($con);
