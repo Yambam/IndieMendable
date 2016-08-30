@@ -29,7 +29,7 @@
 		$signature = mysql_escape_string($row['signature']);
 		$avatar = mysql_escape_string('http://gamemaker.mooo.com' . $row['picture']);
 		
-		if ($result2 = mysqli_query($con_forums,"UPDATE gmf_members SET member_name = '$member_name', date_registered = '$date_registered', real_name = '$real_name', passwd = '$passwd', email_address = '$email_address', birthdate = '$birthdate', location = '$location', signature = '$signature', avatar = '$avatar' WHERE id_member = '$id_member'")) {
+		/*if ($result2 = mysqli_query($con_forums,"UPDATE gmf_members SET member_name = '$member_name', date_registered = '$date_registered', real_name = '$real_name', passwd = '$passwd', email_address = '$email_address', birthdate = '$birthdate', location = '$location', signature = '$signature', avatar = '$avatar' WHERE id_member = '$id_member'")) {
 			
 		} else {
 			echo 'Error: ' . mysqli_error($con_forums);
@@ -69,7 +69,7 @@
 			echo "\r\n    Created new description ".$member_name;
 		} else {
 			echo "\r\n    Updated description ".$member_name;
-		}
+		}*/
 		
 		echo "\n";
 		
@@ -318,11 +318,11 @@
 			ob_flush();
 			
 			/*if ($email=='ima.habekotte@gmail.com') {
-				mail($email, $notification['msg2'], "Dear {$notification['username']},\r\n\r\nYou received a notification from our website.\r\n{$notification['msg']}:\r\n\r\n{$notification['content']}\r\n\r\n{$notification['image_url']} (Domain: {$notification['domain']})\r\n\r\n- IndieMendable", $headers);
+				mail($email, $notification['msg2'], "Dear {$notification['username']},\r\n\r\nYou received a notification from our website.\r\n{$notification['msg']}:\r\n\r\n{$notification['content']}\r\n\r\nhttp://gamemaker.mooo.com{$notification['image_url']} (Domain: {$notification['domain']})\r\n\r\n- IndieMendable", $headers);
 				sleep(1);
 			}*/
 			
-			//echo $headers . "Dear {$notification['username']},\r\n\r\nYou received a notification from our website.\r\n{$notification['msg']}:\r\n\r\n{$notification['content']}\r\n\r\n{$notification['image_url']} (Domain: {$notification['domain']})\r\n\r\n- IndieMendable";
+			echo $headers . "Dear {$notification['username']},\r\n\r\nYou received a notification from our website.\r\n{$notification['msg']}:\r\n\r\n{$notification['content']}\r\n\r\n{$notification['image_url']} (Domain: {$notification['domain']})\r\n\r\n- IndieMendable";
 		//}
 		
 		$type_sql = mysqli_escape_string($con,$notification['type']);
