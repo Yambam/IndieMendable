@@ -140,7 +140,7 @@ if (!empty($user_info['registered'])) { ?>
 					<div class="container-title">Comments</div>
 <?php
 	$id = mysql_escape_string($user_info['id']);
-	$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $id AND domain = '{$_SESSION['domain']}' ORDER BY id DESC");
+	$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $id AND domain = '{$_SESSION['domain']}' AND author!=0 ORDER BY id DESC");
 ?>
 					<div class="even-odd-dark seperators comments items" data-per-page="7">
 <?php

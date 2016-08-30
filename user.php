@@ -338,7 +338,7 @@ if (!empty($user_info['registered'])) { ?>
 					</div>
 <?php
 	$id = mysql_escape_string($user_info['id']);
-	$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $id AND domain = '{$_SESSION['domain']}' ORDER BY id DESC");
+	$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $id AND author!=0 AND domain = '{$_SESSION['domain']}' ORDER BY id DESC");
 ?>
 					<div class="even-odd-dark seperators comments items">
 <?php
@@ -495,7 +495,7 @@ if (!empty($user_info['registered'])) { ?>
 	$type_filter = '';
 	
 	$id = mysql_escape_string($user_info['id']);
-	$result = mysqli_query($con,"SELECT * FROM comments WHERE author = $id AND domain = '{$_SESSION['domain']}'" . $type_filter . " ORDER BY id DESC");
+	$result = mysqli_query($con,"SELECT * FROM comments WHERE author = $id AND author!=0 AND domain = '{$_SESSION['domain']}'" . $type_filter . " ORDER BY id DESC");
 	
 	while($row = mysqli_fetch_assoc($result)) {
 		$comment_author_id = mysql_escape_string($row['author']);

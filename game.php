@@ -346,7 +346,7 @@
 					<div class="container-title-lt"><?php echo gettext('Comments'); ?></div>
 <?php
 	if (!empty($_SESSION['betabeta'])||$version_info['gamemaker_sandbox']>=2) {
-		$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 2 AND place = '$game_id' AND domain = '$domain_sql' ORDER BY id DESC");
+		$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 2 AND place = '$game_id' AND domain = '$domain_sql' AND author!=0 ORDER BY id DESC");
 ?>
 					<div class="even-odd seperators comments items">
 <?php

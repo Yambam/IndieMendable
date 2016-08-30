@@ -145,7 +145,7 @@
 							
 <?php
 		$id = mysql_escape_string($game_info['id']);
-		$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 3 AND place = $id AND domain = '{$_SESSION['domain']}' ORDER BY id DESC");
+		$result = mysqli_query($con,"SELECT * FROM comments WHERE type = 3 AND place = $id AND domain = '{$_SESSION['domain']}' AND author!=0 ORDER BY id DESC");
 ?>
 					<div class="even-odd seperators comments items">
 <?php
