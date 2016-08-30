@@ -5,7 +5,7 @@
 	$result = mysqli_query($con,"SELECT * FROM users WHERE username = \"{$_GET['q']}\"");
 	if (mysqli_num_rows($result) >= 1) {
 		$user_info = mysqli_fetch_array($result);
-		if ($user_info['picture']==''||!file_exists($user_info['picture'])) {
+		if ($user_info['picture']==''||!file_exists(dirname(__FILE__) . $user_info['picture'])) {
 			$user_info['picture'] = $no_picture;
 		}
 		
@@ -94,7 +94,7 @@ Local time: <?php
 					<?php
 	if (!empty($user_info['picture'])) {
 		?><img style="width: 100%; max-width: <?php
-			echo min($picture_size[0],550/$picture_size[1]*$picture_size[0]);
+			echo min($picture_size[0],720/$picture_size[1]*$picture_size[0]);
 		?>px; margin: 0 <?php
 			echo $picture_size[0]>=300 ? 'auto' : '0';
 		?> -10px; display: block;" alt="<?php

@@ -13,7 +13,7 @@
 	$result = mysqli_query($con,"SELECT * FROM users WHERE username = \"{$_GET['q']}\"");
 	if (mysqli_num_rows($result) >= 1) {
 		$user_info = mysqli_fetch_array($result);
-		if ($user_info['picture']==''||!file_exists($user_info['picture'])) {
+		if ($user_info['picture']==''||!file_exists(dirname(__FILE__) . $user_info['picture'])) {
 			$user_info['picture'] = $no_picture;
 		}
 		
