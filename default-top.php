@@ -88,6 +88,14 @@
 		$_SESSION['last_page'] = $_SERVER['REQUEST_URI'];
 	}
 	
+	$_SESSION['url_title'][$_SERVER['REQUEST_URI']] = trim($page_title);
+	while(sizeof($_SESSION['url_title'])>10) {
+		array_shift($_SESSION['url_title']);
+	}
+	if (isset($_SESSION['betabeta'])) {
+		//print_r($_SESSION['url_title']);
+	}
+	
 	$uri = str_replace("http://{$_SERVER['SERVER_NAME']}",'',explode('?',$_SERVER["REQUEST_URI"])[0]);
 	
 	if (isset($doctype)) {
