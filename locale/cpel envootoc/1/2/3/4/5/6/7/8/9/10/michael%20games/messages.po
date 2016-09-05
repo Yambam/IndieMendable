@@ -1,2 +1,0 @@
-msgid "fatso"
-msgstr "dikkerd"
