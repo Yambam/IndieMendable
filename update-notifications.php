@@ -1,6 +1,7 @@
 <h1>Update notifications and forum users</h1>
 <pre>
 <?php
+	define('indiemendable',true,true);
 	require_once('config.php');
 	require_once('vendor/autoload.php');
 	require_once('global_passwd.php');
@@ -10,24 +11,24 @@
 	while($row = mysqli_fetch_assoc($result)) {
 		//print_r($row);
 		
-		$id_member = mysql_escape_string($row['id']);
-		$member_name = mysql_escape_string($row['username']);
-		$date_registered = mysql_escape_string(strtotime($row['registered']));
-		$real_name = mysql_escape_string($member_name);
+		$id_member = mysqli_escape_string($con,$row['id']);
+		$member_name = mysqli_escape_string($con,$row['username']);
+		$date_registered = mysqli_escape_string($con,strtotime($row['registered']));
+		$real_name = mysqli_escape_string($con,$member_name);
 		
 		$converter = new Converter\HTMLConverter($Parsedown->setBreaksEnabled(true)->text($row['description']),'description');
 		
-		$cust_descri = mysql_escape_string($converter->toBBCode());
+		$cust_descri = mysqli_escape_string($con,$converter->toBBCode());
 		//$real_name = $row['firstname'] . ' ' . $row['lastname'];
 		if ($real_name==' ') {
 			$real_name = $member_name;
 		}
-		$passwd = mysql_escape_string(sha1(strtolower($member_name).$_GLOBALS['forum_passwd'])); //$row['password'];
-		$email_address = mysql_escape_string($row['email']);
-		$birthdate = mysql_escape_string($row['date_of_birth']);
-		$location = mysql_escape_string($row['location']);
-		$signature = mysql_escape_string($row['signature']);
-		$avatar = mysql_escape_string('http://gamemaker.mooo.com' . $row['picture']);
+		$passwd = mysqli_escape_string($con,sha1(strtolower($member_name).$_GLOBALS['forum_passwd'])); //$row['password'];
+		$email_address = mysqli_escape_string($con,$row['email']);
+		$birthdate = mysqli_escape_string($con,$row['date_of_birth']);
+		$location = mysqli_escape_string($con,$row['location']);
+		$signature = mysqli_escape_string($con,$row['signature']);
+		$avatar = mysqli_escape_string($con,'http://gamemaker.mooo.com' . $row['picture']);
 		
 		/*if ($result2 = mysqli_query($con_forums,"UPDATE gmf_members SET member_name = '$member_name', date_registered = '$date_registered', real_name = '$real_name', passwd = '$passwd', email_address = '$email_address', birthdate = '$birthdate', location = '$location', signature = '$signature', avatar = '$avatar' WHERE id_member = '$id_member'")) {
 			
@@ -73,8 +74,8 @@
 		
 		echo "\n";
 		
-		$id_folder = mysql_escape_string(1000000+$row['id']);
-		if ($result2 = mysqli_query($con,"UPDATE elfinder_file SET name = 'Games by $member_name', `write` = '0' WHERE id = '$id_folder'")) {
+		$id_folder = mysqli_escape_string($con,1000000+$row['id']);
+		if ($result2 = mysqli_query($con,"UPDATE elfinder_file SET name = 'Games by $member_name', `write` = '0', parent_id = '1000000' WHERE id = '$id_folder'")) {
 			/*, passwd = '$passwd'*/
 		} else {
 			echo 'Error: ' . mysqli_error($con);
@@ -83,7 +84,7 @@
 		list($matched, $changed, $warnings) = sscanf(mysqli_info($con), "Rows matched: %d Changed: %d Warnings: %d");
 		if ($matched==0) {
 			$mtime = time();
-			if ($result2 = mysqli_query($con,"INSERT INTO elfinder_file (id, parent_id, name, content, mtime, mime, width, height, `write`) VALUES ('$id_folder', 0, 'Games by $member_name', '', '$mtime', 'directory', '0', '0', '0')")) {
+			if ($result2 = mysqli_query($con,"INSERT INTO elfinder_file (id, parent_id, name, content, mtime, mime, width, height, `write`) VALUES ('$id_folder', 1000000, 'Games by $member_name', '', '$mtime', 'directory', '0', '0', '0')")) {
 				
 			} else {
 				echo 'Error: ' . mysqli_error($con);
@@ -136,7 +137,7 @@
 		$result = mysqli_query($con,"SELECT * FROM subscriptions WHERE type = 1 AND author = {$row_user['id']} ORDER BY id DESC");
 		
 		while($row = mysqli_fetch_assoc($result)) {
-			$place_id = mysql_escape_string($row['place']);
+			$place_id = mysqli_escape_string($con,$row['place']);
 			$place = mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM users WHERE id = $place_id"));
 			if ($place['picture']=='') {
 				$place['picture'] = $no_picture;
@@ -145,7 +146,7 @@
 			if ($row['type']==1) {
 				$result2 = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $place_id AND domain != 'unassigned' AND author != 0 ORDER BY id DESC");
 				while($row2 = mysqli_fetch_assoc($result2)) {
-					$author_id = mysql_escape_string($row2['author']);
+					$author_id = mysqli_escape_string($con,$row2['author']);
 					if ($row2['author']==$row_user['id']) {
 						continue;
 					}
@@ -181,7 +182,7 @@
 		//echo "\r\n";
 		
 		//Own user profile.
-		$place_id = mysql_escape_string($row_user['id']);
+		$place_id = mysqli_escape_string($con,$row_user['id']);
 		$place = mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM users WHERE id = $place_id"));
 		if ($place['picture']=='') {
 			$place['picture'] = $no_picture;
@@ -189,7 +190,7 @@
 		
 		$result2 = mysqli_query($con,"SELECT * FROM comments WHERE type = 1 AND place = $place_id AND domain != 'unassigned' AND author != 0 ORDER BY id DESC");
 		while($row2 = mysqli_fetch_assoc($result2)) {
-			$author_id = mysql_escape_string($row2['author']);
+			$author_id = mysqli_escape_string($con,$row2['author']);
 			if ($row2['author']==$row_user['id']) {
 				continue;
 			}
@@ -237,7 +238,7 @@
 		$result_games = mysqli_query($con,"SELECT * FROM games WHERE state >= 2 AND author = {$row_user['id']}");
 		while($row_game = mysqli_fetch_assoc($result_games)) {
 			//print_r($row_game);
-			$place_id = mysql_escape_string($row_game['id']);
+			$place_id = mysqli_escape_string($con,$row_game['id']);
 			$place = mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM games WHERE id = $place_id"));
 			if ($place['picture']=='') {
 				$place['picture'] = $no_picture;
@@ -245,7 +246,7 @@
 			
 			$result2 = mysqli_query($con,"SELECT * FROM comments WHERE type = 2 AND place = $place_id AND domain != 'unassigned' AND author != 0 ORDER BY id DESC");
 			while($row2 = mysqli_fetch_assoc($result2)) {
-				$author_id = mysql_escape_string($row2['author']);
+				$author_id = mysqli_escape_string($con,$row2['author']);
 				if ($row2['author']==$row_user['id']) {
 					continue;
 				}

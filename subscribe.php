@@ -1,4 +1,5 @@
 <?php
+	define('indiemendable',true,true);
 	session_start();
 	require_once "config.php";
 	

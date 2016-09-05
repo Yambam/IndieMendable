@@ -1,3 +1,7 @@
+<?php
+	if (!defined('indiemendable'))
+		die();
+?>
 				<h2><?php echo gettext('Log in'); ?></h2>
 				<table style="table-layout: fixed; width: 100%;">
 					<col width="150">

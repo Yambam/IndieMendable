@@ -14,6 +14,7 @@
 		<h1>IndieMendable Virus Scanner</h1>
 		<pre>
 <?php
+	define('indiemendable',true,true);
 	include('config.php');
 	require_once('vendor/autoload.php');
 	$apiKey = '4b53495900004807386de6f5dca477457830e31ff3c70a3ccac0b4e2f95e57cb';

@@ -1,4 +1,5 @@
 <?php
+	define('indiemendable',true,true);
 	include('config.php');
 	$_SERVER['HTTP_REFERER'] = str_replace('/'.$language_abbr,'',$_SERVER['HTTP_REFERER']);
 	
@@ -9,7 +10,7 @@
 		$_SESSION['return_url'] = '';
 		$_SESSION['return_url_title'] = '';
 	}
-	echo $_SESSION['return_url'];
+	//echo $_SESSION['return_url'];
 	
 	$page_title = "Log in";
 	include("default-top.php");

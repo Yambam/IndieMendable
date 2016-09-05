@@ -1,4 +1,5 @@
 <?php
+	define('indiemendable',true,true);
 	session_start();
 	require_once "config.php";
 	
@@ -428,7 +429,27 @@ if (!empty($user_info['registered'])) { ?>
 		$row = mysqli_fetch_assoc($result);
 		$game_author_id = mysqli_escape_string($con,$row['author']);
 		$game_author = mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM users WHERE id = $game_author_id"));
-		?><div class="game-label item">
+		if ($row['domain']=='yoyogames') {
+			$game_author = array(
+				'picture'=>'http://web.archive.org'.$row['author_picture'],
+				'username'=>$row['author_str']
+			);
+			if (!empty($row['screenshots'])) {
+				$row['header_picture'] = $row['screenshots'][0]['filename'];
+			} else {
+				$row['header_picture'] = $row['picture'];
+			}
+			if (empty($row['description'])) {
+				$row['description'] = '_Some information is missing on this game. A downloadable file however is still available! :)_';
+			} else {
+				$row['description'] = str_replace("\r<br />","\r\n",$row['description']);
+			}
+			$row['description'] .= "\r\n\r\n__Source:__ [WayBack Machine](http://web.archive.org/web/20160608203511/http://sandbox.yoyogames.com".$_SERVER['REQUEST_URI'].")";
+			$row['description'] = preg_replace('"\/web\/[0-9]*?im_/http:\/\/sandbox\.yoyogames\.com\/images\/smilies\/icon_smile\.gif"','/Smileys/smiley.gif',$row['description']);
+			$row['plays'] += $row['yyg_plays'];
+			$yyg = true;
+		}
+		?><div class="game-label item<?php if ($row['domain']=='yoyogames') echo ' yyg'; ?>">
 			<a href="<?php echo $language_url; ?>/games/<?php echo $row['id'].'-'.slugify($row['name']); ?>">
 				<div class="name-box">
 					<div class="name-box-bg" style="background-image: url('<?php echo htmlspecialchars(str_replace('/original/','/large/',$row['picture'])); ?>');"></div>

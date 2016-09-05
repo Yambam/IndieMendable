@@ -1,6 +1,5 @@
 <?php
-	//require_once(dirname(__FILE__) . '/forums/index.php');
-	
+	define('indiemendable',true,true);
 	session_start();
 	
 	if (empty($_SESSION['username'])) {

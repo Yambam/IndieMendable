@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	$page_title = 'Search';
 	if (!empty($_GET['q'])) {
 		$page_title = "{$_GET['q']} - Searching for games";

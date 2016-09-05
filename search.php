@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
     @ini_set('zlib.output_compression',0);
     @ini_set('implicit_flush',1);
     @ob_end_clean();

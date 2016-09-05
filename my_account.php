@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	session_start();
 	require_once "config.php";
 	require_once "password.php";
@@ -207,6 +209,7 @@
 			
 			//Picture
 			if ($picture!=''&&empty($errors['picture'])&&$picture!=$user_info['picture']) {
+				umask(0);
 				mkdir(dirname(__FILE__) . $picture_dir,0777,true);
 				move_uploaded_file($_FILES['user']['tmp_name']['image'],dirname(__FILE__) . $picture);
 			}

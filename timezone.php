@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	session_start();
 	require_once('config.php');
 	if (!empty($_SESSION['user_id'])) {
