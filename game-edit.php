@@ -18,11 +18,17 @@
 		}
 		
 		$game_author_id = mysql_escape_string($game_info['author']);
-		$result = mysqli_query($con,"SELECT * FROM users WHERE id = '$game_author_id'");
-		if (mysqli_num_rows($result)>=1) {
-			$game_author = mysqli_fetch_assoc($result);
-			if ($game_author['picture']=='') {
-				$game_author['picture'] = $no_picture;
+		if ($game_author_id==$_SESSION['user_id']||$_SESSION['user_info']['type']==2) {
+			$result = mysqli_query($con,"SELECT * FROM users WHERE id = '$game_author_id'");
+			if (mysqli_num_rows($result)>=1) {
+				$game_author = mysqli_fetch_assoc($result);
+				if ($game_author['picture']=='') {
+					$game_author['picture'] = $no_picture;
+				}
+			} elseif ($_SESSION['user_info']['type']!=2) {
+				header("HTTP/1.1 404 Not Found");
+				include("error-404.php");
+				exit;
 			}
 		} else {
 			header("HTTP/1.1 404 Not Found");
