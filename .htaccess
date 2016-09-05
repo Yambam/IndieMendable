@@ -1,10 +1,6 @@
 Options +FollowSymLinks
 RewriteEngine On
 
-RewriteRule ^cached/ - [NC,L]
-RewriteCond %{DOCUMENT_ROOT}/cached/$1 -f [NC]
-RewriteRule ^(.*)$ /cached/$1 [L]
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(bloody)(\/.*) $2?$1 [QSA,L]
 
