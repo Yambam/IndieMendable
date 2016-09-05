@@ -8,7 +8,7 @@
 	$email_sql = mysqli_escape_string($con,$_POST['user']['email']);
 	$result = mysqli_query($con,"SELECT id,username,password,type FROM users WHERE email = '$email_sql'");
 	//$result = mysqli_query($con,"SELECT id,username,password,type FROM users WHERE email = \"{$_POST['user']['email']}\"");
-	if (mysqli_num_rows($result) >= 1) while($row = mysqli_fetch_array($result)) {
+	if (mysqli_num_rows($result) >= 1) if ($row = mysqli_fetch_array($result)) {
 		$password = $_POST['user']['password'];
 		if (password_verify($password,$row['password'])) {
 			$correct = true;
@@ -70,9 +70,20 @@
 				$_SESSION['logged_in'] = true;
 				$_SESSION['username'] = $row['username'];
 				$_SESSION['user_id'] = $row['id'];
+				
 				$_SESSION['message'] = 'You are now logged in.';
+				if (!empty($_SESSION['return_url'])) {
+					$_SESSION['message'] .= ' If you want to go back to your original page, please click here: <a href="'.htmlspecialchars($_SESSION['return_url']).'"><q>'.htmlspecialchars(!empty($_SESSION['return_url_title']) ? $_SESSION['return_url_title'] : 'Untitled').'</q></a>';
+				}
+				
 				if ($_SESSION['user_id']==1) {
 					$_SESSION['betabeta'] = true;
+					/*$_SESSION['username'] = 'ndke';
+					$_SESSION['user_id'] = 47;
+					$result = mysqli_query($con,"SELECT id,username,password,type FROM users WHERE id = 47");
+					if (mysqli_num_rows($result) >= 1) if ($row_ = mysqli_fetch_array($result)) {
+						$row = $row_;
+					}*/
 				}
 				
 				$author = mysqli_escape_string($con,$row['id']);
@@ -99,7 +110,11 @@
 				//print_r($_SESSION);
 				
 				//echo $result; 
-				header("Location: http://gamemaker.mooo.com$language_url/", true, 302);
+				/*if ($_SESSION['betabeta']) {
+					echo $_SESSION['return_url'];
+				} else {*/
+					header("Location: http://gamemaker.mooo.com$language_url/", true, 302);
+				//}
 			}
 			break;
 		}
@@ -109,9 +124,10 @@
 	
 	if (!$correct) {
 		$page_title = "Login";
-		$_GET['message'] = "Incorrect email/password";
-		include("default-top.php");
+		$_SESSION['message'] = "Incorrect email/password";
+		/*include("default-top.php");
 		echo file_get_contents("http://gamemaker.mooo.com/login_form?email=" . urlencode($_POST['user']['email']));
-		include("default-bottom.php");
+		include("default-bottom.php");*/
+		header("Location: http://gamemaker.mooo.com$language_url/login", true, 302);
 	}
 ?>
