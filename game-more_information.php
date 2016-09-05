@@ -132,7 +132,7 @@
 					<div style="margin: 6px;">
 						<strong>Game description:</strong>
 						<div>
-							<?php echo $Parsedown->setBreaksEnabled(true)->text($game_info['description']); ?>
+							<?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($game_info['description'])); ?>
 						</div>
 						<!--<div class="game-screenshots">
 							<div class="shift" data-count="2" style="margin-left: 0;">

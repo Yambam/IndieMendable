@@ -166,7 +166,7 @@
 						<strong><?php echo gettext('Last updated'); ?>: </strong><?php echo date('d F Y',strtotime($game_info['last_updated'])); ?><br>
 						<strong><?php echo gettext('Version'); ?>: </strong><?php if ($game_info['stage']==2) echo gettext('Beta')+' '; if ($game_info['stage']==3) echo gettext('WIP')+' '; echo htmlspecialchars($game_info['version']); ?><br></div>
 						<div style="margin: 13px 6px;" class="game-description<?php if (strlen($game_info['description'])>240) echo ' less'; ?>" tabindex="0">
-							<?php echo $Parsedown->setBreaksEnabled(true)->text($game_info['description']); ?>
+							<?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($game_info['description'])); ?>
 							<div class="game-short-fade"></div>
 						</div>
 						<div style="background-color: #303030; padding-left: 2px;" class="game-tags<?php if (strlen(implode(', ',$game_info['tags']))>240) echo ' less'; ?>" tabindex="0">
@@ -373,7 +373,7 @@
 								<?php echo $comment_author['username']; ?></a> <?php echo gettext('said'); ?> <span class="date-time" title="<?php echo date('d F Y H:i:s',strtotime($row['posted'])-$utc_offset-$time_offset_seconds); ?>"><?php echo time_elapsed_string($row['posted']); ?></span>
 							</div>
 							<div class="content">
-								<?php echo preg_replace('/&lt;3/','❤',$Parsedown->setBreaksEnabled(true)->text($row['content'])); ?>
+								<?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['content'])); ?>
 							</div>
 						</div>
 <?php

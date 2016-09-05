@@ -130,13 +130,13 @@
 									</span>
 								</div>
 								<p>
-									<strong>Pros: </strong><span><?php echo htmlspecialchars($row['pros']); ?></span><br>
-									<strong>Cons: </strong><span><?php echo htmlspecialchars($row['cons']); ?></span>
+									<strong>Pros: </strong><span><?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['pros'])); ?></span><br>
+									<strong>Cons: </strong><span><?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['cons'])); ?></span>
 							</div>
 							<div style="clear: both;"></div>
 							<p>
-								<strong><?php echo htmlspecialchars($row['title']); ?></strong><br>
-								<?php echo str_replace("\r\n",'<br>',htmlspecialchars($row['body'])); ?>
+								<strong><?php echo $Parsedown->text(filter_tags($row['title'])); ?></strong><br>
+								<?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['body']))); ?>
 							<p style="text-align: right;">
 								<a href="/games/<?php echo $game_info['id'] ?>/reviews">View all reviews on this game</a><br>
 								<a href="/games/<?php echo $game_info['id'] ?>/reviews/make">Add your own review</a><br>
@@ -160,7 +160,7 @@
 								<?php echo $comment_author['username']; ?></a> said <?php echo time_elapsed_string($row['posted']); ?>
 							</div>
 							<div class="content">
-								<?php echo $Parsedown->text($row['content']); ?>
+								<?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['content'])); ?>
 							</div>
 						</div>
 <?php
