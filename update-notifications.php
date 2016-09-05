@@ -308,6 +308,7 @@
 		}
 		$headers  = "From: IndieMendable <info@gamemaker.mooo.com>\r\n";
 		$headers .= "To: $email\r\n";
+		$headers .= "Reply-To: ima.habekotte@gmail.com\r\n";
 		
 		//if ($i[$email]<7) {
 			//echo $headers;
