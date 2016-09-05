@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<script>
-			/*setTimeout(function(){
+			setTimeout(function(){
 			   window.location.reload(1);
-			}, 300000);*/
+			}, 300000);
 		</script>
 	</head>
 	<body>
