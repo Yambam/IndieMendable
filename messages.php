@@ -16,10 +16,11 @@
 		$_GET['action'] = 'inbox';
 	}
 	
-	include('config.php');
+	require_once('config.php');
 	$user_info = user_info($con,$_SESSION['user_id']);
 	
 	function date_short($timestamp,$time_offset_seconds) {
+		global $language_abbr;
 		if (date('d M Y',$timestamp)==date('d M Y')) {
 			return time_elapsed_string(date('d-m-Y H:i:s',$timestamp));
 		} else {
@@ -43,6 +44,8 @@
 	}
 	
 	function message_preview($con,$BBHandler,$user_info,$time_offset_seconds) {
+		global $language_url;
+		
 ?>
 					<div class="container-title-lt"><?php echo gettext('Message preview (Last saved draft: '); ?><span id="draft-last-saved"><?php echo date('d F Y H:i:s',time()-3600-$time_offset_seconds); ?></span>)</div>
 					<div <?php if (!empty($_POST['message']['body'])) { ?>style="border-bottom: 1px dotted #808080; padding-bottom: 5px; box-shadow: 0px 3px 2px rgba(0,0,0,.1);"<?php } ?>>
@@ -62,7 +65,7 @@
 	}
 	
 	function show_header($con) {
-		global $language_url;
+		global $language_url,$language_abbr,$languages,$language;
 		
 		if ($_GET['action']=='compose') {
 			$js[] = '/js/ask_unload.js';
