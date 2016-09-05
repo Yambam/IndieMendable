@@ -1,4 +1,8 @@
 <?php
+	//Constants
+	define('ALLOWED_TAGS','<a><b><blockquote><code><del><dd><dl><dt><em><h1><h2><h3><i><img><kbd><li><ol><p><pre><s><sup><sub><strong><strike><ul><br><hr>');
+	//define('ALLOWED_TAGS','<div><span><pre><p><br><hr><hgroup><h1><h2><h3><h4><h5><h6><ul><ol><li><dl><dt><dd><strong><em><b><i><u><img><a><abbr><address><blockquote><area><audio><video><form><fieldset><label><input><textarea><caption><table><tbody><td><tfoot><th><thead><tr><iframe>',true);
+	
 	//Start session
 	if (session_status() == PHP_SESSION_NONE) {
 		session_start();
@@ -158,6 +162,8 @@
 	//Users
 	if (!function_exists('user_info')) {
 		function user_info($con,$user_id) {
+			global $no_picture;
+			
 			$user_id = mysqli_escape_string($con,$user_id);
 			$result = mysqli_query($con,"SELECT * FROM users WHERE id = $user_id");
 			if (mysqli_num_rows($result) >= 1) {
@@ -193,6 +199,13 @@
 			if (!$result) {
 				echo mysqli_error($con);
 			}
+		}
+	}
+	
+	//Filter HTML tags and more
+	if (!function_exists('filter_tags')) {
+		function filter_tags($str) {
+			return preg_replace('/&lt;3/','❤',strip_tags($str,ALLOWED_TAGS));
 		}
 	}
 	
