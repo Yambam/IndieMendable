@@ -1,3 +1,7 @@
+<?php
+	if (!defined('indiemendable'))
+		die();
+?>
 			</div>
 		</div>
 <?php	if (!isset($minimal)) { ?>

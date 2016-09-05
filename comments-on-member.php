@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	session_start();
 	require_once "config.php";
 	
@@ -167,7 +169,7 @@ if (!empty($user_info['registered'])) { ?>
 									<?php echo $comment_author['username']; ?>
 								</a> said <span class="date-time" title="<?php echo date('d F Y H:i:s',strtotime($row['posted'])-3600-$time_offset_seconds); ?>"><?php echo time_elapsed_string($row['posted']); ?></span>
 							</div>
-							<div class="content"><?php echo preg_replace('/&lt;3/','❤',$Parsedown->setBreaksEnabled(true)->text(filter_tags($row['content']))); ?></div>
+							<div class="content"><?php echo preg_replace('/&lt;3/','❤',$Parsedown->setBreaksEnabled(true)->text($row['content'])); ?></div>
 						</div>
 <?php
 	}

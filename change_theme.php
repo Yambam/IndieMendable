@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	session_start();
 	include('config.php');
 	$_SESSION['theme'] = $_POST['theme'];

@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	$page_title = "Home";
 	/*include("default-top.php");
 	include('blog/wp-load.php');*/

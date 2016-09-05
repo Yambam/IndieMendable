@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	$js[] = '/js/seedrandom.js';
 	$js[] = '/js/tagcanvas.js.min';
 	

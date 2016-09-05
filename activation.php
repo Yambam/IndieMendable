@@ -1,4 +1,5 @@
 <?php
+	define('indiemendable',true,true);
 	require_once "config.php";
 	
 	$uid = mysqli_real_escape_string($con,$_GET['uid']);

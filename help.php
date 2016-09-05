@@ -1,4 +1,4 @@
-<?php $page_title = 'Help'; include('default-top.php'); ?>
+<?php define('indiemendable',true,true); $page_title = 'Help'; include('default-top.php'); ?>
 
 					<div class="container dark dark2" style="width: 150px; margin-right: 15px;">
 						<div class="container-title">Help</div>

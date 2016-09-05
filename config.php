@@ -1,4 +1,7 @@
 <?php
+	if (!defined('indiemendable'))
+		die();
+	
 	//Constants
 	define('ALLOWED_TAGS','<a><b><blockquote><code><del><dd><dl><dt><em><h1><h2><h3><i><img><kbd><li><ol><p><pre><s><sup><sub><strong><strike><ul><br><hr>');
 	//define('ALLOWED_TAGS','<div><span><pre><p><br><hr><hgroup><h1><h2><h3><h4><h5><h6><ul><ol><li><dl><dt><dd><strong><em><b><i><u><img><a><abbr><address><blockquote><area><audio><video><form><fieldset><label><input><textarea><caption><table><tbody><td><tfoot><th><thead><tr><iframe>',true);
@@ -9,7 +12,7 @@
 		//$_SESSION = array();
 	}
 	
-	require_once('global_passwd.php');
+	require_once(dirname(__FILE__).'/global_passwd.php');
 	//echo 'self' . $_SERVER['PHP_SELF'];
 	
 	$host   = "localhost";
@@ -24,10 +27,10 @@
 		echo "Error: " . mysqli_connect_error();
 	}
 	
-	$con_forums = mysqli_connect($host,$user,$pass,"gamemaker_forums");
+	/*$con_forums = mysqli_connect($host,$user,$pass,"gamemaker_forums");
 	if (mysqli_connect_errno($con)) {
 		echo "Error: " . mysqli_connect_error();
-	}
+	}*/
 	
 	$no_picture = '/img/original/no-picture.png';
 	if (!empty($_SESSION['theme'])) {
@@ -202,7 +205,7 @@
 		}
 	}
 	
-	//Filter HTML tags and more
+	//Errors
 	if (!function_exists('filter_tags')) {
 		function filter_tags($str) {
 			return preg_replace('/&lt;3/','❤',strip_tags($str,ALLOWED_TAGS));

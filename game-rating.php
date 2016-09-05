@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	session_start();
 	require_once "config.php";
 	
@@ -21,7 +23,7 @@
 		$result = mysqli_query($con,"SELECT * FROM users WHERE id = '$game_author_id'");
 		if (mysqli_num_rows($result) >= 1) {
 			$game_author = mysqli_fetch_assoc($result);
-		} else {
+		} elseif (empty($game_info['author_str'])) {
 			header("HTTP/1.1 404 Not Found");
 			include("error-404.php");
 			exit;

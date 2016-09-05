@@ -1,4 +1,7 @@
 <?php
+	if (!defined('indiemendable'))
+		die();
+	
 	if (!function_exists('mostRecentModifiedFileTime')) {
 		function mostRecentModifiedFileTime($dirName,$doRecursive) {
 			$d = dir($dirName);

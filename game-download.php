@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	// hide notices
 	@ini_set('error_reporting', E_ALL & ~ E_NOTICE);
 	 

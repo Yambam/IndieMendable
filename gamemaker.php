@@ -1,4 +1,5 @@
 <?php
+	define('indiemendable',true,true);
 	include('config.php');
 ?>
 <!DOCTYPE html>

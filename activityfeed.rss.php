@@ -1,7 +1,10 @@
 <?php
+	header('Content-Type: text/xml; charset=utf-8');
+	
+	define('indiemendable',true,true);
 	include('config.php');
 	$result = mysqli_query($con,"SELECT u.* FROM (
-		(SELECT id,author,place,type,posted,content,'' AS name FROM comments WHERE domain = 'gamemaker') 
+		(SELECT id,author,place,type,posted,content,'' AS name FROM comments WHERE domain = 'gamemaker' AND author!=0) 
 			UNION
 		(SELECT id,author,0 as place,10 AS type,added,CONCAT('New game: ',name) AS content,name FROM games WHERE picture != '')
 			UNION
@@ -25,7 +28,7 @@
 	<atom:link href="http://gamemaker.mooo.com/activityfeed.rss" rel="self" type="application/rss+xml" />
 	<link>http://gamemaker.mooo.com/</link>
 	<description>Welcome to IndieMendable</description>
-	<lastBuildDate><?php echo date('D, d F Y H:i:s +0000'); ?></lastBuildDate>
+	<lastBuildDate><?php echo date(DATE_RSS); ?></lastBuildDate>
 	<language>en-US</language>
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
@@ -53,14 +56,14 @@
 ?>
 		<item>
 		<title>
-			<?php /*echo ucfirst(time_elapsed_string($row['posted']));*/ if ($row['type']!==20) echo $comment_author['username']; if ($row['type']==1) { ?> commented on the member <?php echo htmlspecialchars($place['username']); } elseif ($row['type']==2) { ?> commented on the game <?php echo htmlspecialchars($place['name']); } elseif ($row['type']==3) { ?> commented on the review <?php echo htmlspecialchars($place['title']); ?> commented on on the game <?php echo htmlspecialchars($place['place_info']['name']); } elseif ($row['type']==10) { ?> posted the game <?php echo htmlspecialchars($row['name']); } elseif ($row['type']==20) { ?> A new user is registered called <?php echo htmlspecialchars($row['name']); } ?>
+			<?php /*echo ucfirst(time_elapsed_string($row['posted']));*/ if ($row['type']!==20) echo htmlspecialchars($comment_author['username']); if ($row['type']==1) { ?> commented on the member <?php echo htmlspecialchars($place['username']); } elseif ($row['type']==2) { ?> commented on the game <?php echo htmlspecialchars($place['name']); } elseif ($row['type']==3) { ?> commented on the review <?php echo htmlspecialchars($place['title']); ?> commented on on the game <?php echo htmlspecialchars($place['place_info']['name']); } elseif ($row['type']==10) { ?> posted the game <?php echo htmlspecialchars($row['name']); } elseif ($row['type']==20) { ?> A new user is registered called <?php echo htmlspecialchars($row['name']); } ?>
 		</title>
 		<link>http://gamemaker.mooo.com/</link>
-		<pubDate><?php echo date('D, d F Y H:i:s +0000',strtotime($row['posted'])); ?></pubDate>
+		<pubDate><?php echo date(DATE_RSS,strtotime($row['posted'])); ?></pubDate>
 		<dc:creator><![CDATA[@Yambam on gamemaker.mooo.com]]></dc:creator>
 				<category><![CDATA[Activity]]></category>
 		<guid isPermaLink="false">comment_<?php echo $row['id']; ?>@gamemaker.mooo.com</guid>
-		<description><![CDATA[<?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['content'])); ?>]]></description>
+		<description><![CDATA[<img src="<?php echo str_replace('/original/','/large/',$place['picture']); ?>" /><?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['content'])); ?>]]></description>
 		</item>
 <?php
 	}

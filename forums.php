@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	session_start();
 	if (!empty($_GET['user'])&&!stristr($_SERVER['HTTP_USER_AGENT'],'XML Sitemaps Generator')) {
 		file_get_contents('http://gamemaker.mooo.com/update-notifications');

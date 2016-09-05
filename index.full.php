@@ -1,4 +1,5 @@
 <?php
+	define('indiemendable',true,true);
 	include('config.php');
 	$domain_sql = mysqli_escape_string($con,$_SESSION['domain']);
 	
@@ -63,7 +64,7 @@
 ?>
 					<div class="news-item"><a href="/blog"><?php echo gettext("View all news..."); ?></a></div>
 				</div>
-				<div class="container-lt float-right" style="clear: right; width: 250px; min-height: 0; margin-top: 55px;">
+				<div class="container-lt float-right" style="clear: right; width: 250px; min-height: 0; margin-top: 55px; margin-bottom: -640px;">
 					<div class="container-title-lt"><?php echo gettext("Community"); ?>
 						<a class="arrow-link-lt" href="<?php echo $language_url; ?>/users" title="<?php echo gettext("Community"); ?>"></a>
 					</div>

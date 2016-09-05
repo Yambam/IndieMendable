@@ -1,4 +1,6 @@
 <?php
+	define('indiemendable',true,true);
+	
 	session_start();
 	require_once "config.php";
 	$css_extra = '';
@@ -56,6 +58,7 @@
 				$game_info['description'] = str_replace("\r<br />","\r\n",$game_info['description']);
 			}
 			$game_info['description'] .= "\r\n\r\n__Source:__ [WayBack Machine](http://web.archive.org/web/20160608203511/http://sandbox.yoyogames.com".$_SERVER['REQUEST_URI'].")";
+			$game_info['description'] = preg_replace('"\/web\/[0-9]*?im_/http:\/\/sandbox\.yoyogames\.com\/images\/smilies\/icon_smile\.gif"','/Smileys/smiley.gif',$game_info['description']);
 			$game_info['plays'] += $game_info['yyg_plays'];
 			$yyg = true;
 		} else {
@@ -174,7 +177,11 @@
 <?php foreach($game_info['tags'] as $tag) { ?><a href="/search?q=<?php echo htmlspecialchars($tag); if ($game_info['domain']=='yoyogames') echo '&yyg=yes'; ?>"><?php echo htmlspecialchars($tag); ?></a><?php } ?>
 							<div class="game-short-fade"></div>
 						</div>
-						<a href="<?php echo $_SERVER['REQUEST_URI'] . '/more_information'; ?>" class="game-button-play"><?php echo gettext('Downloads'); ?></a>
+						<a href="<?php echo $_SERVER['REQUEST_URI'] . '/more_information'; ?>" class="game-button-play"><?php echo gettext('Downloads'); ?></a><?php
+	if (!empty($_SESSION['username'])&&$game_info['author']==$_SESSION['user_id']||$_SESSION['user_info']['type']==2) {
+		?><a href="<?php echo $_SERVER['REQUEST_URI'] . '/edit'; ?>" class="game-button-edit"><span class="fa fa-pencil"></span><?php /*echo gettext('Edit');*/ ?></a><?php
+	}
+?>
 						<div style="background-color: #303030;">
 							<ul class="share-buttons">
 								<li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" title="Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img src="/img/simple_icons/Facebook.png"></a></li>
@@ -248,7 +255,7 @@
 		echo sprintf(gettext('Please <a href="%s/login">log in</a> to rate'),$language_url);
 	} else {
 		if ($rating_given) {
-			echo gettext('Thanks for rating!') . sprintf(' <a href="%1/rating">',$_SERVER['REQUEST_URI']) . gettext('Undo?') . '</a>';
+			echo gettext('Thanks for rating!') . sprintf(' <a href="%s/rating">',$_SERVER['REQUEST_URI']) . gettext('Undo?') . '</a>';
 		} else {
 			echo gettext('Current rating');
 		}

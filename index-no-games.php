@@ -1,4 +1,5 @@
  <?php
+	define('indiemendable',true,true);
 	include('config.php');
 	$domain_sql = mysqli_escape_string($con,$_SESSION['domain']);
 	
