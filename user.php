@@ -10,7 +10,8 @@
 		}
 	}
 	
-	$result = mysqli_query($con,"SELECT * FROM users WHERE username = \"{$_GET['q']}\"");
+	$q = mysqli_escape_string($con,$_GET['q']);
+	$result = mysqli_query($con,"SELECT * FROM users WHERE username = '$q'");
 	if (mysqli_num_rows($result) >= 1) {
 		$user_info = mysqli_fetch_array($result);
 		if ($user_info['picture']==''||!file_exists(dirname(__FILE__) . $user_info['picture'])) {
@@ -161,7 +162,7 @@
 		'description' => strip_tags($user_info['description'])
 	);
 	
-	$page_title = $_GET['q'];
+	$page_title = $user_info['username'];
 	include("default-top.php");
 ?>
 
@@ -186,7 +187,7 @@
 		?>px; margin: 0 <?php
 			echo $picture_size[0]>=300 ? 'auto' : '0';
 		?> -10px; display: block;" alt="<?php
-			echo $_GET['q'];
+			echo htmlspecialchars($user_info['username']);
 		?>" src="<?php
 			echo str_replace('/original/','/large/',$user_info['picture']);
 		?>"><?php
@@ -198,7 +199,7 @@
 if (!empty($user_info['firstname'])||!empty($user_info['lastname'])) {
 	echo htmlspecialchars("{$user_info['firstname']} {$user_info['lastname']}");
 }
-if (!empty($_SESSION['username'])&&$_GET['q']==$_SESSION['username']) {
+if (!empty($_SESSION['username'])&&$user_info['username']==$_SESSION['username']) {
 	?> (<a href="/my_account"><?php echo gettext('Edit my details'); ?></a>)<?php
 }
 if ($user_info['options']&1) { ?>
@@ -219,7 +220,7 @@ if (!empty($user_info['location'])) {
 
 						<br><?php
 if (!empty($user_info['description'])) {
-	echo $Parsedown->setBreaksEnabled(true)->text("**".gettext('Description').":**\r\n".$user_info['description']);
+	echo $Parsedown->setBreaksEnabled(true)->text("**".gettext('Description').":**\r\n".filter_tags($user_info['description']));
 }
 
 if (!empty($user_info['registered'])) { ?>
@@ -247,7 +248,7 @@ if (!empty($user_info['registered'])) { ?>
 			}
 		}
 ?>
-						<a class="dark-inset-button-alt" href="<?php echo $language_url; ?>/users/<?php echo $user_info['username'] ?>/friend"><span class="fa fa-user" style="margin-right: 12px;"></span><?php echo $friend_text; ?></a>
+						<a class="dark-inset-button-alt" href="<?php echo $language_url; ?>/users/<?php echo $user_info['username']; ?>/friend"><span class="fa fa-user" style="margin-right: 12px;"></span><?php echo $friend_text; ?></a>
 						<a class="dark-inset-button-alt" href="/messages/compose?to=<?php echo urlencode($user_info['username']); ?>"><span class="fa fa-envelope" style="margin-right: 10px;"></span><?php echo gettext('Send personal message'); ?></a>
 <?php
 	} else {
@@ -357,7 +358,7 @@ if (!empty($user_info['registered'])) { ?>
 								<?php echo $comment_author['username']; ?></a> <?php echo gettext('said'); ?> <span class="date-time" title="<?php echo date('d F Y H:i:s',strtotime($row['posted'])-$utc_offset-$time_offset_seconds); ?>"><?php echo time_elapsed_string($row['posted']); ?></span>
 							</div>
 							<div class="content">
-								<?php echo preg_replace('/&lt;3/','❤',$Parsedown->setBreaksEnabled(true)->text($row['content'])); ?>
+								<?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['content'])); ?>
 							</div>
 						</div>
 <?php
@@ -372,7 +373,7 @@ if (!empty($user_info['registered'])) { ?>
 						<textarea name="comment[content]" rows="4" cols="30"<?php if (empty($_SESSION['logged_in'])) echo ' disabled=""'; ?>><?php if (empty($_SESSION['logged_in'])) echo gettext('Please log in to leave a comment.'); ?></textarea>
 						<button id="post-comment" style="box-sizing: border-box; width: 120px; float: right;"<?php if (empty($_SESSION['logged_in'])) echo ' disabled=""'; ?>><?php echo gettext('Post comment'); ?></button>
 <?php
-	if (!empty($_SESSION['username'])&&$_GET['q']!=$_SESSION['username']) {
+	if (!empty($_SESSION['username'])&&$user_info['username']!=$_SESSION['username']) {
 ?>
 						<label style="display: inline-block; overflow: hidden; max-width: 174px; text-overflow: ellipsis; white-space: nowrap;"><input checked="checked" name="comment[subscribe]" type="checkbox" value="1" style="margin-left: 0;"></input> <span class="smallfont2"><?php echo gettext('Follow') . ' ' . $user_info['username']; ?></span></label>
 <?php
@@ -544,7 +545,7 @@ if (!empty($user_info['registered'])) { ?>
 								
 							</div>
 							<div class="content">
-								<?php echo preg_replace('/&lt;3/','❤',$Parsedown->setBreaksEnabled(true)->text($row['content'])); ?>
+								<?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['content'])); ?>
 							</div>
 						</div>
 <?php

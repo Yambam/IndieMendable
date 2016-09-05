@@ -234,7 +234,7 @@
 						<br><strong>Location: </strong><?php if (!empty($user_info['location'])) { ?><?php echo htmlspecialchars($user_info['location']); } ?>
 						<br><?php
 	if (!empty($user_info['description'])) {
-		echo $Parsedown->setBreaksEnabled(true)->text("**Description:**\r\n".$user_info['description']);
+		echo $Parsedown->setBreaksEnabled(true)->text("**Description:**\r\n".filter_tags($user_info['description']));
 	}
 
 	if (!empty($user_info['registered'])) { ?>

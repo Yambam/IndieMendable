@@ -60,7 +60,7 @@
 		<dc:creator><![CDATA[@Yambam on gamemaker.mooo.com]]></dc:creator>
 				<category><![CDATA[Activity]]></category>
 		<guid isPermaLink="false">comment_<?php echo $row['id']; ?>@gamemaker.mooo.com</guid>
-		<description><![CDATA[<?php echo $Parsedown->setBreaksEnabled(true)->text($row['content']); ?>]]></description>
+		<description><![CDATA[<?php echo $Parsedown->setBreaksEnabled(true)->text(filter_tags($row['content'])); ?>]]></description>
 		</item>
 <?php
 	}

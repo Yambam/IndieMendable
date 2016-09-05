@@ -2,7 +2,8 @@
 	session_start();
 	require_once "config.php";
 	
-	$result = mysqli_query($con,"SELECT * FROM users WHERE username = \"{$_GET['q']}\"");
+	$q = mysqli_escape_string($con,$_GET['q']);
+	$result = mysqli_query($con,"SELECT * FROM users WHERE username = '$q'");
 	if (mysqli_num_rows($result) >= 1) {
 		$user_info = mysqli_fetch_array($result);
 		if ($user_info['picture']==''||!file_exists(dirname(__FILE__) . $user_info['picture'])) {
@@ -74,7 +75,7 @@
 		return $string ? implode(', ', $string) . ' ago' : 'just now';
 	}
 	
-	$page_title = "Comments on {$_GET['q']}'s profile";
+	$page_title = "Comments on ".$user_info['username']."'".(strtolower(substr($user_info['username'],-1,1))!='s' ? 's' : '')." profile";
 	include("default-top.php");
 ?>
 
@@ -98,7 +99,7 @@ Local time: <?php
 		?>px; margin: 0 <?php
 			echo $picture_size[0]>=300 ? 'auto' : '0';
 		?> -10px; display: block;" alt="<?php
-			echo $_GET['q'];
+			echo htmlspecialchars($user_info['username']);
 		?>" src="<?php
 			echo str_replace('/original/','/larger/',$user_info['picture']);
 		?>"><?php
@@ -109,7 +110,7 @@ Local time: <?php
 if (!empty($user_info['firstname'])||!empty($user_info['lastname'])) {
 	echo htmlspecialchars("{$user_info['firstname']} {$user_info['lastname']}");
 }
-if (!empty($_SESSION['logged_in'])&&$_GET['q']==$_SESSION['username']) {
+if (!empty($_SESSION['logged_in'])&&$user_info['username']==$_SESSION['username']) {
 	?> (<a href="/my_account">Edit my details</a>)<?php
 }
 if ($user_info['options']&1) { ?>
@@ -166,7 +167,7 @@ if (!empty($user_info['registered'])) { ?>
 									<?php echo $comment_author['username']; ?>
 								</a> said <span class="date-time" title="<?php echo date('d F Y H:i:s',strtotime($row['posted'])-3600-$time_offset_seconds); ?>"><?php echo time_elapsed_string($row['posted']); ?></span>
 							</div>
-							<div class="content"><?php echo preg_replace('/&lt;3/','❤',$Parsedown->setBreaksEnabled(true)->text($row['content'])); ?></div>
+							<div class="content"><?php echo preg_replace('/&lt;3/','❤',$Parsedown->setBreaksEnabled(true)->text(filter_tags($row['content']))); ?></div>
 						</div>
 <?php
 	}
