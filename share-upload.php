@@ -86,6 +86,7 @@
 					
 					$screenshot_file_sql = mysqli_escape_string($con,$screenshot_file);
 					
+					umask(0777);
 					mkdir(dirname(__FILE__) . $screenshot_file_dir,0777,true);
 					if (!move_uploaded_file($_FILES['game']['tmp_name']['screenshots'][$i],dirname(__FILE__) . $screenshot_file)) {
 						$errors['screenshots'] = 'An error occurred, one or more of your screenshots could not be uploaded.';
@@ -105,7 +106,8 @@
 				
 				$header_picture_sql = mysqli_escape_string($con,$header_picture);
 				
-				mkdir(dirname(__FILE__) . $header_picture_dir,777,true);
+				umask(0777);
+				mkdir(dirname(__FILE__) . $header_picture_dir,0777,true);
 				if (!move_uploaded_file($_FILES['game']['tmp_name']['header_picture'],dirname(__FILE__) . $header_picture)) {
 					$errors['header_picture'] = 'An error occurred, your header picture could not be uploaded.';
 				} else {
@@ -123,7 +125,8 @@
 				
 				$thumbnail_sql = mysqli_escape_string($con,$thumbnail);
 				
-				mkdir(dirname(__FILE__) . $thumbnail_dir,777,true);
+				umask(0777);
+				mkdir(dirname(__FILE__) . $thumbnail_dir,0777,true);
 				if (!move_uploaded_file($_FILES['game']['tmp_name']['thumbnail'],dirname(__FILE__) . $thumbnail)) {
 					$errors['thumbnail'] = 'An error occurred, your header picture could not be uploaded.';
 				} else {
@@ -138,9 +141,8 @@
 			if (!$result) {
 				$errors['mysql'] = mysqli_error($con);
 			} else {
-				
-				
-				mkdir(dirname(__FILE__) . $game_file_dir,777,true);
+				umask(0777);
+				mkdir(dirname(__FILE__) . $game_file_dir,0777,true);
 				if (!move_uploaded_file($_FILES['game']['tmp_name']['latest_version'],dirname(__FILE__) . $game_file)) {
 					$errors['latest_version'] = 'An error occurred, your game could not be uploaded.';
 				} else {

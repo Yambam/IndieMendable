@@ -97,6 +97,7 @@
 				
 				//Picture
 				if ($picture!=''&&empty($errors['picture'])) {
+					umask(0777);
 					mkdir(dirname(__FILE__) . $picture_dir,0777,true);
 					move_uploaded_file($_FILES['user']['tmp_name']['image'],dirname(__FILE__) . $picture);
 				}
@@ -116,7 +117,7 @@
 				}
 				
 				$headers  = "From: IndieMendable <info@gamemaker.mooo.com>\r\n";
-				$headers .= "To: {$_POST['user']['email']}\r\n";
+				$headers .= "Reply-To: ima.habekotte@gmail.com\r\n";
 				
 				mail($_POST['user']['email'], "IndieMendable - Thank you for registering!", "Thank you for registering. In order to complete your registration, please click this link: http://gamemaker.mooo.com/activation?uid=$activation_uid", $headers);
 				
