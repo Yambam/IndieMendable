@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NS1="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$Uv0rN"
+                   NS1:version="1.1.0.24">
+    <NS1:targetApplication RDF:resource="rdf:#$Xv0rN"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$Xv0rN"
+                   NS1:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   NS1:minVersion="1.5"
+                   NS1:maxVersion="30.*.*.*"
+                   NS1:updateLink="http://www.yoyogames.com/plugins/firefox/YoYo.xpi" />
+  <RDF:Description RDF:about="urn:mozilla:extension:yyginstantplay@yoyogames.com"
+                   NS1:version="1.1.0.24"
+                   NS1:updateLink="http://www.yoyogames.com/plugins/firefox/YoYo.xpi"
+                   NS1:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAKS2I30qsmTGfpXgUzIeYtglJrGW7hTAqtCLxt3dS08EvaRW1bnveTonkFO/xPLyU8MI7yKiqDywHdbrMN37AxpuZpr6C092mW+y4xj1yc75mM7UveJWglnaf79UT7iT+LnCToy0ixQGuBpF4y1/NbdDGVzsJkb60FDUuIor2vax">
+    <NS1:updates RDF:resource="rdf:#$Tv0rN"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$Tv0rN">
+    <RDF:li RDF:resource="rdf:#$Uv0rN"/>
+  </RDF:Seq>
+</RDF:RDF>

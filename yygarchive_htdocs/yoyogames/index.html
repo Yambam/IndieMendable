@@ -1,0 +1,1149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=234;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    	  		<meta name="keywords" content="YoYoGames YoYo free games downloads community GameMaker Game Maker GM minigames share make play gaming fun game creation design software" />
+  		<meta name="description" content="Where the world comes to Play, Make, Share and Find games!" />
+  	    <title>YoYo Games | Home</title>
+
+  <link rel="shortcut icon" href="/web/20160110154724im_/http://sandbox.yoyogames.com/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  
+  <link href="/web/20160110154724cs_/http://sandbox.yoyogames.com/stylesheets/screen.css?1424260889" media="screen" rel="stylesheet" type="text/css" />
+    
+  
+  <script src="/web/20160110154724js_/http://sandbox.yoyogames.com/javascripts/application.js?1424260889" type="text/javascript"></script>
+  <script src="/web/20160110154724js_/http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script>
+    $.noConflict();
+  </script>
+  <script src="/web/20160110154724js_/http://sandbox.yoyogames.com/javascripts/carousel.js?1424260889" type="text/javascript"></script>
+  
+  
+  
+  
+  
+  
+  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2711665-1']);
+  _gaq.push(['_setDomainName', '.yoyogames.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? '/web/20160110154724/https://ssl' : '/web/20160110154724/http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  
+</head>
+<body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://sandbox.yoyogames.com/";
+
+var firstYear = 1996;
+var displayDay = "10";
+var displayMonth = "jan";
+var displayYear = "2016";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})(525, 27, 25, 2);//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://sandbox.yoyogames.com/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20160110154724" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20151210052111/http://sandbox.yoyogames.com/" title="10 dec 2015">DEC</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 15:47:24 jan 10, 2016">JAN</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20160311235658/http://sandbox.yoyogames.com/" title="11 mrt 2016"><strong>MRT</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20151210052111/http://sandbox.yoyogames.com/" title="5:21:11 dec 10, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 15:47:24 jan 10, 2016">10</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20160120015840/http://sandbox.yoyogames.com/" title="1:58:40 jan 20, 2016"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20141230143446/http://sandbox.yoyogames.com/" title="30 dec 2014"><strong>2014</strong></a>
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 15:47:24 jan 10, 2016">2016</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2017
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20160110154724*/http://sandbox.yoyogames.com/" title="See a list of every capture for this URL">281 captures</a>
+           <div class="r" title="Timespan for captures of this URL">30 jun 11 - 28 jun 16</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="525"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=525_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:0000016855a6_2012:-1:8645a8b77952_2013:-1:715782630123_2014:-1:12111030083a_2015:-1:4474596454e5_2016:0:414111000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.www.yoyogames.com/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+
+
+<div id="wrapper">
+	<div id="container">
+		<div id="header">
+			<h2><a href="/web/20160110154724/http://sandbox.yoyogames.com/">YOYO Games<span></span></a></h2>
+			<p class="access"><a href="#content">Skip navigation</a></p>		
+
+		    <form method="get" action="/web/20160110154724/http://sandbox.yoyogames.com/search">
+		    <p>
+		      <input id="q" type="text" class="text" name="q" value="" onkeyup="checkSearchBox();" onkeypress="if ($('q').value.length < 3){ return event.keyCode!=13 }" />
+		      <input type="submit" alt="Submit" value="" id="search" />
+	      </p>
+	      		    
+		    <script type="text/javascript">
+		      function checkSearchBox() {
+  		      if ($('q').value.length < 3){
+  		        $('search').disabled = true;
+  		        $('search').style.backgroundImage = 'url(/images/layout/search-button-header-disabled.gif)';
+  		      }
+  		      else{
+  		        $('search').disabled = false;
+  		        $('search').style.backgroundImage = 'url(/images/layout/search-button-header.gif)';
+  		      }
+	        }
+	        
+	        checkSearchBox();
+		    </script> 
+		  </form>		
+			
+		</div>
+				<div id="topnav">
+			<ul>
+				<li id="topnav-play" ><a href="/web/20160110154724/http://sandbox.yoyogames.com/browse">Play<span></span></a></li>
+				<li id="topnav-make" ><a href="/web/20160110154724/http://sandbox.yoyogames.com/make">Make<span></span></a></li>
+				<li id="topnav-share" ><a href="/web/20160110154724/http://sandbox.yoyogames.com/publish/new">Share<span></span></a></li>
+				<li id="topnav-help" ><a href="/web/20160110154724/http://sandbox.yoyogames.com/help">Help<span></span></a></li>
+			</ul>
+		</div>
+	
+		<div id="membernav">
+	    <ul class="left">
+    <li><a href="/web/20160110154724/http://sandbox.yoyogames.com/">Home</a></li>
+    <li><a href="/web/20160110154724/http://gmc.yoyogames.com/">Forums</a></li>
+    <li><a href="/web/20160110154724/http://www.yoyogames.com/gamemaker">GameMaker</a> </li>
+    <li class="last"><a href="/web/20160110154724/http://wiki.yoyogames.com/">Wiki</a></li>
+</ul>
+
+<ul class="right">
+       <li><a href="/web/20160110154724/http://sandbox.yoyogames.com/login">Login</a></li>
+     <li><a href="/web/20160110154724/http://sandbox.yoyogames.com/register">Register</a></li>
+  
+
+     <li class="last"><a href="/web/20160110154724/http://sandbox.yoyogames.com/feedback">Feedback</a></li>
+</ul>
+
+		</div>
+	
+		<div id="main">  
+		  <noscript>Please Enable Javascript to use YoYoGames</noscript>        
+                       
+                       
+                       
+        
+      <div class="block">
+
+  
+    <div id="homepage-left">	
+      <div class="col-box-wide-home">
+        <div class="col-box-wide-top-home">
+          <img alt="Spotlight Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/spotlight-star.gif?1424260889" /><h1>Spotlight</h1>
+
+          <div class="right">
+            <span id="current_page">1</span>/5
+
+            <a onclick="pauseButton();"><img alt="Previous Page" id="prev-arrow" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/spotlight-left-arrow-disabled.gif?1424260889" /></a>
+            <a onclick="playAndStopButton();"><img alt="Pause" id="play-pause-button" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/spotlight-pause.gif?1424260889" /></a>
+
+                          <a onclick="pauseButton();"><img alt="Next Page" id="next-arrow-disabled" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/spotlight-right-arrow-disabled.gif?1424260889" style="display: none;" /><img alt="Next Page" id="next-arrow" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/spotlight-right-arrow.gif?1424260889" /></a>
+            		
+
+            <span id="dummy-button" style="display: none;"></span>
+          </div>
+        </div>
+        <div id="spotlight" class="carousel-component">
+ <div class="carousel-clip-region">
+	<ul class="carousel-list">
+	
+	
+		<li id="spotlight-item-1">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/174569-innoquous-4"><img alt="Innoquous 4" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/100/448100/large/i4-yyg1.png?1305293878" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/174569-innoquous-4">1. Innoquous 4</a></p>
+			
+			
+				<small>Gravity flip your way through 75 levels!</small>
+			
+			
+		</li>
+		
+	
+		<li id="spotlight-item-2">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/181751-unitron-2"><img alt="UniTron 2" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/867/468867/large/thumbnail2.png?1311899851" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/181751-unitron-2">2. UniTron 2</a></p>
+			
+			
+				<small>UniTron 2 is a fast paced arcade shooter.</small>
+			
+			
+		</li>
+		
+	
+		<li id="spotlight-item-3">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/158992-air-hockey-unlimited"><img alt="Air Hockey Unlimited" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/5/408005/large/screenshot109.png?1294352856" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/158992-air-hockey-unlimited">3. Air Hockey Unlimited</a></p>
+			
+			
+				<small>An air hockey sim with tons of game modes and originality.</small>
+			
+			
+		</li>
+		
+	
+		<li id="spotlight-item-4">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/162062-sprint---king-of-the-jungle"><img alt="Sprint - King of the Jungle" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/874/415874/large/sprint_01_y.png?1296395005" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/162062-sprint---king-of-the-jungle">4. Sprint - King of ...</a></p>
+			
+			
+				<small>Sprint, the super fast lion, is here!</small>
+			
+			
+		</li>
+		
+	
+		<li id="spotlight-item-5">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/170448-helicopter-hero"><img alt="HELICOPTER HERO" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/776/437776/large/Screenshot1.jpg?1302153726" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/170448-helicopter-hero">5. HELICOPTER HERO</a></p>
+			
+			
+				<small>Take flight on perilous missions into the heart of enemy territory.</small>
+			
+			
+		</li>
+		
+	
+		<li id="spotlight-item-6">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/182308-ballland-battles-deluxe"><img alt="Ballland Battles Deluxe" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/552/521552/large/screenshot361.png?1340229906" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/182308-ballland-battles-deluxe">6. Ballland Battles ...</a></p>
+			
+			
+				<small>Do you have what it takes to become the best battler out there?</small>
+			
+			
+		</li>
+		
+	
+		<li id="spotlight-item-7">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/180596-turret-2"><img alt="Turret 2" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/42/463042/large/screenshot104.png?1309590990" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/180596-turret-2">7. Turret 2</a></p>
+			
+			
+				<small>A fun, fast platformer with huge explosions.</small>
+			
+			
+		</li>
+		
+	
+		<li id="spotlight-item-8">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/164844-laos-quest"><img alt="Laos Quest" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/53/423053/large/main.png?1298222003" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/164844-laos-quest">8. Laos Quest</a></p>
+			
+			
+				<small>A challenging puzzle platform game!</small>
+			
+			
+		</li>
+		
+	
+		<li id="spotlight-item-9">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/102500-in-a-dungeon"><img alt="In a dungeon" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/31/260031/large/ss1.jpg?1257660508" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/102500-in-a-dungeon">9. In a dungeon</a></p>
+			
+			
+				<small>You are in a dungeon and you don&#x27;t know why.</small>
+			
+			
+		</li>
+		
+	
+		<li id="spotlight-item-10">
+			
+	      <span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/172110-save-ultimate-wainbow-kitty"><img alt="Save Ultimate Wainbow Kitty" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/115/442115/large/QShot_0001.jpg?1303446145" style="height:145px; width: 195px;" /></a>			
+      
+			
+			<p><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/172110-save-ultimate-wainbow-kitty">10. Save Ultimate Wai...</a></p>
+			
+			
+				<small>Like Frogger but with epic explosions and huge guns!</small>
+			
+			
+		</li>
+		
+	
+	</ul>
+ </div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+	var pageLoad = function() 
+	{
+	    carousel = new YAHOO.extension.Carousel("spotlight", 
+	    {
+		  numVisible:        2,
+	      animationSpeed:    0.3,
+	      scrollInc:         2,
+	      navMargin:         20,
+		  wrap:			   true,
+		  autoPlay:          4000,
+	      prevElement:       "prev-arrow",
+	      nextElement:       "next-arrow",
+	      size:              10,
+		  animationMethod:    YAHOO.util.Easing.backBoth,
+		  animationCompleteHandler: updatePageCountAndButtons
+	    });	
+	};
+	
+	YAHOO.util.Event.addListener(window, 'load', pageLoad);
+	
+    function updatePageCountAndButtons()
+    {	
+	 var currentPage = ((carousel.firstVisible + 1) / carousel.numVisible)
+	 var currentPageBox = $('current_page');
+     currentPageBox.innerHTML = Math.ceil(currentPage);
+	 
+	 if(currentPage == 1) {
+		$('prev-arrow').src = "/images/layout/spotlight-left-arrow-disabled.gif";	
+	 } else {
+		$('prev-arrow').src = "/images/layout/spotlight-left-arrow.gif";	
+	 }	 
+
+	 if(Math.ceil(currentPage) == 5) {
+		$('next-arrow-disabled').style.display = "inline";
+		$('next-arrow').style.display = "none";			
+	 } else {
+		$('next-arrow').style.display = "inline";	
+		$('next-arrow-disabled').style.display = "none";		
+	 }	
+	  
+    };
+	
+	var playing = true;
+	
+	function playAndStopButton()
+	{
+		if(playing == true) {
+			$('play-pause-button').src = "/images/layout/spotlight-play.gif";				
+			playing = false;
+			carousel.stopAutoPlay();			
+		}			
+		else {
+			$('play-pause-button').src = "/images/layout/spotlight-pause.gif";
+			playing = true;
+			carousel.startAutoPlay();			
+		}
+	}
+	
+	function pauseButton()
+	{
+		$('play-pause-button').src = "/images/layout/spotlight-play.gif";				
+		playing = false;
+	}	
+//]]>
+</script> 
+      </div>	
+    
+    <div class="internal_left">
+      
+        <a href="/web/20160110154724/http://www.yoyogames.com/promotions/win_big"><img alt="Win_big_435x96" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/internal_adverts/26/original/WIN_BIG_435x96.png?1368459723" /></a>			
+      
+    </div>
+
+    
+      <div class="col-box-small-home">
+	<div class="col-box-small-top-home">
+		<h1>What's Hot</h1>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?home_referrer=whats-hot"><img alt="Go To What's Hot" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button-dark.gif?1424260889" /></a>									
+	</div>
+  
+	
+  	<ol class="top-game-list">
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/226548-maddening-relapse"><img alt="Maddening Relapse" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/541/591541/thumb/PreviewImage.png?1397121352" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/226548-maddening-relapse">Maddening Relapse</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/NAL">NAL</a> <img src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/mod.gif" alt="Moderator" /> </small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/171763-grief"><img alt="Grief" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/119/441119/thumb/screenshot101.png?1303177885" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/171763-grief">Grief</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Klassic">Klassic</a></small>
+    		</li>
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/147242-gore"><img alt="GORE" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/124/377124/thumb/gore1.PNG?1286640147" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/147242-gore">GORE</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Granite%20Gear">Granite Gear</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/160092-pew-n-zombies"><img alt="Pew N Zombies" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/866/410866/thumb/Naamloo2s.png?1295132333" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/160092-pew-n-zombies">Pew N Zombies</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Rawb">Rawb</a></small>
+    		</li>
+    	
+  	</ol>
+	
+  
+	<div class="subnav-top">
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?home_referrer=whats-hot">View All What's Hot</a>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?home_referrer=whats-hot"><img alt="View All What's Hot" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" style="margin-right:6px;margin-top:-3px;" /></a>
+	</div>		  		  
+</div>		  
+      <div class="col-box-small-home" style="margin-left: 10px;">
+	<div class="col-box-small-top-home">
+		<h1>YoYo Legends</h1>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?sort=plays&amp;home_referrer=legends"><img alt="Go To YoYo Legends" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button-dark.gif?1424260889" /></a>									
+	</div>
+  
+	
+  	<ol class="top-game-list">
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/14296-crimelife-2"><img alt="Crimelife 2" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/279/35279/thumb/01.jpg?1192831196" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/14296-crimelife-2">Crimelife 2</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/sakisa">sakisa</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/2200-mario-kart-64"><img alt="Mario Kart 64" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/330/5330/thumb/rn_bo_rd.jpg?1179961729" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/2200-mario-kart-64">Mario Kart 64</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Silent%20X">Silent X</a></small>
+    		</li>
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/39115-mario-builder-v11-4"><img alt="Mario Builder V11-4" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/971/403971/thumb/10-0.png?1293328873" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/39115-mario-builder-v11-4">Mario Builder V...</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Ting_Thing">Ting_Thing</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/72097-death-worm"><img alt="Death Worm" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/792/186792/thumb/dw1.jpg?1235477141" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/72097-death-worm">Death Worm</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/JTR">JTR</a></small>
+    		</li>
+    	
+  	</ol>
+	
+  
+	<div class="subnav-top">
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?sort=plays&amp;home_referrer=legends">View All YoYo Legends</a>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?sort=plays&amp;home_referrer=legends"><img alt="View All YoYo Legends" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" style="margin-right:6px;margin-top:-3px;" /></a>
+	</div>		  		  
+</div>				  		
+
+      <div class="col-box-small-home">
+	<div class="col-box-small-top-home">
+		<h1>Puzzle Games</h1>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=9"><img alt="Go To Puzzle Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button-dark.gif?1424260889" /></a>									
+	</div>
+  
+	
+  	<ol class="top-game-list">
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/77636-bumps"><img alt="Bumps" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/433/199433/thumb/pic4.jpg?1239456546" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/77636-bumps">Bumps</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/spenny_007">spenny_007</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/171763-grief"><img alt="Grief" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/119/441119/thumb/screenshot101.png?1303177885" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/171763-grief">Grief</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Klassic">Klassic</a></small>
+    		</li>
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/219849-gemhex"><img alt="gemHEX" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/950/572950/thumb/screen_nu1.png?1374803490" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/219849-gemhex">gemHEX</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/farfromsleep">farfromsleep</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/182779-hedgehogs"><img alt="Hedgehogs" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/283/469283/thumb/shot_1.jpg?1312049832" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/182779-hedgehogs">Hedgehogs</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/fuegerstef">fuegerstef</a></small>
+    		</li>
+    	
+  	</ol>
+	
+  
+	<div class="subnav-top">
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=9">View All Puzzle Games</a>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=9"><img alt="View All Puzzle Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" style="margin-right:6px;margin-top:-3px;" /></a>
+	</div>		  		  
+</div>	
+      <div class="col-box-small-home" style="margin-left: 10px;">
+	<div class="col-box-small-top-home">
+		<h1>Shooter Games</h1>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=3"><img alt="Go To Shooter Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button-dark.gif?1424260889" /></a>									
+	</div>
+  
+	
+  	<ol class="top-game-list">
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/228370-protocol"><img alt="Protocol" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/992/596992/thumb/Thumb.png?1405012404" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/228370-protocol">Protocol</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Nik">Nik</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/186817-geo-clash---full"><img alt="Geo Clash - Full" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/216/510216/thumb/screenshot110.png?1333322420" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/186817-geo-clash---full">Geo Clash - Full</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/webber17">webber17</a></small>
+    		</li>
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/20326-granny-and-snowmen"><img alt="Granny and Snowmen" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/586/51586/thumb/screen3.jpg?1198243035" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/20326-granny-and-snowmen">Granny and Snowmen</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/RedSystem">RedSystem</a> <img src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/competition/first_star.gif" alt="First Prize Winner" /> </small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/34591-ancient-ants-adventure"><img alt="Ancient Ants Adventure" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/388/90388/thumb/yoyoscreen0.jpg?1209844282" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/34591-ancient-ants-adventure">Ancient Ants Ad...</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/RedSystem">RedSystem</a> <img src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/competition/first_star.gif" alt="First Prize Winner" /> </small>
+    		</li>
+    	
+  	</ol>
+	
+  
+	<div class="subnav-top">
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=3">View All Shooter Games</a>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=3"><img alt="View All Shooter Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" style="margin-right:6px;margin-top:-3px;" /></a>
+	</div>		  		  
+</div>	
+      <div class="col-box-small-home">
+	<div class="col-box-small-top-home">
+		<h1>Strategy Games</h1>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=11"><img alt="Go To Strategy Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button-dark.gif?1424260889" /></a>									
+	</div>
+  
+	
+  	<ol class="top-game-list">
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/2676-hovendall-tactics"><img alt="Hovendall Tactics" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/449/6449/thumb/hdtactics_1_.jpg?1180453869" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/2676-hovendall-tactics">Hovendall Tactics</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Anonymous">Anonymous</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/65679-earth-vs-mars"><img alt="Earth vs Mars" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/973/548973/thumb/evsbanner.png?1357153945" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/65679-earth-vs-mars">Earth vs Mars</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/PixUnit">PixUnit</a></small>
+    		</li>
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/61331-planetoid-2"><img alt="Planetoid 2" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/274/160274/thumb/screenshot103.jpg?1227541703" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/61331-planetoid-2">Planetoid 2</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Metalsoul">Metalsoul</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/65934-greentech"><img alt="greenTech" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/776/171776/thumb/greentech3.jpg?1230924458" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/65934-greentech">greenTech</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Mr_Chubigans">Mr_Chubigans</a> <img src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/competition/first_star.gif" alt="First Prize Winner" /> </small>
+    		</li>
+    	
+  	</ol>
+	
+  
+	<div class="subnav-top">
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=11">View All Strategy Games</a>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=11"><img alt="View All Strategy Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" style="margin-right:6px;margin-top:-3px;" /></a>
+	</div>		  		  
+</div>	
+      <div class="col-box-small-home" style="margin-left: 10px;">
+	<div class="col-box-small-top-home">
+		<h1>Adventure Games</h1>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=2"><img alt="Go To Adventure Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button-dark.gif?1424260889" /></a>									
+	</div>
+  
+	
+  	<ol class="top-game-list">
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/118428-iji"><img alt="Iji " src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/808/299808/thumb/iji_1.gif?1267929510" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/118428-iji">Iji </a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Ultimortal">Ultimortal</a> <img src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/competition/second_star.gif" alt="Second Prize Winner" /> </small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/33982-the-power"><img alt="The Power" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/77/225077/thumb/tp_front_small.jpg?1247458228" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/33982-the-power">The Power</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/AAG">AAG</a></small>
+    		</li>
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/125836-hero-core"><img alt="Hero Core" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/701/319701/thumb/hc1.gif?1272830955" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/125836-hero-core">Hero Core</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Ultimortal">Ultimortal</a> <img src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/competition/second_star.gif" alt="Second Prize Winner" /> </small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/30235-aztec-god"><img alt="Aztec God" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/705/80705/thumb/aztec01.jpg?1206973530" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/30235-aztec-god">Aztec God</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/mauge">mauge</a></small>
+    		</li>
+    	
+  	</ol>
+	
+  
+	<div class="subnav-top">
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=2">View All Adventure Games</a>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=2"><img alt="View All Adventure Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" style="margin-right:6px;margin-top:-3px;" /></a>
+	</div>		  		  
+</div>	
+      <div class="col-box-small-home">
+	<div class="col-box-small-top-home">
+		<h1>Platform Games</h1>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=4"><img alt="Go To Platform Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button-dark.gif?1424260889" /></a>									
+	</div>
+  
+	
+  	<ol class="top-game-list">
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/59700-gray-and-green"><img alt="Gray and Green" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/396/427396/thumb/gg_wallpaper.bmp?1299274119" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/59700-gray-and-green">Gray and Green</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Granite%20Gear">Granite Gear</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/228642-unstrong"><img alt="Unstrong" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/875/597875/thumb/unstrong3.png?1406286931" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/228642-unstrong">Unstrong</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/origamihero">origamihero</a></small>
+    		</li>
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/20523-frozzd"><img alt="Frozzd" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/147/52147/thumb/screen1.jpg?1198360786" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/20523-frozzd">Frozzd</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/2Dcube">2Dcube</a> <img src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/competition/first_star.gif" alt="First Prize Winner" /> </small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/214321-wild-heroes"><img alt="Wild Heroes" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/411/558411/thumb/screenshot101.bmp?1363033936" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/214321-wild-heroes">Wild Heroes</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Firestyle">Firestyle</a></small>
+    		</li>
+    	
+  	</ol>
+	
+  
+	<div class="subnav-top">
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=4">View All Platform Games</a>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=4"><img alt="View All Platform Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" style="margin-right:6px;margin-top:-3px;" /></a>
+	</div>		  		  
+</div>	
+      <div class="col-box-small-home" style="margin-left: 10px;">
+	<div class="col-box-small-top-home">
+		<h1>Arcade Games</h1>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=5"><img alt="Go To Arcade Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button-dark.gif?1424260889" /></a>									
+	</div>
+  
+	
+  	<ol class="top-game-list">
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/16966-skydiver-mach-ii"><img alt="Skydiver Mach II" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/476/42476/thumb/screenshot109.jpg?1195262235" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/16966-skydiver-mach-ii">Skydiver Mach II</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Chad%20Chisholm">Chad Chisholm</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/190104-hyper-princess-pitch"><img alt="Hyper Princess Pitch" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/449/490449/thumb/pitch.gif?1322677271" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/190104-hyper-princess-pitch">Hyper Princess ...</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Ultimortal">Ultimortal</a> <img src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/competition/second_star.gif" alt="Second Prize Winner" /> </small>
+    		</li>
+    	
+  	    <li class="even">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/226351-survivor-reborn"><img alt="Survivor Reborn" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san2/883/590883/thumb/SS1.png?1395698229" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/226351-survivor-reborn">Survivor Reborn</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/TerraFriedSheep">TerraFriedSheep</a></small>
+    		</li>
+    	
+  	    <li class="odd">  
+	        
+	        	<div class="game-thumb-small"><span></span><a href="/web/20160110154724/http://sandbox.yoyogames.com/games/22316-rocket-command"><img alt="Rocket Command" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/name/san1/997/56997/thumb/scr1.jpg?1200262551" /></a></div>
+       	   
+  				
+    	    <a href="/web/20160110154724/http://sandbox.yoyogames.com/games/22316-rocket-command">Rocket Command</a><br />
+    			<small>By <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/RTyp06">RTyp06</a></small>
+    		</li>
+    	
+  	</ol>
+	
+  
+	<div class="subnav-top">
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=5">View All Arcade Games</a>
+		<a href="/web/20160110154724/http://sandbox.yoyogames.com/browse?category=5"><img alt="View All Arcade Games" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" style="margin-right:6px;margin-top:-3px;" /></a>
+	</div>		  		  
+</div>	
+    
+  </div>
+
+  <div id="homepage-right">
+
+    <div id="homepage-ad">
+      <script type="text/javascript"><!--
+        google_ad_client = "pub-3773400329573214";
+        /* 120x600, created 09/06/10 */
+        google_ad_slot = "6586769873";
+        google_ad_width = 300;
+        google_ad_height = 250;
+        //-->
+        </script>
+        <script type="text/javascript"
+          src="/web/20160110154724js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+          </script>    
+        </div>
+        <div class="internal_right">
+          
+            <a href="/web/20160110154724/http://www.yoyogames.com/gamemaker/studio"><img alt="Win_rt_native_announcement_301x96" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/image/internal_adverts/27/original/Win_RT_Native_Announcement_301x96.png?1368459762" /></a>			
+          
+        </div>
+        <div class="col-box-narrow-home"> 
+          <div class="col-box-narrow-top-home">
+            <h1>YoYo Games News</h1>
+            <a href="/web/20160110154724/http://www.yoyogames.com/news" onclick="window.open(this.href);return false;"><img alt="Go To YoYo News Feed" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" /></a>			
+          </div>
+
+          
+    <p>Latest news headlines are currently unavailable.</p>
+
+
+        </div>
+
+        
+          <div class="col-box-narrow-home"> 
+            <div class="col-box-narrow-top-home">
+              <h1>YoYo Community</h1>
+              <a href="/web/20160110154724/http://sandbox.yoyogames.com/users"><img alt="Browse All Members" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" /></a>
+            </div>
+
+            <div id="homepage-loading" style="display:none;">
+              <img src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/spinner.gif" alt="Loading" />
+            </div> 		  
+
+            <div id="yoyo-community">
+                   
+    
+<div id="online-members">
+	<a href="#" onclick="new Ajax.Request('/home/reload_members', {asynchronous:true, evalScripts:true, method:'post', onComplete:function(request){Toggle.display('homepage-loading'); Toggle.display('yoyo-community');}, onLoading:function(request){Toggle.display('yoyo-community'); Toggle.display('homepage-loading');}}); return false;"><img alt="Refresh" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/refresh.gif?1424260889" /></a>
+	
+	<p>Members: <span>431105</span><br />
+	   Games Created: <span>148893</span><br />
+	   Games Played: <span>23887400</span><br />
+	   Games Reviewed: <span>47833</span></p>
+</div>	
+
+<br style="clear:both"/>
+
+
+<ol id="developer-list">	
+     
+    <li class="even">
+        <div class="developer-thumb-small">      
+	        <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/NexyusNex"><img alt="NexyusNex" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/user/image/san2/183/475183/thumb/Logo.png?1409046117" /><span></span></a>        
+        </div>
+        <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/NexyusNex">NexyusNex</a><br />
+        <small>From: Nis,Serbia</small>
+    </li>
+    
+     
+    <li class="odd">
+        <div class="developer-thumb-small">      
+	        <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Ilztas"><img alt="Ilztas" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/user/image/san2/163/475163/thumb/CO_-_Ilztas_-_240_x_240.png?1408933588" /><span></span></a>        
+        </div>
+        <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/Ilztas">Ilztas</a><br />
+        <small>From: Ontario Canada</small>
+    </li>
+    
+     
+    <li class="even">
+        <div class="developer-thumb-small">      
+	        <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/iDzoni"><img alt="iDzoni" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/user/image/san2/159/475159/thumb/13572987305371498ae7424.png?1408910681" /><span></span></a>        
+        </div>
+        <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/iDzoni">iDzoni</a><br />
+        <small>From: Belgrade</small>
+    </li>
+    
+     
+    <li class="odd">
+        <div class="developer-thumb-small">      
+	        <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/SpiritWolf1471"><img alt="SpiritWolf1471" src="/web/20160110154724im_/http://sandbox.yoyogames.com/extras/user/image/san2/154/475154/thumb/SW1471.jpeg?1408869767" /><span></span></a>        
+        </div>
+        <a href="/web/20160110154724/http://sandbox.yoyogames.com/users/SpiritWolf1471">SpiritWolf1471</a><br />
+        <small>From: Den</small>
+    </li>
+    
+     
+</ol>
+ 	
+
+<div class="subnav">
+	<a href="/web/20160110154724/http://sandbox.yoyogames.com/users">Browse All Members</a>
+	<a href="/web/20160110154724/http://sandbox.yoyogames.com/users"><img alt="Browse All Members" src="/web/20160110154724im_/http://sandbox.yoyogames.com/images/layout/goto-button.gif?1424260889" /></a>
+</div>  
+            </div>
+          </div>
+        
+      </div>
+
+    </div>
+
+		</div>
+		
+		<div id="footer">	
+  <p>&copy; 2007-2016 YoYo Games </p>
+  
+  <ul>
+  	<li class="first"><a href="/web/20160110154724/http://sandbox.yoyogames.com/terms">Terms &amp; Conditions</a></li>
+  	<li><a href="/web/20160110154724/http://wiki.yoyogames.com/index.php/YoYoGames_Wiki:Privacy_policy" onclick="window.open(this.href);return false;">Privacy guidelines</a></li>
+  	<li><a href="/web/20160110154724/http://wiki.yoyogames.com/index.php/YoYoGames_Wiki:Advertise_With_Us" onclick="window.open(this.href);return false;">Advertise with us</a></li>
+  	<li><a href="/web/20160110154724/http://wiki.yoyogames.com/index.php/YoYoGames_Wiki:About_Us" onclick="window.open(this.href);return false;">About us</a></li>			
+  	<li><a href="/web/20160110154724/http://help.yoyogames.com/">Contact us</a></li>		
+  	<li><a href="/web/20160110154724/http://help.yoyogames.com/">Help</a></li>			
+  </ul>  	
+</div>
+		
+	</div> 
+	
+	
+	<div id="skyscraper">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-3773400329573214";
+    /* 120x600, created 09/06/10 */
+    google_ad_slot = "9652207337";
+    google_ad_width = 120;
+    google_ad_height = 600;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="/web/20160110154724js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+    
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-3773400329573214";
+    /* 120x600, created 09/06/10 */
+    google_ad_slot = "9652207337";
+    google_ad_width = 120;
+    google_ad_height = 600;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="/web/20160110154724js_/http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>    
+	</div>
+	
+</div>   
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 15:47:24 jan 10, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:07:06 jul 2, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

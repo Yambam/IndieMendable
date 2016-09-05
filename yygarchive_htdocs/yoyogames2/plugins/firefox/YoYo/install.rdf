@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$hAh7V"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="30.*.*.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:name="YoYo Games InstantPlay"
+                   em:id="yyginstantplay@yoyogames.com"
+                   em:version="1.1.0.24"
+                   em:description="A plugin to run GameMaker games directly from a webpage."
+                   em:homepageURL="http://www.yoyogames.com/"
+                   em:updateURL="http://www.yoyogames.com/plugins/firefox/update.rdf"
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDNkgqhHZzDOiczol0xQn+2bEv+DPwJ61AavPIc6Xqh9Zi9/heXdQIMXOz4sislYzOxNQf2x4yTOmWa7Kvppi67WSwG1FnA0R8ccFPp/XyZZmrcdkI7d2dOx6HvtGU2w6SDV88B8gH9Awkwc7IjqdMroRsZ/CiXppeYSFIvDm4ZfQIDAQAB">
+    <em:targetApplication RDF:resource="rdf:#$hAh7V"/>
+  </RDF:Description>
+</RDF:RDF>
